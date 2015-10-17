@@ -1,0 +1,4 @@
+public enum PowerUpType {
+    DOUBLE, SPEED, LONG, SHORT, MOVING_GOALS,
+    NO_GOALS, HOMING, SHIELD, COIN, POINT
+};

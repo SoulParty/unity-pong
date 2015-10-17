@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: 7ba8057f9cb454f38ac82eae5975d94e
+timeCreated: 1443300410
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: circle-line
+    21300002: top-side-wall
+    21300004: ball
+    21300006: coin
+    21300008: nerf
+    21300010: racket
+    21300012: bottom-side-wall
+    21300014: buff
+    21300016: neutral
+    21300018: shield
+    21300020: leds
+    21300022: homing
+    21300024: double
+    21300026: 0
+    21300028: 1
+    21300030: 2
+    21300032: 3
+    21300034: 4
+    21300036: 5
+    21300038: 6
+    21300040: 7
+    21300042: 8
+    21300044: 9
+    21300046: mid-line
+    21300048: top-wall
+    21300050: bottom-wall
+    21300052: side-line
+    21300054: long
+    21300056: S
+    21300058: P
+    21300060: D
+    21300062: SS
+    21300064: N
+    21300066: N
+    21300068: M
+    21300070: C
+    21300072: orange-hit
+    21300074: blue-hit
+    21300076: white-hit
+    21300078: red-hit
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: circle-line
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 568
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: top-side-wall
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 50
+        width: 64
+        height: 1024
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 997
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 804
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nerf
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 803
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: racket
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 819
+        width: 64
+        height: 236
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bottom-side-wall
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 56
+        width: 64
+        height: 1024
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buff
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 900
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neutral
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 896
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 592
+        width: 512
+        height: 488
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: leds
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 429
+        width: 1024
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: homing
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid-line
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 319
+        width: 1024
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: top-wall
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 1998
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bottom-wall
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 2048
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: side-line
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 201
+        width: 2048
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: long
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: S
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 482
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: P
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 484
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: D
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 484
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SS
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: N
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 485
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: M
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 484
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: C
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 484
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: orange-hit
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 634
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue-hit
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 519
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: white-hit
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 393
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: red-hit
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 264
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

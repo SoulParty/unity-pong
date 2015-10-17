@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ModuleManager">
+    <modules>
+      <module name="pong2d" dirurl="file://$PROJECT_DIR$" current-layer="MacOS (any)">
+        <module-layer name="Linux (32 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="Linux (64 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="Linux (any)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="MacOS (32 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="MacOS (64 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="MacOS (any)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="Windows (32 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+        <module-layer name="Windows (64 bit)">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.0.0 (predefined)" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+            <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5</define>
+          </extension>
+          <content url="file://$MODULE_DIR$">
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Library" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/Temp" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/test_Data" />
+          </content>
+          <orderEntry type="sourceFolder" />
+        </module-layer>
+      </module>
+      <module name="Assembly-CSharp-firstpass" current-layer="MacOS (any)">
+        <module-layer name="Linux (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+      </module>
+      <module name="Assembly-UnityScript-firstpass" current-layer="MacOS (any)">
+        <module-layer name="Linux (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-unityscript-child" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+      </module>
+      <module name="Assembly-CSharp-Editor" current-layer="MacOS (any)">
+        <module-layer name="Linux (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxNative_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextFxUGUI_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextfxFontChangeListener.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/EffectManager_Inspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Editor/TextfxFontChangeListener.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp" />
+          <orderEntry type="dot-net-library" name="UnityEditor.Graphs" />
+          <orderEntry type="dot-net-library" name="UnityEditor.UI" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+      </module>
+      <module name="Assembly-CSharp" current-layer="MacOS (any)">
+        <module-layer name="Linux (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Linux (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="MacOS (any)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (32 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+        <module-layer name="Windows (64 bit)">
+          <extension id="unity3d-child" />
+          <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RacketManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/RollManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ScoreManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SettingsController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpecialController.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/MultiplayerType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/PowerUpType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/SpriteType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/UI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/SceneEffectsManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/ShootTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/TitleSceneManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/EffectManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ActionVariableProgression.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/EasingManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAction.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterAnimation.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/LetterSetup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/ParticleEffectInstanceManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/PresetEffectSetting.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationConfigs.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationInterface.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxAnimationManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxBezierCurve.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxHelperMethods.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxNative.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Scripts/VertexColour.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Utilities/Boomlagoon/JSON/JSONObject.cs" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
+          <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="UnityEditor" />
+          <orderEntry type="dot-net-library" name="UnityEngine" />
+          <orderEntry type="dot-net-library" name="UnityEngine.UI" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
+          <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+        </module-layer>
+      </module>
+    </modules>
+  </component>
+</project>
