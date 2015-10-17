@@ -13,16 +13,14 @@ public class HitAnimationManager : MonoBehaviour {
         if (collision.gameObject.name.Equals("Ball")) {
             BallManager ballManager = collision.gameObject.GetComponent<BallManager>();
             float speed = ballManager.speed;
-            Sprite hitSprite;
-
             if (speed > GameController.Instance.defaultBallStartSpeed * 3) {
-                hitSprite = hitSprites[3];
+                CameraShake.Instance.cameraShake(CameraShakeType.STRONG);
             } else if (speed > GameController.Instance.defaultBallStartSpeed * 2.2) {
-                hitSprite = hitSprites[2];
+                CameraShake.Instance.cameraShake(CameraShakeType.NORMAL);
             } else if (speed > GameController.Instance.defaultBallStartSpeed * 1.6) {
-                hitSprite = hitSprites[1];
+                CameraShake.Instance.cameraShake(CameraShakeType.NORMAL);
             } else {
-                hitSprite = hitSprites[0];
+                CameraShake.Instance.cameraShake(CameraShakeType.WEAK);
             }
             hitImpactParticles.transform.position = new Vector3(collision.gameObject.transform.position.x, hitImpactParticles.transform.position.y, 0);
             ObjectUtility.enableGameObject(hitImpactParticles);

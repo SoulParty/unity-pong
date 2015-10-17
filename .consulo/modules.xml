@@ -574,6 +574,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -591,6 +592,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -665,6 +667,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -682,6 +685,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -756,6 +760,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -773,6 +778,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -847,6 +853,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -864,6 +871,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -938,6 +946,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -955,6 +964,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -1029,6 +1039,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1046,6 +1057,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -1120,6 +1132,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1137,6 +1150,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />
@@ -1211,6 +1225,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/UI/BaseUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1228,6 +1243,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteChangeable.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/SpriteSelectionManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/AnimationType.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/CameraShakeType.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Const.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/Difficulty.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Type/LogoStatus.cs" />

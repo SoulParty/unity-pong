@@ -86,6 +86,7 @@ public class GameController : MonoBehaviour {
 
     public void startGameAnimation(AnimationType animationType) {
         UIControl.showGameAnimation(animationType);
+        CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
     }
 
     public void startSpecialAnimation(PowerUpType powerUpType) {

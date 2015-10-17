@@ -68,8 +68,8 @@ public class SpecialController : MonoBehaviour{
 
     public void spawnRandom() {
         GameObject special = (GameObject) Instantiate(Resources.Load("Special"));
-//        switch (Random.Range(1, 9)) {
-        switch (8) {
+        switch (Random.Range(1, 9)) {
+//        switch (8) {
             case 1: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.LONG); break;
             case 2: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHORT); break;
             case 3: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE); break;

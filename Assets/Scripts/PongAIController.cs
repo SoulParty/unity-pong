@@ -33,7 +33,7 @@ public class PongAIController : MonoBehaviour {
     }
 
     public void Start() {
-        switch (Difficulty.INSANE) {
+        switch (SettingsController.Instance.difficulty) {
             case Difficulty.EASY:
             FOLLOW_BALL_SPEED = 500;
             MOVEMENT_SPEED = 600;
