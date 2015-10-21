@@ -101,6 +101,7 @@ MonoBehaviour:
   - {fileID: 21300022, guid: 7ba8057f9cb454f38ac82eae5975d94e, type: 3}
   - {fileID: 21300068, guid: 7ba8057f9cb454f38ac82eae5975d94e, type: 3}
   - {fileID: 21300070, guid: 7ba8057f9cb454f38ac82eae5975d94e, type: 3}
+  IMPACT_LENGTH: .75
 --- !u!212 &21228518
 SpriteRenderer:
   m_ObjectHideFlags: 1

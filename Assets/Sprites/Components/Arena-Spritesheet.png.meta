@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7ba8057f9cb454f38ac82eae5975d94e
-timeCreated: 1443300410
+timeCreated: 1445157862
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -44,6 +44,8 @@ TextureImporter:
     21300074: blue-hit
     21300076: white-hit
     21300078: red-hit
+    21300080: racket2
+    21300082: nogoals
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -143,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2019
-        y: 819
+        y: 810
         width: 64
-        height: 236
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +184,10 @@ TextureImporter:
     - name: shield
       rect:
         serializedVersion: 2
-        x: 177
-        y: 592
+        x: 166
+        y: 568
         width: 512
-        height: 488
+        height: 512
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,43 +331,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orange-hit
+    - name: racket2
       rect:
         serializedVersion: 2
-        x: 1814
-        y: 634
-        width: 256
-        height: 64
+        x: 2009
+        y: 541
+        width: 64
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: blue-hit
+    - name: nogoals
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 519
-        width: 256
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: white-hit
-      rect:
-        serializedVersion: 2
-        x: 1817
-        y: 393
-        width: 256
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: red-hit
-      rect:
-        serializedVersion: 2
-        x: 1817
-        y: 264
-        width: 256
-        height: 64
+        x: 189
+        y: 265
+        width: 1024
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

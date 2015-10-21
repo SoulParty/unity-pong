@@ -45,7 +45,7 @@ public class SettingsController : MonoBehaviour{
         maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
         coins = PlayerPrefs.GetInt(Const.COINS);
 
-        Debug.Log("Max Combo " + maxCombo);
+//        Debug.Log("Max Combo " + maxCombo);
 
         coinsUi.GetComponent<Text>().text = coins.ToString();
         highscoreUi.GetComponent<Text>().text = maxCombo.ToString();

@@ -8,13 +8,13 @@ public class SpecialController : MonoBehaviour{
     public RacketManager leftRacketManager;
     public RacketManager rightRacketManager;
 
-    public int SPEED_UP = 200;
+    public int SPEED_UP = 300;
 
     public float SHIELD_DURATION = 5;
 
     public float NO_GOALS_DURATION = 5;
 
-    public int MOVING_GOAL_AMOUNT = 30;
+    public int MOVING_GOAL_AMOUNT = 4;
     public float MOVING_GOALS_DURATION = 10;
     public float MOVING_GOALS_STEP = 0.04f;
 
@@ -68,17 +68,17 @@ public class SpecialController : MonoBehaviour{
 
     public void spawnRandom() {
         GameObject special = (GameObject) Instantiate(Resources.Load("Special"));
-        switch (Random.Range(1, 9)) {
+        switch (Random.Range(1, 8)) {
 //        switch (8) {
             case 1: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.LONG); break;
             case 2: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHORT); break;
             case 3: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE); break;
             case 4: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SPEED); break;
-            case 5: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.POINT); break;
+            case 5: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.MOVING_GOALS); break;
             case 6: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.NO_GOALS); break;
             case 7: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHIELD); break;
-            case 8: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.MOVING_GOALS); break;
-            case 9: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.HOMING); break;
+//            case 8: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.POINT); break;
+//            case 9: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.HOMING); break;
         }
     }
 

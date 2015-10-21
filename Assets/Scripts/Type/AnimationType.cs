@@ -1,3 +1,3 @@
 public enum AnimationType {
-    GOAL, SPECIAL, WIN, HIGH_SCORE
+    GOAL, WIN, HIGH_SCORE
 };

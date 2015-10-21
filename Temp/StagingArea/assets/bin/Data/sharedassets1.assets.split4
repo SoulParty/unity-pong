@@ -1,1830 +1,4 @@
-= ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1 + (mainTex_1.w * tmpvar_4));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = ((mainTex_1 + (mainTex_1.w * tmpvar_4)) + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = ((mainTex_1 + (mainTex_1.w * tmpvar_4)) + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  gl_FragData[0] = ((mainTex_1 + (mainTex_1.w * tmpvar_3)) + (mainTex_1.w * xlv_COLOR));
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_GlowTex, xlv_TEXCOORD1);
-  _glesFragData[0] = ((mainTex_1 + (mainTex_1.w * tmpvar_3)) + (mainTex_1.w * xlv_COLOR));
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1 + (mainTex_1.w * tmpvar_4));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1 + (mainTex_1.w * tmpvar_4));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  gl_FragData[0] = (mainTex_1 + (mainTex_1.w * tmpvar_3));
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_GlowTex, xlv_TEXCOORD1);
-  _glesFragData[0] = (mainTex_1 + (mainTex_1.w * tmpvar_3));
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 * _GlowColorMult);
-  glow_2 = tmpvar_6;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  glow_2 = tmpvar_5;
-  gl_FragData[0] = tmpvar_5;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  glow_2 = tmpvar_5;
-  _glesFragData[0] = tmpvar_5;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  highp vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 * _GlowColorMult);
-  glow_2 = tmpvar_5;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  highp vec4 tmpvar_5;
-  tmpvar_5 = (glow_2 * _GlowColorMult);
-  glow_2 = tmpvar_5;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColor;
-in mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_4;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  mediump vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_5;
-  tmpvar_5 = (tmpvar_4 * _GlowColorMult);
-  glow_2 = tmpvar_5;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  mediump vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_5;
-  tmpvar_5 = (tmpvar_4 * _GlowColorMult);
-  glow_2 = tmpvar_5;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  gl_FragData[0] = (mainTex_1 + (mainTex_1.w * xlv_COLOR));
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  _glesFragData[0] = (mainTex_1 + (mainTex_1.w * xlv_COLOR));
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 * _GlowColorMult);
-  glow_2 = tmpvar_4;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (mainTex_1 * _GlowColorMult);
-  glow_2 = tmpvar_4;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-varying mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  gl_FragData[0] = mainTex_1;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_MAINTEX" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_GLOWCOLOR_OFF" "GLOWEFFECT_USE_GLOWTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  highp vec2 tmpvar_2;
-  tmpvar_2 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_2;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-in mediump vec2 xlv_TEXCOORD0;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  lowp vec4 tmpvar_2;
-  tmpvar_2 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_2;
-  _glesFragData[0] = mainTex_1;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  mediump vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_8;
-  tmpvar_8 = (tmpvar_7 * _GlowColorMult);
-  glow_2 = tmpvar_8;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  mediump vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  highp vec4 tmpvar_8;
-  tmpvar_8 = (tmpvar_7 * _GlowColorMult);
-  glow_2 = tmpvar_8;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesColor;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-varying mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  mediump vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  glow_2 = tmpvar_7;
-  gl_FragData[0] = tmpvar_7;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_USE_VERTEXCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesColor;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-out mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-in mediump vec4 xlv_COLOR;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  mediump vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 + (mainTex_1.w * xlv_COLOR));
-  glow_2 = tmpvar_7;
-  _glesFragData[0] = tmpvar_7;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  highp vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 * _GlowColorMult);
-  glow_2 = tmpvar_7;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-
-layout(location=0) out mediump vec4 _glesFragData[4];
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-uniform highp vec4 _GlowColorMult;
-in mediump vec2 xlv_TEXCOORD0;
-in mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  highp vec4 tmpvar_7;
-  tmpvar_7 = (glow_2 * _GlowColorMult);
-  glow_2 = tmpvar_7;
-  _glesFragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES
-
-
-#ifdef VERTEX
-
-attribute vec4 _glesVertex;
-attribute vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec2 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec2 tmpvar_3;
-  tmpvar_3 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = ((_glesMultiTexCoord0.xy * _GlowTex_ST.xy) + _GlowTex_ST.zw);
-  tmpvar_2 = tmpvar_4;
-  gl_Position = (glstate_matrix_mvp * _glesVertex);
-  xlv_TEXCOORD0 = tmpvar_1;
-  xlv_TEXCOORD1 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-uniform sampler2D _MainTex;
-uniform sampler2D _GlowTex;
-uniform highp vec4 _GlowColor;
-varying mediump vec2 xlv_TEXCOORD0;
-varying mediump vec2 xlv_TEXCOORD1;
-void main ()
-{
-  mediump vec4 mainTex_1;
-  mediump vec4 glow_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_MainTex, xlv_TEXCOORD0);
-  mainTex_1 = tmpvar_3;
-  lowp vec4 tmpvar_4;
-  tmpvar_4 = texture2D (_GlowTex, xlv_TEXCOORD1);
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = (mainTex_1.w * tmpvar_4);
-  highp vec4 tmpvar_6;
-  tmpvar_6 = (tmpvar_5 + (mainTex_1.w * _GlowColor));
-  glow_2 = tmpvar_6;
-  gl_FragData[0] = glow_2;
-}
-
-
-
-#endif"
-}
-SubProgram "gles3 " {
-Keywords { "GLOWEFFECT_USE_GLOWTEX" "GLOWEFFECT_USE_GLOWCOLOR" "GLOWEFFECT_MULTIPLY_COLOR_OFF" "GLOWEFFECT_USE_VERTEXCOLOR_OFF" "GLOWEFFECT_USE_MAINTEX_OFF" }
-"!!GLES3#version 300 es
-
-
-#ifdef VERTEX
-
-
-in vec4 _glesVertex;
-in vec4 _glesMultiTexCoord0;
-uniform highp mat4 glstate_matrix_mvp;
-uniform highp vec4 _MainTex_ST;
-uniform highp vec4 _GlowTex_ST;
-out mediump vec2 xlv_TEXCOORD0;
-out mediump vec2 xlv_TEXCOORD1;
+mp vec2 xlv_TEXCOORD1;
 void main ()
 {
   mediump vec2 tmpvar_1;
@@ -5589,7 +3763,24 @@ SubShader {
   SetTexture [_MainTex] { combine texture * primary }
  }
 }
-}                    BallMaterial      €?   PressStart2P      €?  €A       þÿÿÿ                              ÍÌÌ=0B      €  `FFTMcå% B   GDEF^ $ Aì   (OS/2¾Y‘–  h   `cmapÓ+©ä  0  Æcvt  "ˆ  	ø   gaspÿÿ  Aä   glyfî6…  \  íLheadü‹   ì   6hhea  $   $hmtx>€2   È  floca·Žó  	ü  `maxpv s  H    namev«û¨  û¨  7postøðùŠ 2¬  7      ©:Å_<õ      Ì¶%‹    Ì¶%‹                                                 / p             @        ô  ™Ì   ™Ì  ë 3	         € ¯P `J        PfEd À  û        `  Ÿ             €           €           €   € € €      €                  € €   €                     €     €               €         €      € €  €           €     € €   €           €   €   €         € €   €        € €€ € €   €   € €   €  €  €   €    €                                   € € € €               €           €   €                         € € € €               €                                                                                                 € € € € € € € € € €       €       €   € € €   €     €                                     €   €   €                 € € € € € €                             €   €            € € € € €€€ € €€ €  € €€ €€ €                      €           €                   € €         € €       €                   €                     €                           €     € €                       €                             €                                 €                             €                                 €     € € €                        € €   € €       €         €                     €                       €       € €                      ¼          d @  $ ’ÇËÝz~ŠŒ¡Î_    " & 0 : D ¬ ¯!!"!“"""""""+"H"`"e%²%¶%¼%À%Ê&&`&c&f&jñøÿûÿÿ      ’ÆÉ×z~„ŒŽ£       & 0 9 D ¬ ¯!!"!"""""""+"H"`"d%²%¶%¼%À%Ê&&`&c&e&jñ øÿûÿÿÿãÿÃÿ±þ~þ}þrýÖýÓýÎýÍýÌýËýšáçáåáäáãáàá×áÏáÆá_á]à÷àìàààààßýßúßîßÒß»ß¸ÜlÜiÜdÜaÜXÜÛÅÛÃÛÂÛ¿*	-,                                                                                                      
+}                    BallMaterial      €?   GoalAnimationIn                              pB                                                            €?  €?  €?  €?  €?                                                                 €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                                                                                                 €?  €?  €?  €?  €?                                                                                                   4                                                                                                                                                                                                                                                 €?  €?  €?  €?  €?                              €?  €?  €?  €?  €?                              €?  €?  €?  €?  €?                œ  ÿÿÿ
+                     ªÂ                 |C                                     €                  €                  €                 €¿                 €?                  ?	               è-?    
+        üÿÁ úÿ@ Ä  ªÂ      B   Á  &Ä  |C                                     €                  €   ¼]÷BIíÀÖ±ÈÀ   €   }“DýçœÁgI¨>  €¿     ¼Ä  PÄ €.D  €?    `Á à@  €?   ?	   ­/UÁ­/Õ@0¤s?è-?‰ˆˆ<                     €                  €   ˜©ôBþ‘¸<b˜ÇÀÖ½   û›ÁÎ}ŸA¡Ó'?ý˜~¿‰ˆ=                     €                  €   >FïBÎÍ@OÄÀÐæT¾   ä2 Â'˜žABè¦?ágz¿ÎÌL=                     €                  €   ï@çBñX…@9ß¾À|7ž¾   rŠ1Â4÷›A|ø?pxs¿‰ˆˆ=                     €                  €   >·ÜBÓÅ@üW·ÀË?Ð¾   Ãä`Â= —A|B#@Þi¿«ªª=                     €                  €   T»ÏB[A‚Î­À  ¿   í†ÂÃ ‘AØ±H@×³]¿ÍÌÌ=                     €                  €   “ƒÀB–ÌAŒ]¢Ày¿   dä›ÂáŠALîk@¼O¿ïîî=                     €                  €   ¦(¯BgÈ;A-%•À&L+¿   Z%¯Âåë€A|J†@¼>>¿‰ˆ>                     €                  €   sß›BdµUAxJ†À¿>>¿   “ƒÀÂtÎlA-%•@#L+¿š™>                     €                  €   Qð†BKHmADîkÀ¾O¿   T»ÏÂN*UAŒ]¢@y¿«ª*>                     €                  €   Zë`B¾"AØ±HÀÙ³]¿   ŠºÜÂw3;A„Î­@üÿÿ¾¼»;>                     €                  €   C}1BÊ6ŠAuB#ÀÞi¿   ¤=çÂ,AþW·@Ä?Ð¾ÍÌL>                     €                  €   ¿A B|Å‘Anø¿qxs¿   HFïÂÖhA:ß¾@u7ž¾ÞÝ]>                     €                  €    ›A½—A5è¦¿âgz¿   ž©ôÂusÄ@OÄ@ÃæT¾ïîn>                     €                  €   ”jÏ@‡
+œA…Ó'¿ý˜~¿   Á]÷Âôíƒ@b˜Ç@ïÖ½  €>        üÿA ýÁ €Ä ZÃ      Â  €A €%Ä  ¬B                                     €                  €   ©ÏÀ{¢žA  Ü5  €¿   xg÷ÂÓó@×±È@Lï.4    `ÎÆ °%F      ÈB‰ˆˆ>                     €                  €   øÚšÁ4|ŸA™Ó'?ü˜~¿   DœôÂ+¾¼]˜Ç@+Ö=‘>                     €                  €   @H Âr™žAIè¦?ágz¿   ÄGïÂìÈÀOÄ@àæT>›™™>                     €                  €   ‚—1Â‹÷›Aªø?nxs¿   ÚWçÂøP…ÀBß¾@‡7ž>$"¢>                     €                  €   =Ê`ÂÓž—A‚B#@Þi¿   ›ÜÂ”ÞÅÀöW·@Ý?Ð>­ªª>                     €                  €   Ñö†ÂÒ¡‘AÜ±H@Ó³]¿   ÊÏÂÁtÎ­@  ?63³>                     €                  €   )Ò›ÂcŠATîk@¶O¿   CvÀÂÒÎÁ†]¢@!y?¿»»>                     €                  €   ?F¯Âï€AJ†@µ>>¿   ?F¯ÂÝÂ;Á2%•@.L+?HDÄ>                     €                  €   iÀÂjÈlA9%•@L+¿   FÈ›ÂæºUÁvJ†@Ê>>?ÑÌÌ>                     €                  €   ÇÁÏÂ/,UAŒ]¢@
+y¿   …ó†Â\GmÁ îk@ÇO?ZUÕ>                     €                  €   ¾¸ÜÂ)3;AŒÎ­@ßÿÿ¾   ›ä`Âî"Á¾±H@á³]?ãÝÝ>                     €                  €   BQçÂÀ.AX·@¢?Ð¾   ‚—1Â¡5ŠÁdB#@&Þi?lfæ>                     €                  €   ìïÂ¿aA2ß¾@M7ž¾   ³  Â-Ç‘Á2ø?xxs?õîî>                     €                  €   –×ôÂ%‡Ä@"OÄ@zæT¾   l(›Áâ»—Áïç¦?ægz?~w÷>                     €                  €   0L÷Âùãƒ@n˜Ç@+Ö½   O“DeèÂ%Ó'? ™~?   ?
+                     °Ã               ÿÿÂ                                     €                  €               Lï®4                 €?                 ¯C    «D Ã  À  €?	   °¾¢DxÃ¡FÀ  €?UU?      ðÿ×ÄùÿWC  ¶   ?	   {’ÍÄ‚’MC  ¶è-?«ª*?       ØD XÃ  ¶  €?	   ’ÍDŒ’MÃ  ¶  €?  @?      	 ØÄ XC       ?	   ’’ÍÄŽ’MC    è-?UUU?       ØD XÃ      €?	   ’ÍD’MÃ      €?ªªj?      òÿ×ÄúÿWC  ¶   ?	   |’ÍÄ„’MC  ¶è-?  €?       ØD XÃ  ¶  €?	   ¡’ÍD•’MÃ  ˆ¶  €?ªªŠ?      Ãÿ×ÄÞÿWC  ·   ?	   N’ÍÄi’MC  ·è-?VU•?       XD Ã  ·  €?	   ’MD_	Ã  ·  €?   ?                     ?	               è-?  €    
+            pB             €?  €?           ?                †   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ     ªÂ  °Ã  |CÿÿÂ                           €Lï®4  €¿  €?  €?  ¯C   ?   ?è-?è-?  €?  €?  €?  €?                                                              j$À÷   „       r       ’ìn   „       r       öüÙ   „       r       y³n   „       r       L­Ð‡   „       r              GoalAnimationOut                             pB                            x                                €?  €?  €?  €?  €?                                                                 €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                          €?  €?  €?  €?  €?                                                                                                                                 €?  €?  €?  €?  €?                                                                                                   4                                                                                                                                                                                                                                                 €?  €?  €?  €?  €?                              €?  €?  €?  €?  €?                              €?  €?  €?  €?  €?                þ  ÿÿÿ                     °Ã                žÂ               	 <Â                                                                          €?                 ¯C                     0D  °Ã            €Ä žÂ              7	 <Â                                         Ïé÷¿o8=ü	É?       Yþ“ÂÜ?m¨¼  €?            €.Ä  ¯C‰ˆˆ<                                            µ÷¿ÿŸ¸YøÈ?qÖ<   þb«=Ï	ž¿ßg(½‹é?‰ˆ=                                            °š÷¿­p½sÃÈ?=^V=   ž»>­ô¿ßX¨½/¦?ÎÌL=                                            ËÇö¿-m„½SkÈ?,¯ =   c+>ˆÃ¿à^ü½ù5?‰ˆˆ=                                            ±xö¿©TÆ½ðÇ?Ö=   Nm>A‹¿á(¾ý˜~?«ªª=                                            Á¥õ¿Y#¾°QÇ?ª¨>   ¬>?%¿AíQ¾UÏ}?ÍÌÌ=                                            ƒåó¿£!%¾VÆ?]0 >    1¨>]ªœ¿š˜{¾%Ù|?ïîî=                                            Ëó¿Z¨E¾-¬Å?ô›:>   6ŒÅ><œ¿î‹’¾˜¶{?‰ˆ>                                            ‰ðñ¿¥ef¾W¥Ä?ÐæT>   ~pÖ>ŸU›¿Ž1§¾ágz?š™>                                            t¬ï¿[|ƒ¾ö{Ã?Po>   C1÷>á“š¿å¹»¾<íx?«ª*>                                            Z]ï¿²~“¾R0Â?ïƒ„>   Ö?É™¿i!Ð¾êFw?¼»;>                                            {ì¿1¤£¾›ÂÀ?wj‘>   S?®˜¿™dä¾6uu?ÍÌL>                                            ª>ë¿~³¾3¿?{7ž>   äÍ?r—¿zø¾pxs?ÞÝ]>                                            b\è¿*^Ã¾ö½?½èª>   Â®.?íQ–¿a7¿ôPq?ïîn>                                            ¬2æ¿ÓÿÒ¾œ¯»?|·>   Þ 7?ï”¿•¿ ÿn?  €>                                            èWä¿xâ¾_¼¹?ïÃ>   DæC?Êƒ“¿VÞ¿^ƒl?‰ˆˆ>                                            B[á¿äñ¾†¨·?Ë?Ð>   >þM? ÷‘¿#Š#¿Þi?‘>                                            ”<Ý¿B˜ ¿jtµ?ökÜ>   Ó\?Ð_¿\-¿Ôg?›™™>                                            ¦Ý¿¡ô¿‹ ³?tqè>   9\h?¡Ž¿<Š6¿ d?$"¢>                                            ;Ö¿à–¿.­°?,Nô>   ™™p?üÂŒ¿âÚ?¿'ú`?­ªª>                                            ×¿÷³¿Ò®?  ?   ¶"|?‰ÚŠ¿å	I¿Ö³]?63³>                                            -ÑÎ¿Þ%¿ði«?zÂ?   Ê{…?Iàˆ¿ÞR¿ŸFZ?¿»»>                                            íÒ¿–î$¿›¨?ym?   imŠ?½»†¿îüZ¿³V?HDÄ>                                            ¯9È¿íC,¿„®¥? ?   (¹?-{„¿R½c¿ìùR?ÑÌÌ>                                            ¿fÇ¿Œ÷2¿Í¤¢?y?   —#•?">‚¿ÝUl¿ºO?ZUÕ>                                            0¢Á¿SÎ9¿«~Ÿ?Î×?   GB™?Ä¦¿
+Åt¿1K?ãÝÝ>                                            @ÏÀ¿³I@¿–<œ?(!?   ÅÙŸ?4Ãz¿6	}¿óF?lfæ>                                            á‘¸¿RýF¿ß˜??B&?   µ¬ ?-vu¿m‚¿ó©B?õîî>                                            ì¶¿ñ1M¿¡f•?)L+?   °Äª?Çpp¿t…†¿º>>?~w÷>                                            æÏKBleÙ¿Ô‘?80?   Ý¿VB<å¿êbŠ¿²9?   ?                                       ©Ã                <Â                                                     ô5?               ò5?                 €?  €                pB                       ?                †   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ     °Ã     žÂ ©Ã	 <Â <Â                    ô5?  €?ò5?  ¯C  €?                                                              j$À÷   „       r              Goal8             ÿÿÿÿÿÿÿ    #-                            àçÕn2Îr›    ÍÌL>    ÍÌL?                      ¢ºvB              ÿÿÿÿÿÿÿÿ                                    ¢ºvB  €?        ¢ºvB¿½±¿½±      €?                        þYK             ÿÿÿÿÿÿÿÿ                                    þYK  €?        þYK ò
+s ò
+s      €?                         #-      0u      #-                                       o           ™ç¤   StateMachineWeight  ¿½±   Base Layer.GoalAnimationIn  ßºü   LeftFootSpeedQ  þYK   GoalAnimationOutGg   QuaternionW ‘   OutC%ÄÆ   Result  ³ÿÜ	   PositionZ   f¥   MinMax  ]ßÕ   WeightE ÖN=   PivotWeight D¸   WeightA Ãï`    S   Ú+'   W   ?¯¨+   MinMin  #-
+   Base Layer  ÷ -   ScaleY  §J¡2   RootStableQ |·3   BlendWeight ÿ„è5   RangeC  ³/R:   Den ÚÁ:   RightFootStableT—<»<   XI  §ÿ×=   C   à
+'?	   Condition   !>,?   RightFoot.WeightT   *¢mB	   SrcPivotX   ¢ºvB   GoalAnimationIn (¾ËB   RootStableT i´ïB   RangeB  @nF   DampTimeÿ+|H
+   StateSpeed  .«J   RightFootStableQ1ÏÐJ   B   Ýƒ÷K   LookAt  %zVP   TransitionStartTime äÓ§R   MaxMax  Ó€S   RightFootSafeX  gW¼Y   Z   a2'Z   ScaleX  Ùc6[   LeftFootSafeX   ãb   NextStateStartTime  ÈKc   LeftFoot.WeightR‚¡ˆc   OutB¦7ik	   DeltaTime   ËïÒm   WeightD ª;Öm   QuaternionZ V&n   SrcRefX +j)n   TransitionTime  ½ìªn   MaxMin  àçÕn9   Base Layer.GoalAnimationIn -> Base Layer.GoalAnimationOut    ò
+s   Base Layer.GoalAnimationOut Š[c{	   RefWeight   „¾}   GravityWeight   PN–}   LeftFootSpeedT  0·V~   StateWeight y+§   Out †ZØƒ   QuaternionX þJ±„   WeightB žNñ…
+   RightFootX  «îŽ‡	   StateTime   ýª(Š   LeftFoot.WeightTÊeÜŠ   RootX   ·ëŠ   OutD	®Õ	   PositionY   {™æ
+   RootSpeedT  x­Å—   StateExitTime   0[6™   Min m·¸š   ComputeSource   2Îr›#   GoalAnimationIn -> GoalAnimationOut 3K   RightFootSpeedT 0Ãðž   LeftFootStableQ j³£   D   id;¥   Max \Œ«   RangeD  MS)´   ScaleZ  K6²·   X   Ë¡ð»   Rem `z¾   T   µ«ó¿	   PlantFeet   ÝµÀ   Y   ´Ã3Â   DynamicCurve$"Ä   PreviousValue   ìªhÊ   In  -GŠÍ   TransitionDuration  ïŽnÎ   Q   âä^Ð   DoTransition‹žÙÓ   A   ’Z´Ô   E   qlÃÕ   DstRefX ¢™ØÕ   XO  ›OÖ   RightFoot.WeightR   8ÆsÖ   LeftFootProjX   ÓåæÛ   RangeA  Ê!‹Ü   RangeE  0w¶Ü   Value   2»ÅÞ   RightFootProjX  ômŒà
+   RootSpeedQ  Žéä   Num L/ä	   DstPivotX   ÿßïç	   LeftFootX   ¼å!í   RightFootSpeedQ ¿7šî   LeftFootStableT tÇñ   TransitionOffsethz¶ó   WeightC jßô   QuaternionY ICpõ   StabilizeFeet   ŸžÒø	   PositionX   8ðú   OutA!4ìý   OutE       !           "                         PressStart2P      €?  €A       þÿÿÿ    
+                          ÍÌÌ=0B      €  `FFTMcå% B   GDEF^ $ Aì   (OS/2¾Y‘–  h   `cmapÓ+©ä  0  Æcvt  "ˆ  	ø   gaspÿÿ  Aä   glyfî6…  \  íLheadü‹   ì   6hhea  $   $hmtx>€2   È  floca·Žó  	ü  `maxpv s  H    namev«û¨  û¨  7postøðùŠ 2¬  7      ©:Å_<õ      Ì¶%‹    Ì¶%‹                                                 / p             @        ô  ™Ì   ™Ì  ë 3	         € ¯P `J        PfEd À  û        `  Ÿ             €           €           €   € € €      €                  € €   €                     €     €               €         €      € €  €           €     € €   €           €   €   €         € €   €        € €€ € €   €   € €   €  €  €   €    €                                   € € € €               €           €   €                         € € € €               €                                                                                                 € € € € € € € € € €       €       €   € € €   €     €                                     €   €   €                 € € € € € €                             €   €            € € € € €€€ € €€ €  € €€ €€ €                      €           €                   € €         € €       €                   €                     €                           €     € €                       €                             €                                 €                             €                                 €     € € €                        € €   € €       €         €                     €                       €       € €                      ¼          d @  $ ’ÇËÝz~ŠŒ¡Î_    " & 0 : D ¬ ¯!!"!“"""""""+"H"`"e%²%¶%¼%À%Ê&&`&c&f&jñøÿûÿÿ      ’ÆÉ×z~„ŒŽ£       & 0 9 D ¬ ¯!!"!"""""""+"H"`"d%²%¶%¼%À%Ê&&`&c&e&jñ øÿûÿÿÿãÿÃÿ±þ~þ}þrýÖýÓýÎýÍýÌýËýšáçáåáäáãáàá×áÏáÆá_á]à÷àìàààààßýßúßîßÒß»ß¸ÜlÜiÜdÜaÜXÜÛÅÛÃÛÂÛ¿*	-,                                                                                                      
                                                                        	 
                         ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b ‡ ˆ Š Œ ” ™ Ÿ ¤ £ ¥ § ¦ ¨ ª ¬ « ­ ® ° ¯ ± ² ´ ¶ µ · ¹ ¸ ½ ¼ ¾ ¿ s e f j y ¢ q l w k ‰ › t h x‹ m }t © » ‚ d oC n ~ c ƒ † ˜úû ýþ º" Â;
 	-. zÿ …  „ Ž ‹  ‘ ’  – —, •  ž œ ôDN rJKL {OME   "ˆ   2 2 2 2 P l ¸„ØêLŒ®ÈÚì.t˜ÜXŽÎ PŽ¨Ê*j¦ê(^¢Øþ\~¢Æ	
@@ -5812,33 +4003,582 @@ Alphatonos	anoteleiaEpsilontonosEtatonos	IotatonosOmicrontonosUpsilontonos
 OmegatonosiotadieresistonosAlphaBetaGammaEpsilonZetaEtaThetaIotaKappaLambdaMuNuXiOmicronPiRhoSigmaTauUpsilonPhiChiPsiIotadieresisUpsilondieresis
 alphatonosepsilontonosetatonos	iotatonosupsilondieresistonosalphabetagammadeltaepsilonzetaetathetaiotakappalambdanuxiomicronrhosigma1sigmatauupsilonphichipsiomegaiotadieresisupsilondieresisomicrontonosupsilontonos
 omegatonosuni0400	afii10023	afii10051	afii10052	afii10053	afii10054	afii10055	afii10056	afii10057	afii10058	afii10059	afii10060	afii10061uni040D	afii10062	afii10145	afii10017	afii10018	afii10019	afii10020	afii10021	afii10022	afii10024	afii10025	afii10026	afii10027	afii10028	afii10029	afii10030	afii10031	afii10032	afii10033	afii10034	afii10035	afii10036	afii10037	afii10038	afii10039	afii10040	afii10041	afii10042	afii10043	afii10044	afii10045	afii10046	afii10047	afii10048	afii10049	afii10065	afii10066	afii10067	afii10068	afii10069	afii10070	afii10072	afii10073	afii10074	afii10075	afii10076	afii10077	afii10078	afii10079	afii10080	afii10081	afii10082	afii10083	afii10084	afii10085	afii10086	afii10087	afii10088	afii10089	afii10090	afii10091	afii10092	afii10093	afii10094	afii10095	afii10096	afii10097uni0450	afii10071	afii10099	afii10100	afii10101	afii10102	afii10103	afii10104	afii10105	afii10106	afii10107	afii10108	afii10109uni045D	afii10110	afii10193	afii00208Eurouni20AF	afii61352	arrowleftarrowup
-arrowright	arrowdownuni2206triagupuni25B6triagdnuni25C0uni2605uni2606spadeclubheartdiamondmusicalnoteuniF100uniF101uniF8FFuniFB01uniFB02    ÿÿ               .                    Ì=¢Ï    ÊÞ    Ì¶%w  €A  €A          Press Start 2P                 8bitlimo      €?š™B       ÿÿÿÿ           F                      €    )\aÂ       €  ðA    !         Ø=  =  Ô½    ÂUÀ  A  TÂ  A    ,     ˜=  P=  =  H½    )\Â  A  ÈÁ  A    -         .>  `=  €½    R¸ÂÁ   B  `Á   B   .     >  =  ˆ=  ½    )\Â  A  ˆÁ  A   0     ˜=   >   >  Ô½    ÂUÀ   B  TÂ   B    1     `>  Ø=  =  Ô½    ÂUÀ  A  TÂ  A    2     –>  Ø=   >  Ô½    ÂUÀ   B  TÂ   B    3         >  è=  Ô½    ÂUÀ  èA  TÂ  èA    4     Ø>  Ø=  è=  Ô½    ÂUÀ  èA  TÂ  èA    5     P>  X>  è=  Ô½    ÂUÀ  èA  TÂ  èA    6     ¤>  X>   >  Ô½    ÂUÀ   B  TÂ   B    7     
-?  è=   >  ä½    Àõ(?   B  dÂ   B    8         Ã>   >  Ô½    ÂUÀ   B  TÂ   B    9     >  ¢>   >  Ô½    ÂUÀ   B  TÂ   B    ?     +?  Ø=  è=  Ô½    ÂUÀ  èA  TÂ  èA    A     „>  ¢>   >  Ô½    ÂUÀ   B  TÂ   B    B         ù>   >  Ô½    ÂUÀ   B  TÂ   B    C     >  Ø>   >  Ô½    ÂUÀ   B  TÂ   B    D     æ>  `>   >  Ô½    ÂUÀ   B  TÂ   B    E     I?  Ø=   >  Ô½    ÂUÀ   B  TÂ   B    F     ?  `>   >  Ô½    ÂUÀ   B  TÂ   B    G     Æ>  ¦>   >  Ô½    ÂUÀ   B  TÂ   B    H     „>  Ø>   >  Ô½    ÂUÀ   B  TÂ   B    I     j?  Ø=  =  Ô½    ÂUÀ  A  TÂ  A    J     5?  h>  ¨=  ô½    ÂUÀ  ¨A  tÂ  ¨A    K     ?  ¦>   >  Ô½    ÂUÀ   B  TÂ   B    L     K?  X>   >  Ô½    ÂUÀ   B  TÂ   B    M     Æ>  Ü>   >  Ô½    ÂUÀ   B  TÂ   B    N     %?  ª>   >  Ô½    ÂUÀ   B  TÂ   B    O     ?  Ü>   >  Ô½    ÂUÀ   B  TÂ   B    P     K?  ¢>   >  Ô½    ÂUÀ   B  TÂ   B    Q     %?  ä>   >  ä½    ÂUÀ   B  dÂ   B    R     F?  Ø>   >  Ô½    ÂUÀ   B  TÂ   B    S        €?   >  Ô½    ÂUÀ   B  TÂ   B    T     > €?   >  Ô½    ÂUÀ   B  TÂ   B    U        €5?   >  Ô½    ÂUÀ   B  TÂ   B    V     „> €?   >  Ô½    ÂUÀ   B  TÂ   B    W     > €5?   >  Ô½    ÂUÀ   B  TÂ   B    X     Æ> €?   >  Ô½    ÂUÀ   B  TÂ   B    Y        €P?   >  Ô½    ÂUÀ   B  TÂ   B    Z     „> €5?   >  Ô½    ÂUÀ   B  TÂ   B    a     ? €?   >  œ½    R¸ŠÁ   B  Â   B    b     > €P?   >  Ô½    ÂUÀ   B  TÂ   B    c     Æ> €.?   >  œ½    R¸ŠÁ   B  Â   B    d         j?   >  È½    HáÊÀ   B  HÂ   B    e     %? €?   >  œ½    R¸ŠÁ   B  Â   B    f     ? €.?   >  Ô½    ÂUÀ   B  TÂ   B    g     „> €M?   >  ¼½    R¸ŠÁ   B  <Â   B    h     Æ> €K?   >  ä½    ÂUÀ   B  dÂ   B    i     >  j?  =  È½    HáÊÀ  A  HÂ  A    j     F?  ?  ¨=  è½    HáÊÀ  ¨A  hÂ  ¨A    k     P> €k?  >  Ô½    ÂUÀ  B  TÂ  B    l     \? €?  =  Ô½    ÂUÀ  A  TÂ  A    m     ? €B?   >  œ½    R¸ŠÁ   B  Â   B    n     ²> €a?   >  œ½    R¸ŠÁ   B  Â   B    o     %? €'?   >  œ½    R¸ŠÁ   B  Â   B    p     %? €??   >  ¼½    R¸ŠÁ   B  <Â   B    q     ? €Z?   >  ¼½    R¸ŠÁ   B  <Â   B    r     €;  ~?   >  œ½    R¸ŠÁ   B  Â   B    s     \? €.?   >  œ½    R¸ŠÁ   B  Â   B    t     ²>  {?   >  È½    HáÊÀ   B  HÂ   B    u     %? €S?   >  œ½    R¸ŠÁ   B  Â   B    v     ô> €n?   >  œ½    R¸ŠÁ   B  Â   B    w     F? €B?   >  œ½    R¸ŠÁ   B  Â   B    x     F? €V?   >  œ½    R¸ŠÁ   B  Â   B    y     %? €k?   >  ¼½    R¸ŠÁ   B  <Â   B    z     F? €j?   >  œ½    R¸ŠÁ   B  Â   B     à    ?  [?       €    )\aÂ       €        à    g?  /?       €    )\aÂ       €  ðA                   ÍÌÌ=      pB)\aB          8-bit Limit O BRK                  Ball          €?  €?                          €?       	             ¿   ?       ?   ?       ¿   ¿       ?   ¿                        €?  €?        @     €?   ?  €?   ?       BG          íD ÀD                        c ?                 ÜwÄ àD    ÜwD àÄ    ÜwD àD    ÜwÄ àÄ                         €D ÀD        @   c ?   Dc ? À‹C       circle-line Å™CÛ{ŠC4©ùC4©yC                        4©ù>              J    µ|CéóB     trCŒÌA     tC¼«A     &fC­™B     dCá¡B     VECá¡B     ;Cy‘B     dµB@§€C     ;C‚@B     {ƒCþ›ÍÁ     {ƒCÓB     tCüWVÁ     MlCþû‹Á     ŠMCþû‹Á     pICøÏçÀ     VEC~B     Â€²hC     Â€	NC      2Â€ÈCC     ¢ŽÂ€ÈCC     >§Â€ïIC     ÈÂ€®?C     ÈÂ€WZC     ÜÂ€z7C     ×Ã€z7C     ?Ã€¡=C     Ã€ÈCC     ?Ã€%C     €Ã€ÞC     6Ã€ÞC     C>Ã€ë C     C>Ã€5C     žLÃüB     ùZÃéóB     ùZÃ—¾B     _ÃªB     •sÃ_B     •sÃ~B     ãÃB    €LŽÃB     »ŸÃÿÎB     SÃJB    €f’Ã€»AC     »ŸÃþ›ÍÁ     &fCæ'B     ËWC~B     ¾UCŒÌA     pIC¼«A     Ö}ÃªB    €þÃÇB     ƒÃ}ºB     FÃÇB     :eÃ€ C     TiÃ€5C     É{Ã€ C     _Ã€ C     -cÃüB     ]ÃüB     ]BÃ€)C      aÃ€)C     TiÃ€'C     P@Ã€,+C     l*Â€ÙnC     ¢ŽÂ€ÙnC     >§Â€²hC     \ÔÂ€‹bC     ÊÃ€‹bC     Ã€d\C     YÃ@§€C     fÃ€ïIC     õ1Ã€ïIC     P@Ã€®?C     ƒÃüB     SÃE‰B    ž   @  ?  @   ? >  ?   >   >       -    -  , -   ,  ) I ' 3 ' I & ' 3 1 & 3 $ & 1 % & $ 2 H 0 6 0 H # 0 6 4 # 6 8 # 4 9 # 8 " # 9 ! " 9 = G  F  G   F E  F   E   E  C  B  C   B A  B   A   A D < * H * < 3 * H I * 3 ) * I 2 3 H 6 H < 5 6 < ; < D G ; D : ; G = : G F G D E F D  E D C  D B C D ? B D  ? D   C A B ? @ A ?  A @   @ > ?   >  : =    = ! 9   5 < 4 ; 4 < 7 4 ; : 7 ; 9 7 :   9 :    :   : 4 7 8 9 8 7 6 5 4 3 2 1 0 1 2 $ 1 0 # $ 0  /  .  /   .   .       - /    / . / -  . - ,  -   , ( ) + ' + ) 	 + ' * ) ( & 	 ' % 	 &  	 % $  % #  $ "  # !  "    !                                                               	   	   	    	  
- 	                             ƒ&ÈC‚}ÂC„ìC5é	Cø&¼BœàB@   4©ù>  D4©ù> ÀÈC       goal          €?  A                          €?                    ¿  A       ?  A       ¿  Á       ?  Á                        €?  A        @     €?   ?  €?  A       top-side-wall   À	@1ÃA4©ùA4©ùC                        4©ù>                    Â   D       B   D       Â   Ä       B   Ä              À	@1ÃA4©ùA4©ùC        @   4©ù>ÒUA4©ù>]‰C   racket  / vD®ÇC4©ùAü'æB                        4©ù>                    Â  ìB       B  ìB       Â  ìÂ       B  ìÂ              / vD®ÇC4©ùAü'æB        @   4©ù>ÔzD4©ù>säC   bottom-side-wallÞABtÚA4©ùA4©ùC                        4©ù>                    Â   D       B   D       Â   Ä       B   Ä              ÞABtÚA4©ùA4©ùC        @   4©ù>+ƒB4©ù>Û{ŠC   shield  ý¬BÒUC4©yCFõmC                        4©ù>                  [?CWrC     
-ÂB+ pÀ     [?Cÿ|êB     sÂWrC     Ò
-Ã+ pÀ     Ú\Ã#jC     Ú\ÃÿÚB                          öÄÎBßÊCÙHCáÇïBä›ˆAø&êB@   4©ù>  SC4©ù> ÀËC   mid-lineÔACìŒC4©ùC4©ùA                        4©ù>                    Ä   B       D   B       Ä   Â       D   Â              ÔACìŒC4©ùC4©ùA        @   4©ù>7D4©ù>'+C   top-wallÕòFBä¡BÒsD4©yB                        4©ù>                  QzDÚB     JyD Þ&Â     QzD vÂ    `ŠdÄ Þ&Â    àeÄÚB    àeÄ vÂ                      d ±BÖï0BBöiDdBóMBÈ71A@   4©ù>  D4©ù>  B       bottom-wall zÙÊA    4©yD4©ùA                        4©ù>                   €Ä   B      €D   B      €Ä   Â      €D   Â              zÙÊA    4©yD4©ùA        @   4©ù>f+D4©ù>4©yA    	   side-line   zÙÊAÚÄB4©yD4©ù@                        4©ù>                   €Ä   A      €D   A      €Ä   Á      €D   Á              zÙÊAÚÄB4©yD4©ù@        @   4©ù>f+D4©ù>$ÓËB       racket1 ñ'RDø)D¬ehB¬ehB                        ¬eè>                ½_AÌ¯‰A    ßÏ A 'À    ½_AÌO›A    ½_A˜ßLA     ÷‹>Ì/ÐA    z?Ü@0?Æ@    z?Ü@)Â    †@„ÀÈfÂ    ½ßWA5úÁ    ½ßWAØÂ    ½ßWAØÂ    ß/AÐÀàÀ    ½_A Ô¾    ð·Bó[ƒB    ð—TBhxÂ    ð—TBÌÏáA    ßïøAhxÂ    C ÁhxÂ    D`rÁhxÂ    "PÑÁÈfÂ    Âó[ƒB    (/ÂæwcB    (/Â4³Á    ½_A(UÂ    N    	  
-  	   
-                                          	  	   	   	  
- 	                    §iTDÌT)D â/Bb×gB€mA ¨?@   ¬eè> `YD¬eè> `0D   racket2 þDRDªªD¬ehB¬ehB                        ¬eè>                æßgARÂ    æßgA~Â    ó…AHuÂ    `ÂRÂ    ¨qÂ~Â    xzÂØZÂ    xzÂHuÂ    ú‡,BéÇ]B    ú÷FB8IÂ    ú÷FBéWCB    ˆÂ8IÂ    (+Â˜7Â    ø3ÂéÇ]B    È<Âé‡:B    È<Â/0âÁ    !            
-    
-  	                      Ý‰RDªªDdKB›äWB ¾‰?    @   ¬eè>  YD¬eè> à!D    
-   orange-hit  Ÿ"]DC“šC4©ùB4©ùA                        4©ù>                    Ã   B       C   B       Ã   Â       C   Â              Ÿ"]DC“šC4©ùB4©ùA        @   4©ù>2½lD4©ù>`¢C       blue-hit5ä\D}C4©ùB4©ùA                        4©ù>                    Ã   B       C   B       Ã   Â       C   Â              5ä\D}C4©ùB4©ùA        @   4©ù>È~lD4©ù>ÌV†C	   white-hit   >€]D`¢?C4©ùB4©ùA                        4©ù>                    Ã   B       C   B       Ã   Â       C   Â              >€]D`¢?C4©ùB4©ùA        @   4©ù>ÑmD4©ù>ó<OC       red-hit >€]D?» C4©ùB4©ùA                        4©ù>                    Ã   B       C   B       Ã   Â       C   Â              >€]D?» C4©ùB4©ùA        @   4©ù>ÑmD4©ù>ÒUC	   main_menu   ¾³QCªªªB¬eèC¬ehB                        ¬eè>                 üÁõßpA    *Â8xÂ     üÁ˜fÂ    ÐÔÂþGuB    ª¦Ã8xÂ    Þ¨ÃþGuB    Þ¨Ã¢ÿê?     6¨Cýg@B     §ChoÂ     6¨CÈ]Â    ÿCþGuB    LÿÅ?hoÂ    -€èÀþGuB    -€èÀ@ßÀ          
+arrowright	arrowdownuni2206triagupuni25B6triagdnuni25C0uni2605uni2606spadeclubheartdiamondmusicalnoteuniF100uniF101uniF8FFuniFB01uniFB02    ÿÿ               .                    Ì=¢Ï    ÊÞ    Ì¶%w  €A  €A          Press Start 2P                 Arcade        €?   B       þÿÿÿ                              ÍÌÌ=4l       0  ÀOS/2P[Õ  k(   VPCLT«kŸ  k€   6cmap3ž9å  aÐ  cvt cDeY  ˜   ,fpgmƒ3ÂO  „   glyfÚ?Â  ,  Y’hdmx…¦ð·  dà  HheadÕ®}»  k¸   6hheaçà  kð   $hmtx²G  _H  „loca 'š  ]À  ˆmaxp úu  l    nameàÔ   ü  ˆpost«ûcŒ  `Ì  prepŽè9r  Ä   f   &         ¬ V                        A        /        N        V         b        V                       ;       )       M       P        b  	   ¬ V  	    	    	  A  	  /  	  N  	  V  	   b(c) Jakob Fischer at www.pizzadude.dk - DO NOT DISTRIBUTE WITHOUT AUTHOR'S PERMISSION! ( c )   J a k o b   F i s c h e r   a t   w w w . p i z z a d u d e . d k   -   D O   N O T   D I S T R I B U T E   W I T H O U T   A U T H O R ' S   P E R M I S S I O N !Arcade A r c a d eRegular R e g u l a rArcade A r c a d eArcade A r c a d e2 2Arcade A r c a d e@ ,vE °%E#ah#h`D- T Ùž 8 z 8 { ¼ ÿÅƒA ½ ÿÅAƒZbZb  @
+
+		  ¸ÿ…EhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhD³F +³F +±EhD±EhD    ?  ¶    U@@	    Fv/7 /</<ý<ý</<ý</<ý< 10Ih¹   Iha°@RX87¹ ÿÀ8Y3!%3#?wþÇúú üà?£     ÙÅž         # ' + / 3 7 ; ?  3#73#3#73#3#73#3#73#73#3#73#73#73#3#73#73#B88B88„88B88	88B88„88B88B88Ç88C88B88B88þ÷88B88C88•888L888Å888
+88888
+8888888
+88888 
+  âAž         # '  3#73#73#73#3#73#73#73#3#73#88B88„88C88þ÷88B88„88C88Ç88Ç88ž8888888
+8888888
+888  "   ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {  ƒ ‡  3#73#73#73#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#73#73#73#3#73#73#73#88B88B88B88C88B88B88þµ88B88…88B88þ÷88B88…88B88þ÷88B88…88B88þ÷88B88…88B88þµ88B88B88B88C88B88B88þµ88B88…88B88•8888888888888
+8888888
+8888888Å8888888
+8888888
+8888888888888
+8888888     Ù þž         # ' + / 3  3#3#73#73#3#3#3#73#73#3#3#73#73#Æ88Æ88B88B888888B88B88B88Æ8888B88B88•8
+88888
+8Å8
+88888
+8
+88888   ƒ\         # ' + / 3 7 ; ? C G  3#73#73#73#3#73#3#73#73#73#3#73#73#73#3#73#3#73#B88B88…88B88B88B88þµ88B88Ç88B88þµ88B88„88C88…88B88Æ88B88•8888888
+888A8888888
+8888888
+888M888    ÙAž         # ' + / 3 7 ;  3#73#73#3#73#3#73#73#3#73#3#73#3#73#3#88„88…88þ÷88Æ88„88B88…88Ç88B88„88Æ88Æ88„88B88•88888
+888
+88888Å888
+888
+888
+8    â zž      @@@
+	  	
+  Fv/7 ?<?</</<ý<ý</<ý</<ý< 10Ih¹   Iha°@RX87¹ ÿÀ8Y3#73#3#73#3#88B88B88B8888ž888
+888
+8     Ù þž         # ' + / 3 7  3#73#3#73#3#73#3#73#3#73#3#73#3#73#88B8888B8888B88B88B88„88B88„88B88B88B88•888
+888
+888Å888
+888
+888
+888     Ù þž         # ' + / 3 7  3#73#3#73#3#73#3#73#3#73#3#73#3#73#„88B88„88B88„88B88B88B8888B8888B88B88B88•888
+888
+888Å888
+888
+888
+888  B] þ      Š@C@
+	  
+	 Fv/7 ?</</<ý<ý<ý</<ý<Ý<ý<Ý<ý< 10Ih¹   Iha°@RX87¹ ÿÀ8Y3#73#'3#73#3#B88„88„88„88B88•888½888
+8   ƒ\         # ' + / 3 7  3#73#3#73#3#73#3#73#3#73#73#73#73#73#„88B88B88B88B88B88B88B88Æ88B88B88B88C88B88•888
+888A888
+888
+88888888888  B T þ       ”@L@ 
+	 
+	  Fv/7 ?<?</<ý</<ý</<ý<Ý<ý<Ý<ý< 10Ih¹  Iha°@RX87¹ ÿÀ8Y3#73#3#73#3#73#„88B88B88B88„88B88888
+888888     AØ      v@8@ 
+			 
+	 Fv/7 /</</<ý</<ý</<ý</<ý</<ý< 10Ih¹   Iha°@RX87¹ ÿÀ8Y3#73#73#73#73#88B88B88B88C88Ø888888888   „ — þ     s@6@
+	 	
+ 
+ Fv/7 ?</</<ý</<ý</<ý< 10Ih¹   Iha°@RX87¹ ÿÀ8Y3#73#3#73#„88B88B88B88888
+888    Ùƒž         # ' + / 3  3#73#3#73#3#73#3#3#73#3#73#3#73#„88B88„88B88„88B88	88B88B88…88C88…88B88•888
+888
+888Å8
+888
+888
+888    Ùƒž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#88B88Ç88B88þµ88B88Ç88B88þ÷88B88B88C88Ç88B88B88C88þ÷88B88Ç88B88þµ88B88Ç88B88þµ88B88Ç88B88•8888888
+8888888
+8888888Å8888888
+8888888
+8888888
+8888888    Ùƒž         # ' + / 3 7 ; ? C G K  3#73#3#73#3#73#73#73#73#73#3#73#3#73#73#3#73#3#73#„88B88B88B88Æ88B88B88B88C88B88Ç88B88„88B88B88B88B88B88B88•888
+888
+88888888888Å888
+88888
+888
+888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c  3#73#3#73#3#73#73#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#73#B88B88„88B88B88B88B88B88C88B88B88þµ88B88B88C88B88þµ88B88	88B88„88B88Ç88B88C88•888
+888
+8888888888888Å888888888
+8888888
+888
+88888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c  3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#73#K88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88B88B88Ç88C88B88•888
+8888888
+888888888Å888888888
+8888888
+888
+88888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g  3#73#73#73#73#73#73#3#73#3#73#3#73#73#3#73#73#73#3#73#73#73#3#73#73#73#88B88B88B88C88B88B88„88B88B88B88…88C88B88Ç88B88C88B88þ÷88B88…88B88þµ88B88Ç88B88•8888888888888
+888
+888Å88888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k  3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#73#3#73#3#73#73#73#73#73#3#73#K88B88þs88B88	88B88þµ88B88B88C88B88þµ88B88B88B88C88B88þµ88B88B88B88B88B88C88B8888B88•888
+8888888
+888888888Å88888888888
+888
+88888888888
+888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#73#73#73#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B88B88B88B88B88C88B88•8888888
+8888888
+888888888Å888888888
+8888888
+888
+88888888888     ÙÅž         # ' + / 3 7 ; ? C G K  3#73#3#73#3#73#3#73#73#73#73#73#73#3#73#3#73#3#73#„88B88B88B88B88B88Æ88B88B88B88C88B88B88„88B88…88C88…88B88•888
+888
+888Å8888888888888
+888
+888
+888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B88	88B88þµ88B88B88C88B88•8888888
+8888888
+888888888Å888888888
+8888888
+8888888
+888888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g  3#73#3#73#3#73#73#3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#K88B88„88B88Ç88B88C88Ç88B88B88C88B88þµ88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88•888
+888
+88888Å888888888
+8888888
+8888888
+88888888888    z\         ª@_  @!
+	  	
+
+ Fv/7 ?</</<ý<ý<ý</<ý</<ý</<ý< 10Ih¹    Iha°@RX87¹  ÿÀ8Y3#73#3#73#3#73#3#73#88B88B88B88B88B88B88B88•888
+888A888
+888  	   Ù z\         #  3#73#3#73#3#3#73#3#73#88B88B88B8888B88B88B88B88•888
+888
+8ƒ888
+888  
+   þ\         # '  3#73#3#73#3#73#3#73#3#73#B88B8888B88B88B88„88B88„88B88•888
+888A888
+888
+888  
+  ]A         # '  3#73#73#73#73#%3#73#73#73#73#88B88B88B88C88þ÷88B88B88B88C88•888888888½888888888  
+   þ\         # '  3#73#3#73#3#73#3#73#3#73#B88B88„88B88B88B8888B8888B88•888
+888A888
+888
+888    Ùƒž         # ' + / 3 7 ; ?  3#73#3#73#3#73#73#73#3#73#73#73#3#73#3#73#„88B88B88B88„88B88B88C88þ÷88B88Ç88B88…88C88…88B88S888
+888Å8888888
+8888888
+888
+888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#73#73#73#3#3#73#73#73#73#73#3#73#73#73#73#3#%3#3#73#73#73#73#3#73#73#73#88„88B88…88B88þs88B88B88B88C88B88B88þµ88B88B88C88B88þµ8888þs88„88B88C88„88þs88„88…88„88•888888888
+8
+88888888888Å888888888
+888
+888888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w  3#73#73#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#3#73#73#73#3#73#%3#73#3#73#%3#73#88B88B88B88C88B88B88þs88B88	88B88þs88B88	88B88þ÷88B88C88Ç88B88…88B88þµ88B88	88B88þs88B88	88B88•8888888888888
+8888888
+8888888Å88888
+8888888
+8888888
+8888888 "   ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {  ƒ ‡  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#88B88	88B88þs88B88	88B88þs88B88B88B88C88B88þµ88B88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88B88B88C88B88•8888888
+8888888
+88888888888Å88888888888
+8888888
+8888888
+88888888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _  3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#88B88B88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B88B88B88•888
+8888888
+888888888Å888888888
+8888888
+888
+888      ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {   3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#88B88	88B88þs88B88	88B88þs88B88B88B88C88B88þµ88B88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88	88B88•8888888
+8888888
+88888888888Å88888888888
+8888888
+8888888
+8888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#3#73#3#73#73#73#73#73#73#3#73#73#73#73#73#73#3#73#3#73#3#73#73#73#73#73#88B88B88B88B88B88B88B88C88B88B88þs88B88B88B88C88B88B88þs88B88B88B88B88B88B88B88C88B88•888
+888
+8888888888888Å8888888888888
+888
+888
+88888888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [  3#73#3#73#3#73#3#73#73#73#73#73#73#3#73#3#73#3#73#73#73#73#73#88B88B88B88B88B88B88B88B88B88C88B88B88þs88B88B88B88B88B88B88B88C88B88•888
+888
+888Å8888888888888
+888
+888
+88888888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#73#73#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B88B88B88Ç88B88B88•8888888
+8888888
+888888888Å888888888
+8888888
+888
+888888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {  3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#73#88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88B88B88C88B88B88•8888888
+8888888
+8888888Å8888888
+8888888
+8888888
+8888888888888    Ùƒž         # ' + / 3 7 ; ? C G K O S W  3#73#3#73#3#73#73#73#73#73#3#73#73#73#73#73#3#73#3#73#3#73#„88B88B88B88Æ88B88B88B88C88B88þµ88B88B88B88C88B88Ç88B88B88B88B88B88•888
+888
+88888888888Å88888888888
+888
+888
+888     ÙÅž         # ' + / 3 7 ; ? C G K O S  3#73#3#73#73#73#3#73#73#73#3#73#73#73#73#3#73#3#73#3#73#	88B88þµ88B88Ç88B88þ÷88B88B88C88…88B88C88B88B88„88B88B88B88B88B88•888
+8888888
+8888888Å888888888
+888
+888
+888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w  3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#3#73#73#73#3#73#73#73#88B88B88B88C88þ÷88B88„88C88B88þµ88B88	88B88þs88B88	88B88þs88B88Ç88B88þµ88B88„88C88þ÷88B88B88B88•888888888
+888888888
+8888888Å8888888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K  3#73#3#73#3#73#73#73#73#73#73#3#73#3#73#3#73#3#73#88B88B88B88B88B88B88B88C88B88B88þs88B88B88B88B88B88B88B88•888
+888
+8888888888888Å888
+888
+888
+888      ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {   3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#%3#3#73#%3#73#3#73#73#73#73#73#3#73#73#73#73#73#73#88B88„88…88B88þs88B88	88B88þs88B88	88B88þs8888þs88B88	88B88þs88B88B88…88B88B88þs88B88B88B88C88B88B88•888888888
+8888888
+8888888Å888
+8888888
+88888888888
+8888888888888  "   ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {  ƒ ‡  3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#73#3#73#73#73#73#73#88B88Ç88B88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88B88Ç88B88þs88B88B88B88…88B88þs88B88„88C88B88B88•888888888
+8888888
+8888888Å8888888
+888888888
+88888888888
+88888888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88	88B88•8888888
+8888888
+888888888Å888888888
+8888888
+8888888
+8888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g  3#73#3#73#3#73#3#73#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#88B88B88B88B88B88B88B88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88B88B88C88B88•888
+888
+888Å88888888888
+8888888
+8888888
+88888888888 "   ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g h l p t x y }   3#73#73#73#73#73#3#73#73#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#373#73#3#73#7;#73#88B88„88C88B88B88þs88B88Ç88B88þ÷88B88B88…88B88þµ88B88B88C88B88þµ88B88	88B88þs88B88ÿ
+88B88þs88B88ÿ
+88B88•88888888888
+8888888
+888888888Å888888888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {   3#73#73#73#3#73#73#73#3#73#%3#73#3#73#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#88B88„88C88þ÷88B88Ç88B88þµ88B88	88B88þs88B88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88B88B88C88B88•8888888
+8888888
+8888888Å88888888888
+8888888
+8888888
+88888888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k  3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#3#73#3#73#73#73#73#K88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88þs88B8888B88B88C88B88•888
+8888888
+888888888Å888888888
+8888888
+888
+888888888    Ùƒž         # ' + / 3 7 ; ? C G  3#73#3#73#3#73#3#73#73#73#73#73#3#73#3#73#3#73#„88B88B88B88B88B88Æ88B88B88B88C88B88Ç88B88B88B88B88B88•888
+888
+888Å88888888888
+888
+888
+888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þµ88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88•8888888
+8888888
+888888888Å8888888
+8888888
+8888888
+8888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k  3#73#%3#73#3#73#73#73#3#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#88B88	88B88þµ88B88…88B88Ç88B88C88þ÷88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88•8888888
+8888888
+88888Å8888888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w {   3#73#73#73#73#3#73#73#73#73#73#73#3#73#73#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#%3#73#88B88„88…88B88þs88B88B88B88C88B88B88þµ88B88…88B88þµ88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88	88B88•888888888
+8888888888888
+8888888Å8888888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 0 4 8 < @ D H L P T X \ `  3#73#73#73#3#73#%3#73#3#%3#3#73#!73#3#73#73#73#3#73#73#3#73#73#73#B88B88…88B88þµ88B88	88B88þs8888þs88B88A
+88þµ88B88…88B88Ç88B88C88…88B88C88B88•8888888
+8888888
+888Å88888
+8888888
+88888
+88888þ8     Ùƒž         # ' + / 3 7 ; ? C G K O S W  3#73#3#73#3#73#3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#„88B88B88B88B88B88Æ88B88Ç88B88þµ88B88Ç88B88þµ88B88Ç88B88þ÷88B88B88C88•888
+888
+888Å8888888
+8888888
+8888888
+8888888     ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _  3#73#3#73#3#73#73#73#73#73#73#3#73#73#73#73#73#73#3#73#3#73#3#73#B88B88„88B88B88B88B88B88C88B88B88þs88B88B88B88C88B88B88„88B88…88C88…88B88•888
+888
+8888888888888Å8888888888888
+888
+888
+888     Ù ¼ž         # ' + / 3 7 ; ?  3#73#3#73#3#73#73#3#73#73#3#73#3#73#3#73#88B88B88B88B88B88B88„88B88B88„88B88B88B88B88B88•888
+888
+88888Å88888
+888
+888
+888     ÙÅž         # ' + / 3  3#73#3#73#3#3#73#3#73#3#73#3#73#	88B8888B8888þs88B8888B8888B8888C88•888
+888
+8Å888
+888
+888
+888    Ù ¼ž         # ' ( , 0 4 8 < @  3#73#3#73#3#73#73#3#73#73#;#73#3#73#3#73#B88B88B88B88„88B88B88„88B88B88L
+88B88B88B88B88B88•888
+888
+88888Å88888
+888
+888
+888    ÙÅ         # ' + / 3 7 ; ? C G K O S W [  3#73#73#73#73#73#3#73#%3#73#3#73#73#73#73#73#3#73#73#73#73#3#73#B88B88B88C88B88B88þs88B88	88B88þµ88B88B88C88B88B88þµ88B88B88C88B8888B88•88888888888
+8888888
+88888888888A888888888
+888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#3#73#73#73#73#73#3#73#%3#73#88B88	88B88þs88B88	88B88þs88B88B88B88C88B88þµ88B88B88B88B88B88B88B88C88B88þµ88B88	88B88•8888888
+8888888
+88888888888Å888
+888
+88888888888
+8888888    ÙÅ         # ' + / 3 7 ; ? C G K O  3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#88B88B88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88•888
+8888888
+888888888A888888888
+8888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#3#73#73#73#73#73#3#73#%3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88B88B88B88B88þµ88B88B88C88B88B88þs88B88	88B88•8888888
+8888888
+88888888888Å888
+888
+88888888888
+8888888    ÙÅ         # ' + / 3 7 ; ? C G K O S W [  3#73#73#73#73#73#73#3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#88B88B88B88C88B88B88þs88B8888B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88•8888888888888
+888
+888888888A888888888
+8888888     ÙAž         # ' + / 3 7 ; ? C  3#73#3#73#3#73#3#73#73#3#73#3#73#73#73#3#73#B88B88B88B88B88B8888B88C88Ç88B88„88B88B88B88„88B88•888
+888
+888Å88888
+888
+8888888
+888    TÅ         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s w  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#73#73#73#3#73#%3#73#3#73#73#73#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88B88B88þµ88B88B88C88B88þµ88B88	88B88þµ88B88B88C88B88•8888888
+8888888
+88888888888
+888ƒ888888888
+8888888þì888888888    ÙÅž         # ' + / 3 7 ; ? C G K O S W [ _ c g  3#73#%3#73#3#73#%3#73#3#73#%3#73#3#73#3#73#3#73#73#73#73#73#3#73#%3#73#88B88	88B88þs88B88	88B88þs88B88	88B88þs88B88B88B88B88B88B88B88C88B88þµ88B88	88B88•8888888
+8888888
+8888888Å888
+888
+88888888888
+8888888     Ù zž         # ' + /  3#73#3#73#3#73#3#73#3#73#3#73#88B88B88B88B88B88B88B88B88B88B88B88•888
+888
+888Å888L888
+888     T þž         # ' + / 3 7 ; ? C G  3#73#3#73#3#73#3#73#3#73#3#73#73#3#73#3#73#73#„88B88B88B88B88B88B88B88B88B88„88B88B88B88B88Æ88B88B88•888
+888
+888
+888888L88888
+888þì88888     Ùƒž         # ' + / 3 7 ; ? C G K O S W [ _ `  3#73#73#73#3#73#73#73#3#73#73#73#3#73#3#73#3#73#73#73#3#73#73#73#788B88B88B88Æ88B88„88C88þ÷88B88Ç88B88þµ88B88B88B88B88B88Ç88B88þµ88B88„88C88B•8888888
+8888888
+8888888Å888
+888
+8888888
+88888888     Ù zž         # ' + / 3 7  3#73#3#73#3#73#3#73#3#73#3#73#3#73#88B88B88B88B88B88B88B88B88B88B88B88B88B88•888
+888
+888Å888
+888
+888
+888     ÙÅ         # ' + / 3 7 ; ? C G K O S W [ _ c  3#73#73#73#73#3#73#73#73#73#3#73#73#73#73#3#73#73#73#73#3#73#73#73#73#88B88„88…88B88þs88B88„88…88B88þs88B88„88…88B88þs88B88B88…88B88þµ88B88„88…88B88•888888888
+888888888
+888888888A888888888
+888888888    Ùƒ         # ' + / 3 7 ; ? C G K O S  3#73#73#73#3#73#73#73#3#73#73#73#3#73#73#73#73#3#73#73#73#88B88Ç88B88þµ88B88Ç88B88þµ88B88Ç88B88þµ88B88B88B88C88þ÷88B88Ç88B88•8888888
+8888888
+8888888A888888888
+8888888    ÙÅ         # ' + / 3 7 ; ? C G K O S W  3#73#%3#73#3#73#%3#73#3#73#73#73#73#3#73#73#73#73#3#73#%3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88	88B88•8888888
+8888888
+888888888A888888888
+8888888    TÅ         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#73#73#73#73#3#73#%3#73#3#73#88B88	88B88þs88B88	88B88þs88B88B88B88C88B88þµ88B88B88B88B88B88C88B88þµ88B88	88B88þs88B88•8888888
+8888888
+88888888888
+888ƒ88888888888
+8888888þì888    TÅ         # ' + / 3 7 ; ? C G K O S W [ _ c g k o  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#73#73#73#73#3#73#%3#73#3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88B88B88þµ88B88B88C88B88B88þs88B88	88B88B88B88•8888888
+8888888
+88888888888
+888ƒ88888888888
+8888888þì888     ÙA         # ' + / 3  3#73#3#73#3#73#3#73#73#73#3#73#73#88B88B88B88B88B88B88B88„88C88þ÷88B88B88•888
+888
+888A8888888
+88888     ÙÅ         # ' + / 3 7 ; ? C G K  3#73#73#73#73#3#73#3#73#73#73#73#3#73#73#73#73#3#73#B88B88B88C88B8888B88þµ88B88B88C88B88þ÷88B88B88C88B88þµ88B88•888888888
+888
+888888888A888888888
+888     ÙAž         # ' + / 3 7 ; ? C  3#73#3#73#3#73#73#3#73#3#73#3#73#73#73#3#73#B88B88B88B8888B88C88Ç88B88B88B88„88B88B88B88„88B88•888
+888
+88888Å888
+888
+8888888
+888    ÙÅ         # ' + / 3 7 ; ? C G K O S W  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#%3#73#3#73#%3#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88þs88B88	88B88þs88B88	88B88•8888888
+8888888
+88888888888A8888888
+8888888     ÙÅ         # ' + / 3 7 ; ? C G K  3#73#%3#73#3#73#73#73#3#73#73#3#73#%3#73#3#73#%3#73#88B88	88B88þµ88B88…88B88Ç88B88C88þ÷88B88	88B88þs88B88	88B88•8888888
+8888888
+88888A8888888
+8888888    ÙÅ         # ' + / 3 7 ; ? C G K O S  3#73#%3#73#3#73#73#73#73#3#73#73#73#3#73#%3#73#3#73#%3#73#88B88	88B88þs88B88„88…88B88þµ88B88…88B88þµ88B88	88B88þs88B88	88B88•8888888
+888888888
+8888888A8888888
+8888888     ÙÅ         # ' + / 3 7 ; ? C G K  3#73#73#3#73#73#73#3#73#%3#73#3#73#%3#73#3#73#73#73#„88B88C88Ç88B88…88B88þµ88B88	88B88þs88B88	88B88þµ88B88…88B88•88888
+8888888
+8888888A8888888
+8888888    TÅ         # ' + / 3 7 ; ? C G K O S W [ _ c g k o s  3#73#%3#73#3#73#%3#73#3#73#73#73#73#73#3#73#3#73#%3#73#3#73#%3#73#3#73#73#73#73#88B88	88B88þs88B88	88B88þµ88B88B88C88B88B88B88B88þs88B88	88B88þs88B88	88B88þµ88B88B88C88B88•8888888
+8888888
+88888888888
+888ƒ8888888
+8888888þì888888888    ÙÅ         # ' + / 3 7 ; ? C G K O S  3#73#73#3#73#3#73#73#73#73#73#73#3#73#73#73#73#73#73#3#73#„88B88C88Ç88B88„88B88B88B88C88B88B88þs88B88B88B88C88B88B88„88B88•88888
+888
+8888888888888A8888888888888
+888         |   |   |   |  <  ¸  B  Ü  ²  f  *  Ð  v  D  ì  	Ð  
+Š  6  Ô    ú    F  t  °    ð  \  Ž  ž    Š    €  @  ˆ  è  v   ’  "
+  #N  $Z  %®  '  (  )  *v  +V  ,Î  .Z  /¼  0ì  2h  3Þ  5  5ð  7H  8ˆ  :   ;"  <&  =>  =ü  >–  ?X  @f  A®  Bœ  Cä  Dò  Eº  G  HN  Hà  I¶  JÔ  K|  L   M˜  Nž  Oè  Q2  QÐ  R²  Sz  T‚  Uf  Vb  WF  Xœ  Y’  Y’  Y’  Y’  Y’  Y’  Y’ô ?                  ¤  [       BÄ  B B  B „  Æ  Ä                   Ç   Æ                                                                0    @            ˆ       ¼  B     ¼    Ä        „    „                       r   r         ÿ{                      a           	 
+                        ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ]    glyph92glyph93glyph91ch255           ,          ,                                                                       	                          ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @       A B C D E F G H I J K L M N O P Q R S T U V W X Y Z                                                                                             
+                                                                                                                                                                     [ \ ] ^ _ `    ä        ] z ÿÿ     a ÿÿ         ‚ ´ÿÿ       	 
+                        ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z         d	  
+              		 																																																																									 		 																																																																									 
+
+ 
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+  		
+		  	
+	
+
+		
+		  
+
+	
+
+		
+		  
+
+
+			     ¼Š   ¼Š  Å 2                          MACR @   zž    ž              €    r  ` žuArcade          ÿÿÿÿ7ÿÿþARCR00            ¨#O_<õ  è    ºkÝ    ºkÝ    Å              ÿ8     >Å                a    a ˆ "       @ 
+   c ª     B   B          Arcade                 Ball          €?  €?                          €?                    ¿   ?       ?   ?       ¿   ¿       ?   ¿                        €?  €?        @     €?   ?  €?   ?       BG          íD ÀD                        c ?                 ÜwÄ àD    ÜwD àÄ    ÜwD àD    ÜwÄ àÄ                         €D ÀD        @   c ?   Dc ? À‹C       circle-line Å™CÛ{ŠC4©ùC4©yC                        4©ù>              J    µ|CéóB     trCŒÌA     tC¼«A     &fC­™B     dCá¡B     VECá¡B     ;Cy‘B     dµB@§€C     ;C‚@B     {ƒCþ›ÍÁ     {ƒCÓB     tCüWVÁ     MlCþû‹Á     ŠMCþû‹Á     pICøÏçÀ     VEC~B     Â€²hC     Â€	NC      2Â€ÈCC     ¢ŽÂ€ÈCC     >§Â€ïIC     ÈÂ€®?C     ÈÂ€WZC     ÜÂ€z7C     ×Ã€z7C     ?Ã€¡=C     Ã€ÈCC     ?Ã€%C     €Ã€ÞC     6Ã€ÞC     C>Ã€ë C     C>Ã€5C     žLÃüB     ùZÃéóB     ùZÃ—¾B     _ÃªB     •sÃ_B     •sÃ~B     ãÃB    €LŽÃB     »ŸÃÿÎB     SÃJB    €f’Ã€»AC     »ŸÃþ›ÍÁ     &fCæ'B     ËWC~B     ¾UCŒÌA     pIC¼«A     Ö}ÃªB    €þÃÇB     ƒÃ}ºB     FÃÇB     :eÃ€ C     TiÃ€5C     É{Ã€ C     _Ã€ C     -cÃüB     ]ÃüB     ]BÃ€)C      aÃ€)C     TiÃ€'C     P@Ã€,+C     l*Â€ÙnC     ¢ŽÂ€ÙnC     >§Â€²hC     \ÔÂ€‹bC     ÊÃ€‹bC     Ã€d\C     YÃ@§€C     fÃ€ïIC     õ1Ã€ïIC     P@Ã€®?C     ƒÃüB     SÃE‰B    ž   @  ?  @   ? >  ?   >   >       -    -  , -   ,  ) I ' 3 ' I & ' 3 1 & 3 $ & 1 % & $ 2 H 0 6 0 H # 0 6 4 # 6 8 # 4 9 # 8 " # 9 ! " 9 = G  F  G   F E  F   E   E  C  B  C   B A  B   A   A D < * H * < 3 * H I * 3 ) * I 2 3 H 6 H < 5 6 < ; < D G ; D : ; G = : G F G D E F D  E D C  D B C D ? B D  ? D   C A B ? @ A ?  A @   @ > ?   >  : =    = ! 9   5 < 4 ; 4 < 7 4 ; : 7 ; 9 7 :   9 :    :   : 4 7 8 9 8 7 6 5 4 3 2 1 0 1 2 $ 1 0 # $ 0  /  .  /   .   .       - /    / . / -  . - ,  -   , ( ) + ' + ) 	 + ' * ) ( & 	 ' % 	 &  	 % $  % #  $ "  # !  "    !                                                               	   	   	    	  
+ 	                             ƒ&ÈC‚}ÂC„ìC5é	Cø&¼BœàB@   4©ù>  D4©ù> ÀÈC       goal          €?  A                          €?                    ¿  A       ?  A       ¿  Á       ?  Á                        €?  A        @     €?   ?  €?  A       top-side-wall   À	@1ÃA4©ùA4©ùC                        4©ù>                    Â   D       B   D       Â   Ä       B   Ä              À	@1ÃA4©ùA4©ùC        @   4©ù>ÒUA4©ù>]‰C   racket  / vDX|ÅC4©ùA4©ùB                        4©ù>                    Â   C       B   C       Â   Ã       B   Ã              / vDX|ÅC4©ùA4©ùB        @   4©ù>ÔzD4©ù>~±äC   bottom-side-wallÞABtÚA4©ùA4©ùC                        4©ù>                    Â   D       B   D       Â   Ä       B   Ä              ÞABtÚA4©ùA4©ùC        @   4©ù>+ƒB4©ù>Û{ŠC   shield  ¸ã¡BÛ{ŠC4©yC4©yC                        4©ù>                 €•=C€yC    €ÖGCøB    €ÖGC€yC    €{9C€órC     ×B>€u?     •™B€yC     ‡…Â>€u?    €òÃ²B    €Ÿ^Ãá¡B    €¹bÃ€yC    €¹bÃåÊB       
+ 	    	                          ±
+¾B™ÉCÙOC²ñBÈ7aAø&úB@   4©ù> €MC4©ù> ÀÈC   mid-lineÔACìŒC4©ùC4©ùA                        4©ù>                    Ä   B       D   B       Ä   Â       D   Â              ÔACìŒC4©ùC4©ùA        @   4©ù>7D4©ù>'+C   top-wallÕòFBä¡BÒsD4©yB                        4©ù>                  QzDÚB     JyD Þ&Â     QzD vÂ    `ŠdÄ Þ&Â    àeÄÚB    àeÄ vÂ                      d ±BÖï0BBöiDdBóMBÈ71A@   4©ù>  D4©ù>  B       bottom-wall zÙÊA    4©yD4©ùA                        4©ù>                   €Ä   B      €D   B      €Ä   Â      €D   Â              zÙÊA    4©yD4©ùA        @   4©ù>f+D4©ù>4©yA    	   side-line   zÙÊAÚÄB4©yD4©ù@                        4©ù>                   €Ä   A      €D   A      €Ä   Á      €D   Á              zÙÊAÚÄB4©yD4©ù@        @   4©ù>f+D4©ù>$ÓËB       racket1 ñ'RDø)D¬ehB¬ehB                        ¬eè>                ¾{A4ÐÖÁ    ½Ÿ4AxÂ    ¾{A4pèÁ    ½Ÿ4AÀüä?    ß/AÐ@šÀ    ðçBó[ƒB    ð—TBœ€Â    ð—TBæ×QB    ßOçAœ€Â    ßÏ A0?Æ@     ÷‹>˜oÂ    C OÁœ€Â    "PÑÁó[ƒB    "PÑÁœ€Â    (/Âæ§ZB    (/Â4ð¡Á    ß/A4³Á    6              	                  
+    
+  	    	                    ÐlTD×)Dd/B²kBÀ7A à›=@   ¬eè> `YD¬eè> `0D       racket2 þDRDªªD¬ehB¬ehB                        ¬eè>                æŸDARÂ    ó…A~Â    ó…A¨cÂ    (+ÂRÂ    ØhÂRÂ    xzÂ¨cÂ    xzÂ~Â    úG	BéÇ]B    ú÷FBRÂ    ú÷FBéwB    ˆÂéÇ]B    ˜EÂé÷TB    ˜EÂø%Â    !      
+      
+    
+     	                      Ý‰RDªªDdKB›äWB ¾‰?    @   ¬eè>  YD¬eè> à!D       racket2 ètD¥æƒC4©ùA4©ùB                        4©ù>                    Â   C       B   C       Â   Ã       B   Ã              ètD¥æƒC4©ùA4©ùB        @   4©ù>ÀÎxD4©ù>Ì£C   nogoals ëQ¸B8C4©ùC4©ù@                        4©ù>                    Ä   A       D   A       Ä   Á       D   Á              ëQ¸B8C4©ùC4©ù@        @   4©ù>éªC4©ù>¸C	   main_menu   ¾³QCªªªB¬eèC¬ehB                        ¬eè>                 üÁõßpA    *Â8xÂ     üÁ˜fÂ    ÐÔÂþGuB    ª¦Ã8xÂ    Þ¨ÃþGuB    Þ¨Ã¢ÿê?     6¨Cýg@B     §ChoÂ     6¨CÈ]Â    ÿCþGuB    LÿÅ?hoÂ    -€èÀþGuB    -€èÀ@ßÀ          
      
    
- 	                    cC£Ñ¬B„ì˜Cßo_Bø&žB@¾‰?@   ¬eè>  ÝC¬eè>  åB       resume  á”&D	§B¬ehC¬ehB                        ¬eè>                ÿ¹YC (B    ÿ‰bC ¸AÂ    ÿ‰bCpåA    ÿéPC ÈmÂ    * Ã¸B    ~ZÃ¸B    ~ZÃ ÈmÂ                           ÀÙ*DÆ«B5éIC6É_Bà›ˆA@¶@@   ¬eè>  CD¬eè>  áB   pause   ÝDïlTD¬ehB¬ehB                        ¬eè>                G Áé^B    ä~
+ 	                    cC£Ñ¬B„ì˜Cßo_Bø&žB@¾‰?@   ¬eè>  ÝC¬eè>  åB       resume  á”&D	§B¬ehC¬ehB                        ¬eè>                ÿ¹YC (B    ÿ‰bC ¸AÂ    ÿ‰bCpåA    ÿéPC ÈmÂ    * Ã¸B    ~ZÃ¸B    ~ZÃ ÈmÂ                           ÀÙ*DÆ«B5éIC6É_Bà›ˆA@¶@@   ¬eè>  CD¬eè>  áB   pause   ÝDïlTD¬ehB¬ehB                        ¬eè>                G Áé^B    ä~
 @¨%Â    ä~
 @éGUB    ÈÂé^B    ˜'ÂéGUB    ˜'Â¨%Â    ï‡JBé^B    ïWSBØÂ    ïWSBéGUB    ïç8B¨%Â    ¹Ÿ/Aé^B    ¹_Aé2B    ¹_A¨%Â         	 
  	   	 
-  	                     ¼£DÎñVDd+B¨–/BÀ7!AÀ7!A@   ¬eè> `"D¬eè>  [D   rollÔwöCÄ$C¬ehB¬eèB                        ¬eè>                ù8Bý³êB    ùß&B\èÂ    ù8BŒßÂ    0Âý³êB     (ÂýKæB     (Â\èÂ                     xûC’×)C°B²ÓBà A o¢@@   ¬eè> €D¬eè> €^C   free &÷CÝ‹C¬ehB¬eèB                        ¬eè>                ô×BüÃÖB    ôw.BÙÂ    ôw.Büã¡B    ˜ÂÙÂ    8)ÂÔËÂ    Ø:ÂüÃÖB    Ø:Â	ÈUÂ                            )ûCo¥C¬¸#BØÃB m A@ÒA@   ¬eè> àD¬eè> @¨C       100cˆÉõCþDÂC¬ehB¬eèB                        ¬eè>             	   ýç0BÿëöB    ý‡BBtžÂ    ý‡BBÿîB    ýç0BìÎÂ    ý×BTÓÂ    è¿Ø@ÿëöB    põÁTÓÂ    XÂÿ{ÜB    XÂ„ÊÂ                                  õLüCkHÇC.­BUËÏB mPA m A@   ¬eè>  D¬eè> @ßC
-   play_again  bC D¬ehC¬ehB                        ¬eè>                ¸JÂÎ¯ÒA    ÈvÂøÂ    ¸JÂ2±Á    žÃèWvB    ²JÃøÂ    ’ÃèWvB    ’ÃˆeÂ    ÿOCôûƒB     á€C¸\Â     á€Cçç[B    ÿ™CøÂ    û70BøÂ     U ¼HBÂ     ÁèSÂ    P°ÁôûƒB    ¨Âdà1Á    ¨Â8Â    '                  
+  	                     ¼£DÎñVDd+B¨–/BÀ7!AÀ7!A@   ¬eè> `"D¬eè>  [D   rollÔwöCÄ$C¬ehB¬eèB                        ¬eè>                ù8Bý³êB    ùß&B\èÂ    ù8BŒßÂ    0Âý³êB     (ÂýKæB     (Â\èÂ                     xûC’×)C°B²ÓBà A o¢@@   ¬eè> €D¬eè> €^C   free &÷CÝ‹C¬ehB¬eèB                        ¬eè>                ô×BüÃÖB    ôw.BÙÂ    ôw.Büã¡B    ˜ÂÙÂ    8)ÂÔËÂ    Ø:ÂüÃÖB    Ø:Â	ÈUÂ                            )ûCo¥C¬¸#BØÃB m A@ÒA@   ¬eè> àD¬eè> @¨C       100cˆÉõCþDÂC¬ehB¬eèB                        ¬eè>             	   ýç0BÿëöB    ý‡BBtžÂ    ý‡BBÿîB    ýç0BìÎÂ    ý×BTÓÂ    è¿Ø@ÿëöB    põÁTÓÂ    XÂÿ{ÜB    XÂ„ÊÂ                                  õLüCkHÇC.­BUËÏB mPA m A@   ¬eè>  D¬eè> @ßC
+   play_again  bC D¬ehC¬ehB                        ¬eè>                ¸JÂÎ¯ÒA    ÈvÂøÂ    ¸JÂ2±Á    žÃèWvB    ²JÃøÂ    ’ÃèWvB    ’ÃˆeÂ    ÿOCôûƒB     á€C¸\Â     á€Cçç[B    ÿ™CøÂ    û70BøÂ     U ¼HBÂ     ÁèSÂ    P°ÁôûƒB    ¨Âdà1Á    ¨Â8Â    '                  
     
-  	                      bC D  iC²kB        @   ¬eè> @«C¬eè> `D       rng1AL®@  pD¬ehB¬ehB                        ¬eè>                 0äA üB    À ð½ Ð•A    ÿŸQA p§A    @×À àAA    `UÁ üB    æÁ  A    Â ¸`B    Â àAA     ˜8B PÜÁ     ˜8B èWB    ÿŸQA({Â    ŸÁ @°@    xÂ @°@    Â àAÁ    Â({Â    '     
+  	                      bC D  iC²kB        @   ¬eè> @«C¬eè> `D       rng1AL®@  pD¬ehB¬ehB                        ¬eè>                 0äA üB    À ð½ Ð•A    ÿŸQA p§A    @×À àAA    `UÁ üB    æÁ  A    Â ¸`B    Â àAA     ˜8B PÜÁ     ˜8B èWB    ÿŸQA({Â    ŸÁ @°@    xÂ @°@    Â àAÁ    Â({Â    '     
   
    
    
    
       	                           )üƒA¿BpD}B†gB2Ò0A ~…?@   ¬eè>  
-B¬eè> `wD       rng2^ü‰B  pD¬ehB¬ehB                        ¬eè>                ýÿäA({B    ýžA üÂ    ýÿäA èWÂ    €0Á üÂ     ÓÁ({B     ÓÁ ˆiÂ                      W#¬B¿pD;ÇA†gBä›ˆA À/=@   ¬eè>  ÄB¬eè> `wD   rng3‘p
-CÙ¨oD¬ehB¬ehB                        ¬eè>             	   ÿëƒBâ‡]B    þBhÂ    ÿëƒBøÂ    þç&BècÂ    þGBñË„B    Ð÷ÁñË„B    Ð÷ÁècÂ    HwÂâ7B    HwÂ¨@Â                                 „CjpDdgB›ä_B€¾‰? ¶A@@   ¬eè> €'C¬eè> àvD   rng4°[CÙ¨oD¬ehB¬ehB                        ¬eè>             
-    H BñË„B     (UB>PôÁ     (UBâB     ¨B¸lÂ    0ÐÁñË„B    0ÐÁ¸lÂ    XÂècÂ    8@Â>Ð­Á    IÂâ×B    IÂ{`+Á       	                           »aC¸-pD†;B²cB€_Á@ ß@@   ¬eè> €xC¬eè> àvD   rng5Øí‘CÙ¨oD¬ehB¬ehB                        ¬eè>                þ/ÈAñË„B    ÿg3BxIÂ    ÿg3BâG:B    þï¤AX~Â    P˜ÁñË„B    0ÍÁX~Â    -Ââ§(B    -ÂØ7Â                            Eq–CÙ¨oD¨–B  lB mA    @   ¬eè> @ C¬eè> àvD              ;       Ô       >       =       =       2       <       r       ?              Totem          :                     €?  °Á          @@   @  €?                        :         €?    ÍÌL=                 :                                  Âu>=
-7@    :              ÿÿÿÿ  €?  €?          €?  €?              *                                                              €?  €?  €?  €?    :             s                               
+B¬eè> `wD       rng2^ü‰B  pD¬ehB¬ehB                        ¬eè>                ýÿäA({B    ýžA üÂ    ýÿäA èWÂ    €0Á üÂ     ÓÁ({B     ÓÁ ˆiÂ                      W#¬B¿pD;ÇA†gBä›ˆA À/=@   ¬eè>  ÄB¬eè> `wD   rng3‘p
+CÙ¨oD¬ehB¬ehB                        ¬eè>             	   ÿëƒBâ‡]B    þBhÂ    ÿëƒBøÂ    þç&BècÂ    þGBñË„B    Ð÷ÁñË„B    Ð÷ÁècÂ    HwÂâ7B    HwÂ¨@Â                                 „CjpDdgB›ä_B€¾‰? ¶A@@   ¬eè> €'C¬eè> àvD   rng4°[CÙ¨oD¬ehB¬ehB                        ¬eè>             
+    H BñË„B     (UB>PôÁ     (UBâB     ¨B¸lÂ    0ÐÁñË„B    0ÐÁ¸lÂ    XÂècÂ    8@Â>Ð­Á    IÂâ×B    IÂ{`+Á       	                           »aC¸-pD†;B²cB€_Á@ ß@@   ¬eè> €xC¬eè> àvD   rng5Øí‘CÙ¨oD¬ehB¬ehB                        ¬eè>                þ/ÈAñË„B    ÿg3BxIÂ    ÿg3BâG:B    þï¤AX~Â    P˜ÁñË„B    0ÍÁX~Â    -Ââ§(B    -ÂØ7Â                            Eq–CÙ¨oD¨–B  lB mA    @   ¬eè> @ C¬eè> àvD

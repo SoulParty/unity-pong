@@ -5,9 +5,9 @@ public class CameraShake : MonoBehaviour {
 
     private Transform cameraTransform = null;
     //Total time for shaking in seconds
-    public float shakeTime = 0.002f;
+    public float shakeTime = 0.003f;
     //Speed of camera moving to shake points
-    public float shakeSpeed = 0.006f;
+    public float shakeSpeed = 0.01f;
 
     [System.NonSerialized]
     public static CameraShake Instance;

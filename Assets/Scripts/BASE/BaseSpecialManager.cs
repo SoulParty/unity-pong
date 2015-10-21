@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BaseSpecialManager : TimedPowerUp {
 
@@ -44,7 +45,7 @@ public class BaseSpecialManager : TimedPowerUp {
                 SpecialController.Instance.enableMovingGoals();
                 break;
             }
-
+            GameController.Instance.explodeSpecial(gameObject.transform.position);
         }
         if (collision.gameObject.name == "RacketLeft" || collision.gameObject.name == "RacketRight") {
             switch (powerUpType) {
@@ -54,7 +55,6 @@ public class BaseSpecialManager : TimedPowerUp {
             }
 
         }
-        GameController.Instance.startSpecialAnimation(powerUpType);
         SelfDestruct();
     }
 
@@ -76,7 +76,7 @@ public class BaseSpecialManager : TimedPowerUp {
             break;
             case PowerUpType.POINT:
             gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[5];
-            GetComponent<SpriteRenderer>().sprite = ballSprites[0];
+            GetComponent<SpriteRenderer>().sprite = ballSprites[3];
             break;
             case PowerUpType.SHORT:
             gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[1];

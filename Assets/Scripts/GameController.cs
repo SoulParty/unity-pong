@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 
     public float specialInterval = 5f;
     public float coinInterval = 3f;
+    public float impactLength = 0.75f;
 
     public static int DISTANCE_FROM_GOAL = 840;
     public float ARENA_HALF_LENGTH = 840;
@@ -24,6 +25,8 @@ public class GameController : MonoBehaviour {
     public GameObject player2;
     public GameObject puck;
     public GameObject rollManager;
+
+    public GameObject specialHitImpact;
 
     private bool isDoubleBallMode = false;
 
@@ -86,11 +89,6 @@ public class GameController : MonoBehaviour {
 
     public void startGameAnimation(AnimationType animationType) {
         UIControl.showGameAnimation(animationType);
-        CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
-    }
-
-    public void startSpecialAnimation(PowerUpType powerUpType) {
-        UIControl.showSpecialAnimation(powerUpType);
     }
 
     public void incrementCombo() {
@@ -117,13 +115,12 @@ public class GameController : MonoBehaviour {
     public void gameFinished(GameObject winner) {
 //        this.winnerId = winnerId;
         UIControl.showWinner(winner);
-        startGameAnimation(AnimationType.WIN);
+//        startGameAnimation(AnimationType.WIN);
         if (highScoreCheck()) {
 //        if (true) {
             UIControl.showNewHighScore(ScoreController.Instance.getCombo());
-            startGameAnimation(AnimationType.HIGH_SCORE);
+//            startGameAnimation(AnimationType.HIGH_SCORE);
         }
-//        restart();
         StartCoroutine(showGameEndMenu());
     }
 
@@ -138,8 +135,8 @@ public class GameController : MonoBehaviour {
     public void goalScored(GameObject player) {
         if (player != null) {
             ScoreController.Instance.incrementGoals(player);
-            restart();
             startGameAnimation(AnimationType.GOAL);
+            restart();
             if (ScoreController.Instance.checkWinCondition(player)) {
                 gameFinished(player);
             }
@@ -183,4 +180,14 @@ public class GameController : MonoBehaviour {
 //        }
     }
 
+    public void explodeSpecial(Vector3 specialPosition) {
+        specialHitImpact.transform.position = specialPosition;
+        ObjectUtility.enableGameObject(specialHitImpact);
+        StartCoroutine(disableImpactTimer());
+    }
+
+    IEnumerator disableImpactTimer() {
+        yield return new WaitForSeconds(impactLength);
+        ObjectUtility.disableGameObject(specialHitImpact);
+    }
 }
