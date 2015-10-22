@@ -3171,14 +3171,14 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
           m_values:
-          - .409068525
-          - .120658591
-          - .200899571
-          - .381914794
-          - .43126446
-          - .296303123
-          - .374411434
-          - .1527334
+          - .339793295
+          - .343551129
+          - .213481814
+          - .277729124
+          - .114593282
+          - .130020276
+          - .22688666
+          - .32842502
           m_from: 0
           m_to: .5
           m_to_to: 0
@@ -5034,7 +5034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &686067604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5409,6 +5409,8 @@ MonoBehaviour:
   player2: {fileID: 1108538301}
   puck: {fileID: 1481788229}
   rollManager: {fileID: 0}
+  aiDot: {fileID: 1046064174}
+  player2InputHandler: {fileID: 686067603}
   specialHitImpact: {fileID: 924786882}
   UIControl: {fileID: 370447028}
   gameSpeed: 1
@@ -10195,15 +10197,15 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
           m_values:
-          - .111101285
-          - .381026685
-          - .37948364
-          - .406607807
-          - .171739355
-          - .274980873
-          - .262373835
-          - .442913294
-          - .290622145
+          - .242222458
+          - .0768989399
+          - .0265559591
+          - .352712482
+          - .420441568
+          - .192501694
+          - .298917264
+          - .141226783
+          - .144576564
           m_from: 0
           m_to: .5
           m_to_to: 0
@@ -15293,12 +15295,12 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
           m_values:
-          - .227809399
-          - .318742067
-          - .22701022
-          - .241100341
-          - .407981515
-          - .196699709
+          - .201312155
+          - .247176975
+          - .388242602
+          - .37900424
+          - .0253729261
+          - .106821314
           m_from: 0
           m_to: .5
           m_to_to: 0

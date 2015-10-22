@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour {
     public GameObject player2;
     public GameObject puck;
     public GameObject rollManager;
+    public GameObject aiDot;
+    public GameObject player2InputHandler;
 
     public GameObject specialHitImpact;
 
@@ -69,6 +71,8 @@ public class GameController : MonoBehaviour {
         ARENA_HALF_LENGTH = DISTANCE_BETWEEN_WALLS / 2;
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.Init();
+        } else {
+            ObjectUtility.disableGameObject(aiDot);
         }
     }
 

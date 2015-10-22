@@ -5,285 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/CFXM2_AuraBubble copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSans.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSansMono.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/DynamicText.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Instructions_DynamicTextForUnity.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/ReadMe.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/UnityAds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_mute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_mute@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_on@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/icon.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Textures/test_unit_600.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Textures/test_unit_800.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/libs/unity-ads.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Alignment bkg quad.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Alignment bkg quad.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Anchor quad.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Anchor quad.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/AndroidManifest.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/ApplifierImpact.h.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/ApplifierImpact.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Blue.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Blue.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/CAMERA.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/CFXM2_AuraBubble copy.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Type/CameraShakeType.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/CameraTranslateX.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/CameraTranslateX.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/CoinIn.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/CoinIn.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/CoinOut.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/CoinOut.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Cyan.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Cyan.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSans-README.txt.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSans-README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSans.ttf.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DroidSansMono.ttf.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_Gira.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_Gira.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_e.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_e.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_f.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_f.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_in.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_in.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_rasound.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_rasound.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_whitespaceonly.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynAlignExample_whitespaceonly.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/DynamicText.dll.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextColor.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextColor.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/DynamicTextExamples.unity.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/DynamicTextExamples.unity" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Editor/DynamicTextInspector.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextScaling.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextScaling.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextSize.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/DynamicTextSize.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/DynamicText_aligned_prefab_array_example.unity.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/DynamicText_aligned_prefab_array_example.unity" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Editor.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Goal.controller.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Goal.controller" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/GoalAnimationIn.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/GoalAnimationIn.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/GoalAnimationOut.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/GoalAnimationOut.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/Info.plist.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources/Info.plist.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/en.lproj/InfoPlist.strings.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources/en.lproj/InfoPlist.strings.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Instructions_DynamicTextForUnity.pdf.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/LICENSE.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/MoreInfoBounce.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/MoreInfoBounce.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/MoreInfoRotation.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/MoreInfoRotation.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/ReadMe.pdf.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/Readme.mdown.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/Readme.mdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/RotateY opposite direction.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/RotateY opposite direction.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/RotateY.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/RotateY.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/Scripts.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Resources/SpecialImpact.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Resources/SpecialImpact.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/SpecialIn.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/SpecialIn.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/SpecialOut.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/SpecialOut.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Specials.controller.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Specials.controller" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/SwitcherButton hilite.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/SwitcherButton hilite.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/SwitcherButton.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/SwitcherButton.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextMeshSize1.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextMeshSize1.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextMeshSize2.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextMeshSize2.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Textures.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Transparent background dimmer.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Transparent background dimmer.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Transparent separator.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/Transparent separator.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Headers/UnityAds.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/UnityAds.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.h.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.mm.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAdsUnityWrapper.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/WelcomeColor.anim.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/WelcomeColor.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Editor/UnityAds/XCodeEditor.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_mute.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_mute@2x.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_on.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/audio_on@2x.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/build.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.bundle/en.lproj.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/UnityAds.framework/Resources/en.lproj.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/icon.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/icon.psd.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/libs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/proguard-project.txt.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/proguard-project.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/project.properties.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.psd.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/values/strings.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Textures/test_unit_600.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Textures/test_unit_800.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/libs/unity-ads.jar.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_background_button_pause.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_background_button_pause.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_button_audio_toggle.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_button_audio_toggle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_button_pause.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_button_pause.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_play.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_play.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_base.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_base.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_triangle.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_triangle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_waves.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/drawable/unityads_icon_speaker_waves.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_view_video_paused.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_view_video_paused.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_view_video_play.xml.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/layout/unityads_view_video_play.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku-license.txt.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku-license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku-readme.txt.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku-readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/vaikku.ttf.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/unityads/res/values.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" afterPath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/10615f8e66db142fabe55c314dadf27b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/10615f8e66db142fabe55c314dadf27b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/1fca15dabe7224e05ad123732f23c795" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/1fca15dabe7224e05ad123732f23c795" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/4a97e630366dc4d8e88544d1cd9388be" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/4a97e630366dc4d8e88544d1cd9388be" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/6cc5362a648fb4a46ae6bb1576439034" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/6cc5362a648fb4a46ae6bb1576439034" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" afterPath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/7b7376374611b4ada9e0f6319593af10" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/7b7376374611b4ada9e0f6319593af10" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp-firstpass.dll" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp-firstpass.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-UnityScript.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/Package_unaligned.apk" afterPath="$PROJECT_DIR$/Temp/StagingArea/Package_unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__BuildPlayer Backupscene" afterPath="$PROJECT_DIR$/Temp/__BuildPlayer Backupscene" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__EditModeScene" afterPath="$PROJECT_DIR$/Temp/__EditModeScene" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/a76807b2c9f05417fbf6ecc3a2ca771b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/a76807b2c9f05417fbf6ecc3a2ca771b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets.ap_" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/c87b01452c9ba461ea7ffb8ebdad819b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/c87b01452c9ba461ea7ffb8ebdad819b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.dex" afterPath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/expandedItems" afterPath="$PROJECT_DIR$/Library/expandedItems" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" afterPath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" afterPath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/level0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/level0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/mainData" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/mainData" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong.apk" afterPath="$PROJECT_DIR$/pong.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/bin/resources.ap_" afterPath="$PROJECT_DIR$/Temp/StagingArea/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split10" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split10" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split1" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split2" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split3" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split4" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split5" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split6" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split7" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split8" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split8" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split9" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/splash.png" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/splash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.png" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Temp/StagingArea/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" afterPath="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/menu.unity" afterPath="$PROJECT_DIR$/Assets/menu.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/modules.xml" afterPath="$PROJECT_DIR$/.consulo/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/pong.unity" afterPath="$PROJECT_DIR$/Assets/pong.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split4" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/workspace.xml" afterPath="$PROJECT_DIR$/.consulo/workspace.xml" />
     </list>
     <ignored path=".consulo/workspace.xml" />
@@ -301,7 +87,7 @@
     <file path="/PlayerController_2PGP.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441029390394" ignored="false" />
     <file path="/UI_2PGP.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441038566087" ignored="false" />
     <file path="/Base2DPadel.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444497558802" ignored="false" />
-    <file path="/a.dummy" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445522612161" ignored="false" />
+    <file path="/a.dummy" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445538282475" ignored="false" />
     <file path="/SpawnController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441030207877" ignored="false" />
     <file path="/ScoreManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445158239403" ignored="false" />
     <file path="/ScoreController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445021282962" ignored="false" />
@@ -311,7 +97,7 @@
     <file path="/BaseSpecialManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445123936880" ignored="false" />
     <file path="/SpecialController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445021092048" ignored="false" />
     <file path="/RacketManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445024217461" ignored="false" />
-    <file path="/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445124017213" ignored="false" />
+    <file path="/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445543115425" ignored="false" />
     <file path="/TextFxUGUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442092099118" ignored="false" />
     <file path="/LetterAction.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441207933948" ignored="false" />
     <file path="/LetterSetup.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441221797842" ignored="false" />
@@ -339,16 +125,16 @@
     <file path="/SpriteSelectionManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444986651879" ignored="false" />
     <file path="/RollManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444986437687" ignored="false" />
     <file path="/PlayerController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445023377867" ignored="false" />
-    <file path="/InputHandler.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445005249645" ignored="false" />
+    <file path="/InputHandler.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445543447546" ignored="false" />
     <file path="/PowerUp.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445002477523" ignored="false" />
     <file path="/TimedPowerUp.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445002511653" ignored="false" />
     <file path="/BaseUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444982436101" ignored="false" />
     <file path="/LogoStatus.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445000606448" ignored="false" />
     <file path="/PauseManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445007037200" ignored="false" />
-    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445522849141" ignored="false" />
-    <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445461207832" ignored="false" />
+    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445523097015" ignored="false" />
+    <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445539412164" ignored="false" />
     <file path="/CameraShakeType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445087073374" ignored="false" />
-    <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445522506241" ignored="false" />
+    <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445537923884" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="20" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="20" />
+              <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
               <folding>
                 <element signature="e#0#80#0" expanded="true" />
               </folding>
@@ -382,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78510636">
-              <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="46" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="46" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -394,21 +180,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Advertisement.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs">
+      <file leaf-file-name="Vibration.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecialController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpecialController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -416,33 +192,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArenaController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArenaController.cs">
+      <file leaf-file-name="ScoreManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="5" />
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+      <file leaf-file-name="InputHandler.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.5346535">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
-                <element signature="e#0#140#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PongAIController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
+      <file leaf-file-name="HitAnimationManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -454,7 +242,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="22" />
+              <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
               <folding>
                 <element signature="e#0#132#0" expanded="true" />
               </folding>
@@ -462,11 +250,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
+      <file leaf-file-name="ScoreController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -476,7 +264,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -492,8 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Assets/TextFx/Scripts/VertexColour.cs" />
-        <option value="$PROJECT_DIR$/Assets/TextFx/Scripts/LetterSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/TextFx/Scripts/TextFxTest.cs" />
         <option value="$PROJECT_DIR$/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointTextManager.cs" />
         <option value="$PROJECT_DIR$/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -522,7 +308,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArenaController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreController.cs" />
@@ -538,17 +323,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpecialController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibrate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1549" />
-    <option name="y" value="-13" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="834" />
   </component>
@@ -608,6 +395,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Standard Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnityAds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Standard Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnityAds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Standard Assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -949,7 +802,7 @@
       <workItem from="1443040345410" duration="62562000" />
       <workItem from="1443811820808" duration="26222000" />
       <workItem from="1443990606719" duration="50822000" />
-      <workItem from="1444925756882" duration="57556000" />
+      <workItem from="1444925756882" duration="61849000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -963,11 +816,15 @@
       <created>1445522846266</created>
       <updated>1445522846266</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added ads">
+      <created>1445523121535</created>
+      <updated>1445523121535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370809000" />
+    <option name="totallyTimeSpent" value="375102000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -990,7 +847,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1549" y="-13" width="1440" height="834" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -998,11 +855,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32614556" sideWeight="0.44067797" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26954177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28167117" sideWeight="0.55932206" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28167117" sideWeight="0.55932206" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1120,13 +977,6 @@
     <option name="MODULE_GROUPING" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs.meta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/RuntimeDynamicSceneManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1321,32 +1171,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RacketManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1423,36 +1253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Type/AnimationType.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1493,46 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1544,17 +1308,113 @@
     <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78510636">
-          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="46" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5346535">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,7 +14,7 @@ public class InputHandler : MonoBehaviour {
                 if (point.x < 0) {
                     player1.GetComponent<PlayerController>().handleInput(point);
                 }
-                if (point.x > 0) {
+                if (point.x > 0 && !SettingsController.Instance.isVersusAI) {
                     player2.GetComponent<PlayerController>().handleInput(point);
                 }
             }
