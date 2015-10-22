@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class SettingsController : MonoBehaviour{
     
@@ -37,6 +38,10 @@ public class SettingsController : MonoBehaviour{
 
     public SettingsController() {
         Instance = this;
+    }
+
+    public void start() {
+        Advertisement.Initialize ("1009968");
     }
 
     public void Awake () {

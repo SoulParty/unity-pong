@@ -35,7 +35,9 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
 
         // Hit the left Racket?
         bool hitRacket = false;
-        PongAIController.Instance.wildBall++;
+        if (SettingsController.Instance.isVersusAI) {
+            PongAIController.Instance.wildBall++;
+        }
 
         if (collision.gameObject.name == "RacketLeft") {
             // Calculate hit Factor
@@ -62,7 +64,9 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
                     PongAIController.Instance.calculateBallCrossPoint(0, MathUtility.convertToRadians(angle), y);
                 }
             }
-            PongAIController.Instance.wildBall = 0;
+            if (SettingsController.Instance.isVersusAI) {
+                PongAIController.Instance.wildBall = 0;
+            }
             increaseSpeed(GameController.Instance.ballSpeedUp);
         }
 
@@ -77,13 +81,16 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;
             hitRacket = true;
-            PongAIController.Instance.wildBall = 0;
+            if (SettingsController.Instance.isVersusAI) {
+                PongAIController.Instance.wildBall = 0;
+            }
             increaseSpeed(GameController.Instance.ballSpeedUp);
         }
 
         //        //Debug.Log("Speed:" + speed.ToString());
-        if (SettingsController.Instance.isVersusAI && (collision.gameObject.name == "leftWall" || collision.gameObject.name == "leftWall2")) {
-            //Debug.Log(collision.gameObject.name);
+        if (SettingsController.Instance.isVersusAI &&
+        (collision.gameObject.name == "leftWall" || collision.gameObject.name == "leftWall2")
+        || collision.gameObject.name == "rightWall" || collision.gameObject.name == "rightWall2") {
             PongAIController.Instance.isFollowBall = true;
         }
 

@@ -118,6 +118,8 @@ public class SpecialController : MonoBehaviour{
         if (GameController.Instance.getIsDoubleBallMode()) {
             GameController.Instance.toggleIsDoubleBallMode();
         }
-        PongAIController.Instance.wildBall = 0;
+        if (SettingsController.Instance.isVersusAI) {
+            PongAIController.Instance.wildBall = 0;
+        }
     }
 }

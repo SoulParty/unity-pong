@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Advertisements;
 
 //MainMenuManager
 public class ButtonManager : MonoBehaviour {
@@ -76,6 +77,9 @@ public class ButtonManager : MonoBehaviour {
     public void LoadWatchAd() {
         //        source.Play();
         //        StartCoroutine ("playSound", level);
+        if (Advertisement.isReady()) {
+            Advertisement.Show();
+        }
     }
 
     public void next(int selection) {

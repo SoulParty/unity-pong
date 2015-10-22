@@ -33,6 +33,9 @@ public class PongAIController : MonoBehaviour {
     }
 
     public void Start() {
+        if (!SettingsController.Instance.isVersusAI) {
+            ObjectUtility.disableGameObject(gameObject);
+        }
         switch (SettingsController.Instance.difficulty) {
             case Difficulty.EASY:
             FOLLOW_BALL_SPEED = 500;

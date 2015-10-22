@@ -67,7 +67,9 @@ public class GameController : MonoBehaviour {
 
         DISTANCE_BETWEEN_WALLS = Vector3.Distance(bottomWall.gameObject.transform.position, topWall.gameObject.transform.position) - WALL_THICKNESS;
         ARENA_HALF_LENGTH = DISTANCE_BETWEEN_WALLS / 2;
-        PongAIController.Instance.Init();
+        if (SettingsController.Instance.isVersusAI) {
+            PongAIController.Instance.Init();
+        }
     }
 
     public void spawnRandomSpecial() {

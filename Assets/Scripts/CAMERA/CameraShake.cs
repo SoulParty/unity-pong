@@ -34,6 +34,7 @@ public class CameraShake : MonoBehaviour {
         //Count elapsed time (in seconds)
         float ElapsedTime = 0.0f;
         //Repeat for total shake time
+        Handheld.Vibrate();
         while (ElapsedTime < shakeTime * (int) shakeType) {
             //Pick random point on unit sphere
             Vector2 randomPoint2D = Random.insideUnitCircle * (int) shakeType;
