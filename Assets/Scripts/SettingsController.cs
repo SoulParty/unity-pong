@@ -1,13 +1,14 @@
 using Mono.Xml.Xsl;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Advertisements;
+using UnityEngine.UI;
 
-public class SettingsController : MonoBehaviour{
-    
+public class SettingsController : MonoBehaviour {
+
     public GameObject background;
 
     public Sprite selectedPlayer1Racket;
@@ -16,12 +17,14 @@ public class SettingsController : MonoBehaviour{
 
     private Dictionary<string, int> ownedPuckSpritesCache = new Dictionary<string, int>();
     private Dictionary<string, int> ownedRacketSpritesCache = new Dictionary<string, int>();
-    
+
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
 
     public GameObject coinsUi;
     public GameObject highscoreUi;
+
+    public GameObject adButton;
 
     [SerializeField]
     private int maxCombo = 0;
@@ -40,8 +43,16 @@ public class SettingsController : MonoBehaviour{
         Instance = this;
     }
 
-    public void start() {
-        Advertisement.Initialize ("1009968");
+    void Start () {
+        Advertisement.Initialize("82920", true);
+        StartCoroutine(ShowAdButtonWhenReady(adButton));
+    }
+
+    public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
+        while (!Advertisement.isReady()) {
+            yield return null;
+        }
+        ObjectUtility.enableGameObject(adButton);
     }
 
     public void Awake () {
@@ -50,7 +61,7 @@ public class SettingsController : MonoBehaviour{
         maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
         coins = PlayerPrefs.GetInt(Const.COINS);
 
-//        Debug.Log("Max Combo " + maxCombo);
+        //        Debug.Log("Max Combo " + maxCombo);
 
         coinsUi.GetComponent<Text>().text = coins.ToString();
         highscoreUi.GetComponent<Text>().text = maxCombo.ToString();
@@ -115,7 +126,7 @@ public class SettingsController : MonoBehaviour{
     public void setStatus(string sprite, int status) {
         PlayerPrefs.SetInt(sprite, status);
     }
-    
+
     public Sprite[] loadSprites(SpriteType spriteType) {
         Debug.Log("-------- LOADING SPRITES ---------");
         if (spriteType == SpriteType.PUCK) {
@@ -192,5 +203,12 @@ public class SettingsController : MonoBehaviour{
         } else {
             return ownedRacketSpritesCache.FirstOrDefault(x => x.Value == status).Key;
         }
+    }
+
+    public void addCoins(int reward) {
+        coins += reward;
+        PlayerPrefs.SetInt(Const.COINS, coins);
+        coinsUi.GetComponent<Text>().text = coins.ToString();
+        //TODO update UI and for highscore too
     }
 }

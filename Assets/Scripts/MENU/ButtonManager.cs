@@ -74,13 +74,16 @@ public class ButtonManager : MonoBehaviour {
         //        StartCoroutine ("playSound", level);
     }
 
-    public void LoadWatchAd() {
+    public void LoadWatchAd() { //TODO make an Ad Manager
         //        source.Play();
         //        StartCoroutine ("playSound", level);
         if (Advertisement.isReady()) {
             Advertisement.Show(null, new ShowOptions {
                 resultCallback = result => {
                     Debug.Log(result.ToString());
+                    if (result.ToString().Equals("Finished")) {
+                        SettingsController.Instance.addCoins(100);
+                    }
                 }
             });
         }

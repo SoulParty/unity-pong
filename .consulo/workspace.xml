@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/10615f8e66db142fabe55c314dadf27b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/10615f8e66db142fabe55c314dadf27b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/1fca15dabe7224e05ad123732f23c795" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/1fca15dabe7224e05ad123732f23c795" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/4a97e630366dc4d8e88544d1cd9388be" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/4a97e630366dc4d8e88544d1cd9388be" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/6cc5362a648fb4a46ae6bb1576439034" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/6cc5362a648fb4a46ae6bb1576439034" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" afterPath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/7b7376374611b4ada9e0f6319593af10" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/7b7376374611b4ada9e0f6319593af10" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb" />
@@ -26,50 +18,32 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/Managed/Assembly-UnityScript.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/Package_unaligned.apk" afterPath="$PROJECT_DIR$/Temp/StagingArea/Package_unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__BuildPlayer Backupscene" afterPath="$PROJECT_DIR$/Temp/__BuildPlayer Backupscene" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__EditModeScene" afterPath="$PROJECT_DIR$/Temp/__EditModeScene" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/a76807b2c9f05417fbf6ecc3a2ca771b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/a76807b2c9f05417fbf6ecc3a2ca771b" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets.ap_" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/c87b01452c9ba461ea7ffb8ebdad819b" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/c87b01452c9ba461ea7ffb8ebdad819b" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.dex" afterPath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/expandedItems" afterPath="$PROJECT_DIR$/Library/expandedItems" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" afterPath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.jar" afterPath="$PROJECT_DIR$/Temp/StagingArea/bin/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" afterPath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" afterPath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/level0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/level0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libmain.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libmain.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libmain.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libmain.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libmono.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libmono.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libmono.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libmono.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libunity.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/armeabi-v7a/libunity.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libunity.so" afterPath="$PROJECT_DIR$/Temp/StagingArea/libs/x86/libunity.so" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/mainData" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/mainData" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong.apk" afterPath="$PROJECT_DIR$/pong.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/bin/resources.ap_" afterPath="$PROJECT_DIR$/Temp/StagingArea/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split10" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split10" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split1" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split2" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split3" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split4" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split5" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split6" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split7" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split8" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split9" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets0.assets.split9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split0" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/splash.png" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/splash.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.png" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start-bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Temp/StagingArea/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" afterPath="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/menu.unity" afterPath="$PROJECT_DIR$/Assets/menu.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/modules.xml" afterPath="$PROJECT_DIR$/.consulo/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/pong.unity" afterPath="$PROJECT_DIR$/Assets/pong.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split4" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/misc.xml" afterPath="$PROJECT_DIR$/.consulo/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/settings.xml" afterPath="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/workspace.xml" afterPath="$PROJECT_DIR$/.consulo/workspace.xml" />
     </list>
     <ignored path=".consulo/workspace.xml" />
@@ -106,11 +80,11 @@
     <file path="/SpecialType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442085533489" ignored="false" />
     <file path="/SettingsManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441310527210" ignored="false" />
     <file path="/Const.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441309046199" ignored="false" />
-    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445522542373" ignored="false" />
+    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445547289762" ignored="false" />
     <file path="/RandomUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443354452878" ignored="false" />
     <file path="/PongAIController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445459863413" ignored="false" />
     <file path="/MathUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443211802739" ignored="false" />
-    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445013120827" ignored="false" />
+    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445547065373" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442068817390" ignored="false" />
     <file path="/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442057422355" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442074666387" ignored="false" />
@@ -131,10 +105,12 @@
     <file path="/BaseUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444982436101" ignored="false" />
     <file path="/LogoStatus.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445000606448" ignored="false" />
     <file path="/PauseManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445007037200" ignored="false" />
-    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445523097015" ignored="false" />
+    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445544224956" ignored="false" />
     <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445539412164" ignored="false" />
     <file path="/CameraShakeType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445087073374" ignored="false" />
     <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445537923884" ignored="false" />
+    <file path="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445544927693" ignored="false" />
+    <file path="$PROJECT_DIR$/Temp/StagingArea/assets/bin/Data/sharedassets1.assets.split4" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445544927693" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="46" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="46" />
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -192,35 +168,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputHandler.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InputHandler.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5346535">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HitAnimationManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,24 +204,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
+      <file leaf-file-name="SettingsController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="0.51361865">
+              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#187#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraShake.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
+      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#140#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Advertisement.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6923077">
+              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -324,13 +290,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpecialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibrate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
       </list>
     </option>
   </component>
@@ -802,7 +768,7 @@
       <workItem from="1443040345410" duration="62562000" />
       <workItem from="1443811820808" duration="26222000" />
       <workItem from="1443990606719" duration="50822000" />
-      <workItem from="1444925756882" duration="61849000" />
+      <workItem from="1444925756882" duration="65102000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -820,11 +786,15 @@
       <created>1445523121535</created>
       <updated>1445523121535</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="vibrations">
+      <created>1445544221899</created>
+      <updated>1445544221899</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375102000" />
+    <option name="totallyTimeSpent" value="378355000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -855,11 +825,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32614556" sideWeight="0.44067797" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26954177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26954177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28167117" sideWeight="0.55932206" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28167117" sideWeight="0.55932206" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -942,7 +912,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ads" />
+    <option name="LAST_COMMIT_MESSAGE" value="vibrations" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -961,13 +931,14 @@
     <MESSAGE value="Camera shake" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="added ads" />
+    <MESSAGE value="vibrations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="341" />
+      <option name="time" value="347" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1297,32 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1345,16 +1290,6 @@
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1399,22 +1334,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6923077">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="46" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="46" />
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5346535">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.51361865">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#187#0" expanded="true" />
           </folding>
         </state>
       </provider>
