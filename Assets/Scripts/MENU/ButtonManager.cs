@@ -78,7 +78,11 @@ public class ButtonManager : MonoBehaviour {
         //        source.Play();
         //        StartCoroutine ("playSound", level);
         if (Advertisement.isReady()) {
-            Advertisement.Show();
+            Advertisement.Show(null, new ShowOptions {
+                resultCallback = result => {
+                    Debug.Log(result.ToString());
+                }
+            });
         }
     }
 
