@@ -49,7 +49,7 @@ public class SettingsController : MonoBehaviour {
     }
 
     public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
-        while (!Advertisement.isReady()) {
+        while (!Advertisement.IsReady()) {
             yield return null;
         }
         ObjectUtility.enableGameObject(adButton);
