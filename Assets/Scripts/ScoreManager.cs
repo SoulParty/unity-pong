@@ -43,7 +43,6 @@ public class ScoreManager : MonoBehaviour {
     public void incrementGoals() {
 //        goalImpact.transform.position = new Vector3(goalImpact.transform.position.x, collider.gameObject.transform.position.y, 0);
         goals++;
-
         GameController.Instance.UIControl.updateScore(racket, goals.ToString());
     }
 

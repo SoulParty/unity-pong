@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1443991324
-licenseType: Free
+timeCreated: 1445713512
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: 1player
@@ -127,6 +127,7 @@ TextureImporter:
     21300240: rng3
     21300242: rng4
     21300244: rng5
+    21300246: quit
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -176,7 +177,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1744
+        y: 1723
         width: 512
         height: 256
       alignment: 0
@@ -185,8 +186,8 @@ TextureImporter:
     - name: 2player
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1482
+        x: 6
+        y: 1506
         width: 512
         height: 256
       alignment: 0
@@ -205,8 +206,8 @@ TextureImporter:
     - name: credits
       rect:
         serializedVersion: 2
-        x: 666
-        y: 1489
+        x: 639
+        y: 1492
         width: 512
         height: 128
       alignment: 0
@@ -226,7 +227,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 974
+        y: 977
         width: 512
         height: 128
       alignment: 0
@@ -236,7 +237,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 531
+        y: 534
         width: 512
         height: 128
       alignment: 0
@@ -245,8 +246,8 @@ TextureImporter:
     - name: medium
       rect:
         serializedVersion: 2
-        x: 525
-        y: 528
+        x: 519
+        y: 537
         width: 512
         height: 128
       alignment: 0
@@ -256,7 +257,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 341
+        y: 350
         width: 512
         height: 128
       alignment: 0
@@ -265,8 +266,8 @@ TextureImporter:
     - name: insane
       rect:
         serializedVersion: 2
-        x: 528
-        y: 337
+        x: 471
+        y: 349
         width: 512
         height: 128
       alignment: 0
@@ -275,8 +276,8 @@ TextureImporter:
     - name: watch
       rect:
         serializedVersion: 2
-        x: 491
-        y: 1007
+        x: 497
+        y: 1016
         width: 512
         height: 64
       alignment: 0
@@ -286,7 +287,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 189
+        y: 201
         width: 512
         height: 128
       alignment: 0
@@ -296,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 57
         width: 1024
         height: 128
       alignment: 0
@@ -306,7 +307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 976
-        y: 47
+        y: 59
         width: 1024
         height: 128
       alignment: 0
@@ -325,7 +326,7 @@ TextureImporter:
     - name: left
       rect:
         serializedVersion: 2
-        x: 1027
+        x: 1036
         y: 1870
         width: 128
         height: 128
@@ -335,8 +336,8 @@ TextureImporter:
     - name: right
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 1872
+        x: 1141
+        y: 1869
         width: 128
         height: 128
       alignment: 0
@@ -345,8 +346,8 @@ TextureImporter:
     - name: selected
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1747
+        x: 1047
+        y: 1765
         width: 128
         height: 128
       alignment: 0
@@ -355,8 +356,8 @@ TextureImporter:
     - name: not-selected
       rect:
         serializedVersion: 2
-        x: 1167
-        y: 1744
+        x: 1146
+        y: 1768
         width: 128
         height: 128
       alignment: 0
@@ -1276,7 +1277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 462
-        y: 188
+        y: 203
         width: 1024
         height: 128
       alignment: 0
@@ -1285,8 +1286,8 @@ TextureImporter:
     - name: resume
       rect:
         serializedVersion: 2
-        x: 1468
-        y: 184
+        x: 1474
+        y: 205
         width: 512
         height: 128
       alignment: 0
@@ -1295,8 +1296,8 @@ TextureImporter:
     - name: pause
       rect:
         serializedVersion: 2
-        x: 1367
-        y: 1872
+        x: 1373
+        y: 1881
         width: 128
         height: 128
       alignment: 0
@@ -1305,8 +1306,8 @@ TextureImporter:
     - name: till_prize
       rect:
         serializedVersion: 2
-        x: 553
-        y: 1605
+        x: 559
+        y: 1611
         width: 512
         height: 128
       alignment: 0
@@ -1315,8 +1316,8 @@ TextureImporter:
     - name: roll
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 363
+        x: 1089
+        y: 372
         width: 128
         height: 256
       alignment: 0
@@ -1325,8 +1326,8 @@ TextureImporter:
     - name: free
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 613
+        x: 1083
+        y: 616
         width: 128
         height: 256
       alignment: 0
@@ -1335,8 +1336,8 @@ TextureImporter:
     - name: 100c
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 856
+        x: 1086
+        y: 844
         width: 128
         height: 256
       alignment: 0
@@ -1345,9 +1346,9 @@ TextureImporter:
     - name: play_again
       rect:
         serializedVersion: 2
-        x: 499
-        y: 1129
-        width: 512
+        x: 857
+        y: 2113
+        width: 1024
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -1398,6 +1399,16 @@ TextureImporter:
         x: 643
         y: 2112
         width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: quit
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1131
+        width: 512
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}

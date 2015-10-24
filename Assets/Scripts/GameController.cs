@@ -93,8 +93,8 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public void startGameAnimation(AnimationType animationType) {
-        UIControl.showGameAnimation(animationType);
+    public void showGoal() {
+        UIControl.showGoal();
     }
 
     public void incrementCombo() {
@@ -122,11 +122,6 @@ public class GameController : MonoBehaviour {
 //        this.winnerId = winnerId;
         UIControl.showWinner(winner);
 //        startGameAnimation(AnimationType.WIN);
-        if (highScoreCheck()) {
-//        if (true) {
-            UIControl.showNewHighScore(ScoreController.Instance.getCombo());
-//            startGameAnimation(AnimationType.HIGH_SCORE);
-        }
         StartCoroutine(showGameEndMenu());
     }
 
@@ -141,11 +136,14 @@ public class GameController : MonoBehaviour {
     public void goalScored(GameObject player) {
         if (player != null) {
             ScoreController.Instance.incrementGoals(player);
-            startGameAnimation(AnimationType.GOAL);
+            showGoal();
             restart();
             if (ScoreController.Instance.checkWinCondition(player)) {
                 gameFinished(player);
             }
+        }
+        if (highScoreCheck()) {
+            UIControl.showNewHighScore(ScoreController.Instance.getCombo());
         }
     }
 

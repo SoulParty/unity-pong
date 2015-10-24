@@ -30,13 +30,13 @@ public class UI : BaseUI {
         } else if (player.name.Equals("RacketRight")) {
             scoreRight.GetComponent<Text>().text = score.ToString();
         }
-//        ObjectUtility.enableGameObject(goalAnimation);
-//        goalAnimation.GetComponent<Animator>().enabled = true;
     }
 
     public void showNewHighScore(int combo) {
+        highScoreAnimation.transform.position = new Vector3(28, -214, 0);
         highScoreAnimation.GetComponent<TextFxNative>().SetText("HIGH SCORE! " + combo.ToString());
         highScoreAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
+        StartCoroutine(cleanUp());
     }
 
     public void showComboInARow(int combo) {
@@ -50,27 +50,21 @@ public class UI : BaseUI {
             direction = -1;
         }
         winnerAnimation.transform.position = new Vector3(direction * 500, 400, 0);
+        winnerAnimation.GetComponent<TextFxNative>().SetText("WINNER");
         winnerAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
+        StartCoroutine(cleanUp());
+
     }
 
-    public void showGameAnimation(AnimationType animationType) {
-        StartCoroutine(startAnimation(animationType));
+    public void showGoal() {
+        StartCoroutine(startGoal());
     }
 
-    IEnumerator startAnimation(AnimationType animationType) {
-        switch (animationType) {
-            case AnimationType.GOAL:
-            CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
-            yield return new WaitForSeconds(goalAnimationLength);
-            BallController.Instance.moveInRandomDirection(); //TODO move out of here
-            break;
-            case AnimationType.HIGH_SCORE:
-            yield return new WaitForSeconds(highScoreAnimationLength);
-            break;
-            case AnimationType.WIN:
-            yield return new WaitForSeconds(winAnimationLength);
-            break;
-        }
+    IEnumerator startGoal() {
+        goalAnimation.GetComponent<Animator>().Play("GoalAnimationIn");
+        CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
+        yield return new WaitForSeconds(goalAnimationLength);
+        BallController.Instance.moveInRandomDirection(); //TODO move out of here
     }
 
     public void showPauseMenu() {
@@ -95,5 +89,11 @@ public class UI : BaseUI {
             deactivate(freeRoll);
             //TODO Show not enough coins, watch ad
         }
+    }
+
+    public IEnumerator cleanUp() {
+        yield return new WaitForSeconds(highScoreAnimationLength);
+        winnerAnimation.GetComponent<TextFxNative>().SetText("");
+        highScoreAnimation.GetComponent<TextFxNative>().SetText("");
     }
 }

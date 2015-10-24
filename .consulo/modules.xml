@@ -112,6 +112,39 @@
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -125,6 +158,39 @@
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -138,6 +204,39 @@
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -151,6 +250,39 @@
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -164,6 +296,39 @@
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -177,6 +342,39 @@
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -190,6 +388,39 @@
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -203,6 +434,39 @@
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisement.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/MiniJSON.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/Utils.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/ShowOptionsExtended.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAds.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsAndroid.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsEditorPlaceholder.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsExternal.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIos.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsIosBridge.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/Advertisements/VideoAds/UnityAdsPlatform.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowOptions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Standard Assets/UnityAds/Scripts/ShowResult.cs" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="UnityEditor" />
@@ -324,8 +588,13 @@
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -349,12 +618,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -378,12 +659,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -407,12 +700,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -436,12 +741,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -465,12 +782,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -494,12 +823,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -523,12 +864,24 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Editor/DynamicTextInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowEffectInspector.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Editor/GlowMaterialInspector.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_InspectorHelpEditor.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Editor/CFX_SpawnSystemEditor.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxNative.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/MenuOptionsTextFxUGUI.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Editor/TextEffectsManager.cs" />
@@ -552,22 +905,53 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
       </module>
       <module name="Assembly-CSharp" current-layer="MacOS (any)">
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -648,20 +1032,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -742,20 +1164,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -836,20 +1296,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -930,20 +1428,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -1024,20 +1560,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -1118,20 +1692,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -1212,20 +1824,58 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableQuadButton.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ClickableURL.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/DebugInfo.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TestDTAlignedPrefabArray.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BLETestScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/BusyScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralPeripheralButtonScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralRFduinoScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Central/CentralTISensorTagScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/Peripheral/PeripheralScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/BluetoothLETest/TypeSelectionScript.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Example/Test/TestScript.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/GlowColorAnimation.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Demo/Scripts/SphereBounce.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Glow Effect/Glow/GlowEffect.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_AutoStopLoopedEffect.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX3_Demo_Translate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/AnimationController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/ArenaController.cs" />
-          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/Base2DPadel.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/BaseSpecialManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/PowerUp.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BASE/PowerUp/TimedPowerUp.cs" />
@@ -1306,6 +1956,20 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/JMO Assets/Editor/JMOAssets.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll:///Users/DK/2dpong/Assets/DynamicText/DynamicText.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
       </module>
     </modules>

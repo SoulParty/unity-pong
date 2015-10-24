@@ -54,4 +54,10 @@ public class PlayerController : MonoBehaviour {
     public void OnMouseExit() {
         canMove = false;
     }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.name.Equals("Ball")) {
+            Vibration.Vibrate(90);
+        }
+    }
 }

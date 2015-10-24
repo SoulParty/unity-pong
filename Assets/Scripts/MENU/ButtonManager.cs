@@ -74,6 +74,10 @@ public class ButtonManager : MonoBehaviour {
         //        StartCoroutine ("playSound", level);
     }
 
+    public void quit() {
+        Application.Quit();
+    }
+
     public void LoadWatchAd() { //TODO make an Ad Manager
         //        source.Play();
         //        StartCoroutine ("playSound", level);
