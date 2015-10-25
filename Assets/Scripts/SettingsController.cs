@@ -21,9 +21,6 @@ public class SettingsController : MonoBehaviour {
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
 
-    public GameObject coinsUi;
-    public GameObject highscoreUi;
-
     public GameObject adButton;
 
     [SerializeField]
@@ -46,6 +43,13 @@ public class SettingsController : MonoBehaviour {
     void Start () {
         Advertisement.Initialize("82920", true);
         StartCoroutine(ShowAdButtonWhenReady(adButton));
+
+        maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
+        coins = PlayerPrefs.GetInt(Const.COINS);
+
+        if (UI.Instance != null) {
+            UI.Instance.showTotals();
+        }
     }
 
     public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
@@ -57,14 +61,6 @@ public class SettingsController : MonoBehaviour {
 
     public void Awake () {
         DontDestroyOnLoad(gameObject);
-
-        maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
-        coins = PlayerPrefs.GetInt(Const.COINS);
-
-        //        Debug.Log("Max Combo " + maxCombo);
-
-        coinsUi.GetComponent<Text>().text = coins.ToString();
-        highscoreUi.GetComponent<Text>().text = maxCombo.ToString();
     }
 
     public int getMaxCombo() {
@@ -78,6 +74,7 @@ public class SettingsController : MonoBehaviour {
     public void setCoins(int coins) {
         PlayerPrefs.SetInt(Const.COINS, coins);
         this.coins = coins;
+        UI.Instance.refreshCoins(coins);
     }
 
     public Difficulty getAIDifficulty() {
@@ -208,7 +205,6 @@ public class SettingsController : MonoBehaviour {
     public void addCoins(int reward) {
         coins += reward;
         PlayerPrefs.SetInt(Const.COINS, coins);
-        coinsUi.GetComponent<Text>().text = coins.ToString();
         //TODO update UI and for highscore too
     }
 }

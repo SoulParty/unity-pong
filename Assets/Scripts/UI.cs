@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
+using TextFx;
 using UnityEngine;
 using UnityEngine.UI;
-using TextFx;
 
 public class UI : BaseUI {
 
@@ -11,10 +12,18 @@ public class UI : BaseUI {
     public GameObject freeRoll;
     public GameObject paidRoll;
 
+    public GameObject tillFree;
+    public GameObject timeLeft;
+
+    public GameObject coinTotal;
+    public GameObject highscoreTotal;
+
     public GameObject goalAnimation;
     public GameObject highScoreAnimation;
     public GameObject winnerAnimation;
     public GameObject comboAnimation;
+
+    public Sprite[] symbolArray;
 
     public float goalAnimationLength = 3f;
     public float specialAnimationLength = 1.5f;
@@ -23,6 +32,18 @@ public class UI : BaseUI {
 
     public GameObject scoreLeft;
     public GameObject scoreRight;
+
+    [System.NonSerialized]
+    public static UI Instance;
+
+    public UI() {
+        Instance = this;
+    }
+
+    public void showTotals() {
+        display4CharNumber(coinTotal, SettingsController.Instance.getCoins());
+        display4CharNumber(highscoreTotal, SettingsController.Instance.getMaxCombo());
+    }
 
     public void updateScore(GameObject player, string score) {
         if (player.name.Equals("RacketLeft")) {
@@ -33,6 +54,10 @@ public class UI : BaseUI {
     }
 
     public void showNewHighScore(int combo) {
+        if (combo > 9999) {
+            combo = 9999; //TODO move out of here
+        }
+        display4CharNumber(highscoreTotal, combo);
         highScoreAnimation.transform.position = new Vector3(28, -214, 0);
         highScoreAnimation.GetComponent<TextFxNative>().SetText("HIGH SCORE! " + combo.ToString());
         highScoreAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
@@ -81,9 +106,14 @@ public class UI : BaseUI {
         if (SettingsController.Instance.getCoins() > 1) {
             activate(paidRoll);
             deactivate(freeRoll);
-            //if time passed
-            deactivate(paidRoll);
-            activate(freeRoll);
+            TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
+            if (passedSinceLastRoll.TotalMinutes < 0) {
+                deactivate(paidRoll);
+                activate(freeRoll);
+            } else {
+                activate(tillFree);
+                displayTime(passedSinceLastRoll.Hours, passedSinceLastRoll.Minutes);
+            }
         } else {
             deactivate(paidRoll);
             deactivate(freeRoll);
@@ -96,4 +126,62 @@ public class UI : BaseUI {
         winnerAnimation.GetComponent<TextFxNative>().SetText("");
         highScoreAnimation.GetComponent<TextFxNative>().SetText("");
     }
+
+    public Sprite toImage(char symbol) {
+        switch (symbol) {
+            case '0': return symbolArray[0]; break;
+            case '1': return symbolArray[1]; break;
+            case '2': return symbolArray[2]; break;
+            case '3': return symbolArray[3]; break;
+            case '4': return symbolArray[4]; break;
+            case '5': return symbolArray[5]; break;
+            case '6': return symbolArray[6]; break;
+            case '7': return symbolArray[7]; break;
+            case '8': return symbolArray[8]; break;
+            case '9': return symbolArray[9]; break;
+            case 'c': return symbolArray[10]; break;
+            case ' ': return symbolArray[11]; break;
+            default: return symbolArray[0];
+        }
+    }
+
+    private void display4CharNumber(GameObject display, int number) {
+        Image[] componentImages = display.GetComponentsInChildren<Image>();
+        char[] charArray = number.ToString().ToCharArray();
+        for (int i = 0; i < 4; i++) {
+            if (i < charArray.Length) {
+                componentImages[i].sprite = toImage(charArray[i]);
+            } else {
+                componentImages[i].sprite = toImage(' ');
+            }
+        }
+    }
+
+    private void displayTime(int hour, int minute) {
+        Image[] componentImages = timeLeft.GetComponentsInChildren<Image>();
+        componentImages[0].sprite = toImage('0');
+        componentImages[1].sprite = toImage('0');
+        componentImages[2].sprite = toImage('0');
+        componentImages[3].sprite = toImage('0');
+
+        char[] hourArray = hour.ToString().ToCharArray();
+        if (hourArray.Length > 0) {
+            componentImages[1].sprite = toImage(hourArray[0]);
+        } else if (hourArray.Length > 1) {
+            componentImages[0].sprite = toImage(hourArray[0]);
+            componentImages[1].sprite = toImage(hourArray[1]);
+        }
+        char[] minArray = minute.ToString().ToCharArray();
+        if (minArray.Length > 0) {
+            componentImages[2].sprite = toImage(minArray[0]);
+        } else if (minArray.Length > 1) {
+            componentImages[2].sprite = toImage(minArray[0]);
+            componentImages[3].sprite = toImage(minArray[1]);
+        }
+    }
+
+    public void refreshCoins(int coins) {
+        display4CharNumber(coinTotal, coins);
+    }
+
 }

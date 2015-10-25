@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour {
     public int direction = 0;
     public Camera mainCamera;
 
+    public float impactLength = 2f;
+    public GameObject hitImpactParticles;
+
     public void handleInput(Vector3 inputPosition) {
         if (inputPosition != Vector3.zero) {
             Vector3 position = this.gameObject.transform.position;
@@ -58,6 +61,14 @@ public class PlayerController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.name.Equals("Ball")) {
             Vibration.Vibrate(90);
+            hitImpactParticles.transform.position = new Vector3(transform.position.x, collision.gameObject.transform.position.y, 0);
+            ObjectUtility.enableGameObject(hitImpactParticles);
+            StartCoroutine(disableImpactTimer());
         }
+    }
+
+    IEnumerator disableImpactTimer() {
+        yield return new WaitForSeconds(impactLength);
+        ObjectUtility.disableGameObject(hitImpactParticles);
     }
 }

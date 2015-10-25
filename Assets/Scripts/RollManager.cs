@@ -3,24 +3,29 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-//TODO implement free roll timer
 public class RollManager : MonoBehaviour {
 
     public Sprite[] rngIcons;
+    public Sprite[] pucks;
     public GameObject rng;
-    public GameObject glowParticles;
     public GameObject rollFinishedParticles;
 
-    public void Awake() {
-        glowParticles.GetComponent<ParticleSystem>().Play();
-    }
-
     public void rollTheDice() {
+        //TODO
+//        TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
+//        if (passedSinceLastRoll.Hours >= 4) {
+//            TimeUtility.saveLastRollTime();
+//        }
+        TimeUtility.saveLastRollTime();
+
         ObjectUtility.enableGameObject(rollFinishedParticles);
 
-        Sprite[] puckSprites = SettingsController.Instance.getPuckSprites();
-        Sprite sprite = puckSprites[Random.Range(0, puckSprites.Length)];
+        Sprite[] puckSprites = pucks;
+        if (SettingsController.Instance != null) {
+            puckSprites = SettingsController.Instance.getPuckSprites();
+        }
 
+        Sprite sprite = puckSprites[Random.Range(0, puckSprites.Length - 1)];
         rng.GetComponent<Image>().sprite = sprite;
         SettingsController.Instance.setStatus(sprite.ToString(), 1);
     }

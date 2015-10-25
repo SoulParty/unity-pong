@@ -964,6 +964,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -987,6 +988,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1096,6 +1098,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1119,6 +1122,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1228,6 +1232,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1251,6 +1256,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1360,6 +1366,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1383,6 +1390,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1492,6 +1500,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1515,6 +1524,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1624,6 +1634,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1647,6 +1658,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1756,6 +1768,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1779,6 +1792,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />
@@ -1888,6 +1902,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/InputHandler.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/ButtonManager.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/MenuManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/MENU/PauseManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/PongAIController.cs" />
@@ -1911,6 +1926,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/MathUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/ObjectUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/RandomUtility.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/TimeUtility.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/Utility/Vibration.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/BasicsSceneManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/TextFx/Legacy Content/Demo Scenes/Scripts/PointsTextManager.cs" />

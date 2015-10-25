@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject player1;
     public GameObject player2;
-    public GameObject puck;
+    public GameObject ball;
     public GameObject rollManager;
     public GameObject aiDot;
     public GameObject player2InputHandler;
@@ -61,7 +61,7 @@ public class GameController : MonoBehaviour {
         } else {
             player1.GetComponent<RacketManager>().setSprite(SettingsController.Instance.selectedPlayer1Racket);
             player2.GetComponent<RacketManager>().setSprite(SettingsController.Instance.selectedPlayer2Racket);
-            puck.GetComponent<BallManager>().setSprite(SettingsController.Instance.selectedPuck);
+            ball.GetComponent<BallManager>().setSprite(SettingsController.Instance.selectedPuck);
         }
 
         InvokeRepeating("spawnRandomSpecial", initialSpawnDelay, specialInterval);
@@ -166,9 +166,13 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    //TODO figure out what to do during end screen
     public IEnumerator showGameEndMenu() {
         yield return new WaitForSeconds(3);
+        ObjectUtility.disableGameObject(ball);
+        player1.GetComponent<Rigidbody2D>().isKinematic = true;
+        player2.GetComponent<Rigidbody2D>().isKinematic = true;
+        CancelInvoke("spawnRandomSpecial");
+        CancelInvoke("spawnRandomCoin");
         UIControl.showWinMenu();
     }
 
