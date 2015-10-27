@@ -959,6 +959,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1093,6 +1094,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1227,6 +1229,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1361,6 +1364,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1495,6 +1499,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1629,6 +1634,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1763,6 +1769,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />
@@ -1897,6 +1904,7 @@
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/BallManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/CameraShake.cs" />
+          <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/CameraManager.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/GameController.cs" />
           <content url="file://$USER_HOME$/2dpong/Assets/Scripts/HitAnimationManager.cs" />

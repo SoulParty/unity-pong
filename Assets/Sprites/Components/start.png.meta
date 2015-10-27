@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1445774190
+timeCreated: 1445805442
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -140,6 +140,9 @@ TextureImporter:
     21300266: 0
     21300268: c
     21300270: null
+    21300272: MIN
+    21300274: ':'
+    21300276: H
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -209,9 +212,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1248
+        y: 1333
         width: 1024
-        height: 256
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +231,8 @@ TextureImporter:
     - name: coins
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1104
+        x: 6
+        y: 1113
         width: 256
         height: 128
       alignment: 0
@@ -238,8 +241,8 @@ TextureImporter:
     - name: highscore
       rect:
         serializedVersion: 2
-        x: 0
-        y: 977
+        x: 16
+        y: 983
         width: 512
         height: 128
       alignment: 0
@@ -278,7 +281,7 @@ TextureImporter:
     - name: insane
       rect:
         serializedVersion: 2
-        x: 471
+        x: 490
         y: 349
         width: 512
         height: 128
@@ -288,7 +291,7 @@ TextureImporter:
     - name: watch
       rect:
         serializedVersion: 2
-        x: 497
+        x: 541
         y: 1016
         width: 512
         height: 64
@@ -328,8 +331,8 @@ TextureImporter:
     - name: select
       rect:
         serializedVersion: 2
-        x: 511
-        y: 1730
+        x: 502
+        y: 1777
         width: 512
         height: 256
       alignment: 0
@@ -1278,8 +1281,8 @@ TextureImporter:
     - name: buy
       rect:
         serializedVersion: 2
-        x: 1312
-        y: 1749
+        x: 1306
+        y: 1764
         width: 128
         height: 128
       alignment: 0
@@ -1328,8 +1331,8 @@ TextureImporter:
     - name: roll
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 389
+        x: 1090
+        y: 467
         width: 128
         height: 256
       alignment: 0
@@ -1338,8 +1341,8 @@ TextureImporter:
     - name: free
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 616
+        x: 1089
+        y: 740
         width: 128
         height: 256
       alignment: 0
@@ -1348,18 +1351,18 @@ TextureImporter:
     - name: 100c
       rect:
         serializedVersion: 2
-        x: 1088
-        y: 844
+        x: 1091
+        y: 1017
         width: 128
-        height: 256
+        height: 512
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: play_again
       rect:
         serializedVersion: 2
-        x: 857
-        y: 2113
+        x: 876
+        y: 2119
         width: 1024
         height: 128
       alignment: 0
@@ -1368,7 +1371,7 @@ TextureImporter:
     - name: rng1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 28
         y: 2115
         width: 128
         height: 128
@@ -1378,8 +1381,8 @@ TextureImporter:
     - name: rng2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 2115
+        x: 171
+        y: 2112
         width: 128
         height: 128
       alignment: 0
@@ -1388,7 +1391,7 @@ TextureImporter:
     - name: rng3
       rect:
         serializedVersion: 2
-        x: 305
+        x: 346
         y: 2112
         width: 128
         height: 128
@@ -1398,8 +1401,8 @@ TextureImporter:
     - name: rng4
       rect:
         serializedVersion: 2
-        x: 484
-        y: 2112
+        x: 541
+        y: 2121
         width: 128
         height: 128
       alignment: 0
@@ -1408,8 +1411,8 @@ TextureImporter:
     - name: rng5
       rect:
         serializedVersion: 2
-        x: 643
-        y: 2112
+        x: 693
+        y: 2109
         width: 128
         height: 128
       alignment: 0
@@ -1418,8 +1421,8 @@ TextureImporter:
     - name: quit
       rect:
         serializedVersion: 2
-        x: 555
-        y: 1131
+        x: 536
+        y: 1137
         width: 512
         height: 128
       alignment: 0
@@ -1528,7 +1531,7 @@ TextureImporter:
     - name: c
       rect:
         serializedVersion: 2
-        x: 794
+        x: 788
         y: 735
         width: 64
         height: 64
@@ -1538,8 +1541,38 @@ TextureImporter:
     - name: null
       rect:
         serializedVersion: 2
-        x: 878
-        y: 737
+        x: 765
+        y: 863
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MIN
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 868
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ':'
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 729
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: H
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 735
         width: 64
         height: 64
       alignment: 0
