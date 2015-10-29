@@ -42,9 +42,11 @@ public class SpecialController : MonoBehaviour{
     }
 
     public void makeDoubleBall(GameObject special) {
-        GameObject ball = (GameObject) Instantiate(Resources.Load("Ball"));
-        Vector3 position = ball.transform.position;
-        position = new Vector3(position.x, special.transform.position.y, position.z);
+//        GameObject ball = (GameObject) Instantiate(Resources.Load("Ball"));
+//        Vector3 position = ball.transform.position;
+//        position = new Vector3(position.x, special.transform.position.y, position.z);
+        GameObject ball = Instantiate(GameController.Instance.ball);
+        ball.transform.position = new Vector3(ball.transform.position.x, special.transform.position.y, ball.transform.position.z);
         ball.GetComponent<BallManager>().moveInRandomDirection();
         GameController.Instance.toggleIsDoubleBallMode();
     }

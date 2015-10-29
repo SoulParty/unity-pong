@@ -27,7 +27,6 @@ public class ScoreManager : MonoBehaviour {
         this.goals = goals;
     }
 
-    //TODO add sprite for disabled goals
     public void toggleDisabled() {
         isDisabled = true;
         ObjectUtility.enableGameObject(noGoalsSprite);

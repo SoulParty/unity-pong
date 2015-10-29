@@ -12,9 +12,9 @@ public class RollManager : MonoBehaviour {
     public GameObject rollFinishedParticles;
 
     public void rollTheDice() {
-        TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
-        if (passedSinceLastRoll.Hours >= 4) {
+        if (TimeUtility.getIsFreeRollAvailable()) {
             TimeUtility.saveLastRollTime();
+            UI.Instance.showWinMenu(); //Refresh menu
         } else {
             SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 100);
         }

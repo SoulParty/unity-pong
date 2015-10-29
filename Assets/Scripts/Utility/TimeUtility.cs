@@ -21,6 +21,15 @@ public class TimeUtility {
         return difference;
     }
 
+    public static bool getIsFreeRollAvailable() {
+        TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
+        if (passedSinceLastRoll.TotalMinutes < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public static void saveLastRollTime(){
         DateTime now = System.DateTime.Now;
         DateTime targetTime = now.AddHours(4);

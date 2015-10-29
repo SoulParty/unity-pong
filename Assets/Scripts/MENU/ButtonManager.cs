@@ -81,7 +81,7 @@ public class ButtonManager : MonoBehaviour {
     public void LoadWatchAd() { //TODO make an Ad Manager
         //        source.Play();
         //        StartCoroutine ("playSound", level);
-        if (Advertisement.isReady()) {
+        if (Advertisement.IsReady()) {
             Advertisement.Show(null, new ShowOptions {
                 resultCallback = result => {
                     Debug.Log(result.ToString());

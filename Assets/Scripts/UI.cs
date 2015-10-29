@@ -16,7 +16,8 @@ public class UI : BaseUI {
     public GameObject timeLeft;
 
     public GameObject coinTotal;
-    public GameObject highscoreTotal;
+    public GameObject highScoreTotal;
+    public GameObject bestScoreTotal;
 
     public GameObject goalAnimation;
     public GameObject highScoreAnimation;
@@ -42,7 +43,7 @@ public class UI : BaseUI {
 
     public void showTotals() {
         display4CharNumber(coinTotal, SettingsController.Instance.getCoins());
-        display4CharNumber(highscoreTotal, SettingsController.Instance.getMaxCombo());
+        display4CharNumber(highScoreTotal, ScoreController.Instance.getCombo());
     }
 
     public void updateScore(GameObject player, string score) {
@@ -57,7 +58,6 @@ public class UI : BaseUI {
         if (combo > 9999) {
             combo = 9999; //TODO move out of here
         }
-        display4CharNumber(highscoreTotal, combo);
         highScoreAnimation.transform.position = new Vector3(28, -214, 0);
         highScoreAnimation.GetComponent<TextFxNative>().SetText("HIGH SCORE! " + combo.ToString());
         highScoreAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
@@ -90,6 +90,7 @@ public class UI : BaseUI {
         CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
         yield return new WaitForSeconds(goalAnimationLength);
         BallController.Instance.moveInRandomDirection(); //TODO move out of here
+        display4CharNumber(highScoreTotal, 0);
     }
 
     public void showPauseMenu() {
@@ -103,15 +104,16 @@ public class UI : BaseUI {
 
     public void showWinMenu() {
         activate(winMenu);
+        display4CharNumber(bestScoreTotal, SettingsController.Instance.getMaxCombo());
         if (SettingsController.Instance.getCoins() > 1) {
             activate(paidRoll);
             deactivate(freeRoll);
-            TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
-            if (passedSinceLastRoll.TotalMinutes < 0) {
+            if (TimeUtility.getIsFreeRollAvailable()) {
                 deactivate(paidRoll);
                 activate(freeRoll);
             } else {
                 activate(tillFree);
+                TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
                 displayTime(passedSinceLastRoll.Hours, passedSinceLastRoll.Minutes);
             }
         } else {
@@ -182,6 +184,10 @@ public class UI : BaseUI {
 
     public void refreshCoins(int coins) {
         display4CharNumber(coinTotal, coins);
+    }
+
+    public void refreshScore(int score) {
+        display4CharNumber(highScoreTotal, score);
     }
 
 }

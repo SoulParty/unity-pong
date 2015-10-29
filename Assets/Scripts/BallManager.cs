@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class BallManager : MonoBehaviour, SpriteChangeable {
 
     public float speed;
-
+    public float speedCap;
     private enum TrailColor : int {
         WHITE = 0,
         BLUE = 1,
@@ -18,6 +18,7 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
 
     void Start() {
         speed = GameController.Instance.defaultBallStartSpeed;
+        speedCap = GameController.Instance.ballSpeedUp * 45 + GameController.Instance.defaultBallStartSpeed;
         // Initial Velocity
         GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
@@ -123,8 +124,10 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     }
 
     public void increaseSpeed(int speedUp) {
-        speed += speedUp;
-        changeTrail();
+        if (speed < speedCap) {
+            speed += speedUp;
+            changeTrail();
+        }
     }
 
     public void changeTrail() {

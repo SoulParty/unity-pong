@@ -18,6 +18,7 @@ public class ScoreController : MonoBehaviour {
 
     public void incrementCombo() {
         combo++;
+        UI.Instance.refreshScore(combo);
         if (combo % 5 == 0) {
             GameController.Instance.comboInARow(combo);
         }
