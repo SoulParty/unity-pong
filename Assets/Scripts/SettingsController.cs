@@ -16,7 +16,8 @@ public class SettingsController : MonoBehaviour {
     public Sprite selectedPuck;
 
     private Dictionary<string, int> ownedPuckSpritesCache = new Dictionary<string, int>();
-    private Dictionary<string, int> ownedRacketSpritesCache = new Dictionary<string, int>();
+    private Dictionary<string, int> ownedRacket1SpritesCache = new Dictionary<string, int>();
+    private Dictionary<string, int> ownedRacket2SpritesCache = new Dictionary<string, int>();
 
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
@@ -35,6 +36,8 @@ public class SettingsController : MonoBehaviour {
 
     public Difficulty difficulty = Difficulty.INSANE;
     public MultiplayerType multiplayerType = MultiplayerType.LOCAL;
+
+    public bool isVibrate = false;
 
     public SettingsController() {
         Instance = this;
@@ -74,7 +77,9 @@ public class SettingsController : MonoBehaviour {
     public void setCoins(int coins) {
         PlayerPrefs.SetInt(Const.COINS, coins);
         this.coins = coins;
-        UI.Instance.refreshCoins(coins);
+        if (UI.Instance != null) {
+            UI.Instance.refreshCoins(coins);
+        }
     }
 
     public Difficulty getAIDifficulty() {
@@ -141,10 +146,10 @@ public class SettingsController : MonoBehaviour {
             return getPuckSprites();
         } else if (spriteType == SpriteType.RACKET1) {
             foreach (Sprite sprite in getRacketSprites()) {
-                if (sprite != null && !ownedRacketSpritesCache.ContainsKey(sprite.ToString())) {
+                if (sprite != null && !ownedRacket1SpritesCache.ContainsKey(sprite.ToString())) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
-                    ownedRacketSpritesCache.Add(sprite.ToString(), status);
-                    Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
+                    ownedRacket1SpritesCache.Add(sprite.ToString(), status);
+                    Debug.Log("Racket 1 sprite: " + sprite.ToString() + "status: " + status);
                     if (status == 3) {
                         selectedPlayer1Racket = sprite;
                         Debug.Log("Selected racket 1: " + sprite.ToString() + "status: " + status);
@@ -154,9 +159,9 @@ public class SettingsController : MonoBehaviour {
             return getRacketSprites();
         } else {
             foreach (Sprite sprite in getRacketSprites()) {
-                if (sprite != null && !ownedRacketSpritesCache.ContainsKey(sprite.ToString())) {
+                if (sprite != null && !ownedRacket2SpritesCache.ContainsKey(sprite.ToString())) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
-                    Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
+                    Debug.Log("Racket 2 sprite: " + sprite.ToString() + "status: " + status);
                     if (status == 4) {
                         selectedPlayer2Racket = sprite;
                         Debug.Log("Selected racket 2: " + sprite.ToString() + "status: " + status);
@@ -176,12 +181,19 @@ public class SettingsController : MonoBehaviour {
                 ownedPuckSpritesCache.Remove(sprite);
                 ownedPuckSpritesCache.Add(sprite, status);
             }
-        } else {
-            if (!ownedRacketSpritesCache.ContainsKey(sprite)) {
-                ownedRacketSpritesCache.Add(sprite, status);
+        } else if (spriteType == SpriteType.RACKET1) {
+            if (!ownedRacket1SpritesCache.ContainsKey(sprite)) {
+                ownedRacket1SpritesCache.Add(sprite, status);
             } else {
-                ownedRacketSpritesCache.Remove(sprite);
-                ownedRacketSpritesCache.Add(sprite, status);
+                ownedRacket1SpritesCache.Remove(sprite);
+                ownedRacket1SpritesCache.Add(sprite, status);
+            }
+        } else {
+            if (!ownedRacket2SpritesCache.ContainsKey(sprite)) {
+                ownedRacket2SpritesCache.Add(sprite, status);
+            } else {
+                ownedRacket2SpritesCache.Remove(sprite);
+                ownedRacket2SpritesCache.Add(sprite, status);
             }
         }
     }
@@ -189,16 +201,20 @@ public class SettingsController : MonoBehaviour {
     public int spriteStatus(SpriteType spriteType, string sprite) {
         if (spriteType == SpriteType.PUCK) {
             return ownedPuckSpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
+        } else if (spriteType == SpriteType.RACKET1) {
+            return ownedRacket1SpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
         } else {
-            return ownedRacketSpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
+            return ownedRacket2SpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
         }
     }
 
     public string spriteKeyByStatus(SpriteType spriteType, int status) {
         if (spriteType == SpriteType.PUCK) {
             return ownedPuckSpritesCache.FirstOrDefault(x => x.Value == status).Key;
+        } else if (spriteType == SpriteType.RACKET1) {
+            return ownedRacket1SpritesCache.FirstOrDefault(x => x.Value == status).Key;
         } else {
-            return ownedRacketSpritesCache.FirstOrDefault(x => x.Value == status).Key;
+            return ownedRacket2SpritesCache.FirstOrDefault(x => x.Value == status).Key;
         }
     }
 

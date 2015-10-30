@@ -16,10 +16,13 @@ public class RollManager : MonoBehaviour {
             TimeUtility.saveLastRollTime();
             UI.Instance.showWinMenu(); //Refresh menu
         } else {
-            SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 100);
+            if (SettingsController.Instance.checkFunds(SettingsController.Instance.getCoins())) {
+                SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 100);
+            }
         }
 
         ObjectUtility.enableGameObject(rollFinishedParticles);
+        StartCoroutine(disableCoinImpactTimer());
 
         Sprite[] puckSprites = pucks;
         if (SettingsController.Instance.getPuckSprites().Length != 0) {
@@ -29,5 +32,10 @@ public class RollManager : MonoBehaviour {
         Sprite sprite = puckSprites[UnityEngine.Random.Range(0, puckSprites.Length - 1)];
         rng.GetComponent<Image>().sprite = sprite;
         SettingsController.Instance.setStatus(sprite.ToString(), 1);
+    }
+
+    IEnumerator disableCoinImpactTimer() {
+        yield return new WaitForSeconds(3f);
+        ObjectUtility.disableGameObject(rollFinishedParticles);
     }
 }

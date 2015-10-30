@@ -10,7 +10,7 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public SpriteType spriteType;
 
-    public int LOGO_COST = 1;
+    public int LOGO_COST = 10;
     public GameObject owned;
     public GameObject selectionSprite;
     public Sprite[] sprites;
@@ -46,26 +46,28 @@ public class SpriteSelectionManager : MonoBehaviour {
         }
     }
 
-    public void buySprite() {
+    public void buySprite(int sprite) {
         if (SettingsController.Instance.spriteStatus(spriteType, sprites[currentSprite].ToString()) == 0 && SettingsController.Instance.checkFunds(LOGO_COST)) {
             SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - LOGO_COST);
             SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 1);
             showSprite(currentSprite);
+        } else {
+            selectSprite(sprite);
         }
     }
 
     public void selectSprite(int sprite) {
         string exSprite = null;
         switch (sprite) {
-            case 1:
+            case 2:
             exSprite = SettingsController.Instance.selectedPuck.ToString();
             SettingsController.Instance.setPuck(sprites[currentSprite]);
             SettingsController.Instance.spriteKeyByStatus(spriteType, 2); break;
-            case 2:
+            case 3:
             exSprite = SettingsController.Instance.selectedPlayer1Racket.ToString();
             SettingsController.Instance.setPlayer1Racket(sprites[currentSprite]);
             SettingsController.Instance.spriteKeyByStatus(spriteType, 3); break;
-            case 3:
+            case 4:
             exSprite = SettingsController.Instance.selectedPlayer2Racket.ToString();
             SettingsController.Instance.setPlayer2Racket(sprites[currentSprite]);
             SettingsController.Instance.spriteKeyByStatus(spriteType, 4); break;
@@ -75,13 +77,13 @@ public class SpriteSelectionManager : MonoBehaviour {
         }
 
         switch (sprite) {
-            case 1: SettingsController.Instance.setPuck(sprites[currentSprite]);
+            case 2: SettingsController.Instance.setPuck(sprites[currentSprite]);
             SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 2);
             break;
-            case 2: SettingsController.Instance.setPlayer1Racket(sprites[currentSprite]);
+            case 3: SettingsController.Instance.setPlayer1Racket(sprites[currentSprite]);
             SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 3);
             break;
-            case 3: SettingsController.Instance.setPlayer2Racket(sprites[currentSprite]);
+            case 4: SettingsController.Instance.setPlayer2Racket(sprites[currentSprite]);
             SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 4);
             break;
         }

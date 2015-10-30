@@ -34,8 +34,12 @@ public class CameraShake : MonoBehaviour {
         //Count elapsed time (in seconds)
         float ElapsedTime = 0.0f;
         //Repeat for total shake time
-        long pattern = (long) (300 * shakeTime * (int) shakeType);
-        Vibration.Vibrate(pattern);
+
+        if (SettingsController.Instance.isVibrate) {
+            long pattern = (long) (300 * shakeTime * (int) shakeType);
+            Vibration.Vibrate(pattern);
+        }
+
         while (ElapsedTime < shakeTime * (int) shakeType) {
             //Pick random point on unit sphere
             Vector2 randomPoint2D = Random.insideUnitCircle * (int) shakeType;

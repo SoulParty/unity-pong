@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour {
     public GameObject player2InputHandler;
 
     public GameObject specialHitImpact;
+    public GameObject coinHitImpact;
 
     private bool isDoubleBallMode = false;
 
@@ -191,11 +192,22 @@ public class GameController : MonoBehaviour {
     public void explodeSpecial(Vector3 specialPosition) {
         specialHitImpact.transform.position = specialPosition;
         ObjectUtility.enableGameObject(specialHitImpact);
-        StartCoroutine(disableImpactTimer());
+        StartCoroutine(disableSpecialImpactTimer());
     }
 
-    IEnumerator disableImpactTimer() {
+    IEnumerator disableSpecialImpactTimer() {
         yield return new WaitForSeconds(impactLength);
         ObjectUtility.disableGameObject(specialHitImpact);
+    }
+
+    public void explodeCoin(Vector3 coinPosition) {
+        coinHitImpact.transform.position = coinPosition;
+        ObjectUtility.enableGameObject(coinHitImpact);
+        StartCoroutine(disableCoinImpactTimer());
+    }
+
+    IEnumerator disableCoinImpactTimer() {
+        yield return new WaitForSeconds(impactLength);
+        ObjectUtility.disableGameObject(coinHitImpact);
     }
 }

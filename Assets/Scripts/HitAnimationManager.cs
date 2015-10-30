@@ -3,10 +3,14 @@ using UnityEngine;
 
 public class HitAnimationManager : MonoBehaviour {
 
-    public Sprite[] hitSprites;
-    public float IMPACT_LENGTH = 0.75f;
+    public float IMPACT_LENGTH = 2f;
     public int direction;
 
+    public enum Orientation {
+        HORIZONTAL, VERTiCAL
+    }
+
+    public Orientation orientation = Orientation.HORIZONTAL;
     public GameObject hitImpactParticles;
 
     void OnCollisionEnter2D(Collision2D collision) {
@@ -22,7 +26,13 @@ public class HitAnimationManager : MonoBehaviour {
             } else {
                 CameraShake.Instance.cameraShake(CameraShakeType.WEAK);
             }
-            hitImpactParticles.transform.position = new Vector3(collision.gameObject.transform.position.x, hitImpactParticles.transform.position.y, 0);
+
+            if (orientation.Equals(Orientation.HORIZONTAL)) {
+                hitImpactParticles.transform.position = new Vector3(collision.gameObject.transform.position.x, hitImpactParticles.transform.position.y, 0);
+            } else {
+                hitImpactParticles.transform.position = new Vector3(hitImpactParticles.transform.position.x, collision.gameObject.transform.position.y, 0);
+            }
+
             ObjectUtility.enableGameObject(hitImpactParticles);
             StartCoroutine(disableImpactTimer());
         }

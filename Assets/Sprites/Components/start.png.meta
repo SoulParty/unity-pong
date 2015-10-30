@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1445805442
+timeCreated: 1446152935
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -143,6 +143,8 @@ TextureImporter:
     21300272: MIN
     21300274: ':'
     21300276: H
+    21300278: not_enough_coins
+    21300280: score
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -361,8 +363,8 @@ TextureImporter:
     - name: selected
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 1765
+        x: 1036
+        y: 1768
         width: 128
         height: 128
       alignment: 0
@@ -371,7 +373,7 @@ TextureImporter:
     - name: not-selected
       rect:
         serializedVersion: 2
-        x: 1146
+        x: 1152
         y: 1768
         width: 128
         height: 128
@@ -1281,8 +1283,8 @@ TextureImporter:
     - name: buy
       rect:
         serializedVersion: 2
-        x: 1306
-        y: 1764
+        x: 1303
+        y: 1767
         width: 128
         height: 128
       alignment: 0
@@ -1575,6 +1577,26 @@ TextureImporter:
         y: 735
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: not_enough_coins
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2027
+        width: 512
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: score
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1113
+        width: 256
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

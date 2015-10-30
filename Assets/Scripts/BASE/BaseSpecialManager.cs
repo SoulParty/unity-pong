@@ -26,9 +26,6 @@ public class BaseSpecialManager : TimedPowerUp {
                 case PowerUpType.SPEED:
                 SpecialController.Instance.makeBallFaster();
                 break;
-                case PowerUpType.COIN:
-                SpecialController.Instance.addCoin(1);
-                break;
                 case PowerUpType.POINT:
                 GameController.Instance.goalScored(GameController.Instance.getLastTouchedBy());
                 break;
@@ -53,7 +50,7 @@ public class BaseSpecialManager : TimedPowerUp {
                 SpecialController.Instance.addCoin(1);
                 break;
             }
-
+            GameController.Instance.explodeCoin(gameObject.transform.position);
         }
         SelfDestruct();
     }

@@ -15,6 +15,10 @@ public class UI : BaseUI {
     public GameObject tillFree;
     public GameObject timeLeft;
 
+    public GameObject notEnoughCoins;
+    public GameObject watchAd;
+    public GameObject roll;
+
     public GameObject coinTotal;
     public GameObject highScoreTotal;
     public GameObject bestScoreTotal;
@@ -104,23 +108,31 @@ public class UI : BaseUI {
 
     public void showWinMenu() {
         activate(winMenu);
+        activate(roll);
         display4CharNumber(bestScoreTotal, SettingsController.Instance.getMaxCombo());
-        if (SettingsController.Instance.getCoins() > 1) {
+        if (SettingsController.Instance.getCoins() > 100) {
             activate(paidRoll);
             deactivate(freeRoll);
-            if (TimeUtility.getIsFreeRollAvailable()) {
-                deactivate(paidRoll);
-                activate(freeRoll);
-            } else {
-                activate(tillFree);
-                TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
-                displayTime(passedSinceLastRoll.Hours, passedSinceLastRoll.Minutes);
-            }
         } else {
+            deactivate(roll);
             deactivate(paidRoll);
             deactivate(freeRoll);
-            //TODO Show not enough coins, watch ad
+            activate(notEnoughCoins);
+            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
         }
+        if (TimeUtility.getIsFreeRollAvailable()) {
+            deactivate(paidRoll);
+            activate(freeRoll);
+        } else {
+            activate(tillFree);
+            TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
+            displayTime(passedSinceLastRoll.Hours, passedSinceLastRoll.Minutes);
+        }
+    }
+
+    public void enoughCoins() {
+        ObjectUtility.disableGameObject(notEnoughCoins);
+        ObjectUtility.disableGameObject(watchAd);
     }
 
     public IEnumerator cleanUp() {

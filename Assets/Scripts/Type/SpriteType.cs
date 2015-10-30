@@ -1,3 +1,3 @@
-public enum SpriteType {
-    PUCK, RACKET1, RACKET2
+public enum SpriteType : int {
+    PUCK = 1, RACKET1 = 2, RACKET2 = 3
 }

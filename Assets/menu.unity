@@ -249,7 +249,7 @@ GameObject:
   - 114: {fileID: 189004280}
   - 114: {fileID: 189004279}
   m_Layer: 5
-  m_Name: owned
+  m_Name: owned-ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,14 +311,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964143451}
+      - m_Target: {fileID: 1413638804}
         m_MethodName: buySprite
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1723,6 +1723,56 @@ RectTransform:
   m_AnchoredPosition: {x: 335, y: -304}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
+--- !u!1 &481483845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 481483847}
+  - 114: {fileID: 481483846}
+  m_Layer: 0
+  m_Name: Racket2Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481483846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481483845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteType: 3
+  LOGO_COST: 10
+  owned: {fileID: 1189690886}
+  selectionSprite: {fileID: 716048438}
+  sprites: []
+  selections:
+  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+--- !u!4 &481483847
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481483845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 681.815918, y: 310.378662, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &507138266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2088,7 @@ GameObject:
   - 114: {fileID: 655426006}
   - 114: {fileID: 655426005}
   m_Layer: 5
-  m_Name: sprite
+  m_Name: sprite-ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2100,14 +2150,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964143451}
-        m_MethodName: selectSprite
+      - m_Target: {fileID: 1413638804}
+        m_MethodName: buySprite
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2153,7 +2203,7 @@ GameObject:
   - 114: {fileID: 716048441}
   - 114: {fileID: 716048440}
   m_Layer: 5
-  m_Name: sprite
+  m_Name: sprite-p2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2215,14 +2265,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1823413436}
-        m_MethodName: selectSprite
+      - m_Target: {fileID: 481483846}
+        m_MethodName: buySprite
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2330,7 +2380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721068023}
+      - m_Target: {fileID: 1930552108}
         m_MethodName: prevSprite
         m_Mode: 1
         m_Arguments:
@@ -2428,7 +2478,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964143451}
+      - m_Target: {fileID: 1413638804}
         m_MethodName: prevSprite
         m_Mode: 1
         m_Arguments:
@@ -2663,14 +2713,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964143451}
-        m_MethodName: selectSprite
+      - m_Target: {fileID: 1413638804}
+        m_MethodName: buySprite
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2815,7 +2865,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 964143450}
-  - 114: {fileID: 964143451}
   m_Layer: 5
   m_Name: PuckSelection
   m_TagString: Untagged
@@ -2843,28 +2892,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1778, y: -2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &964143451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 964143449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteType: 0
-  LOGO_COST: 1
-  owned: {fileID: 189004277}
-  selectionSprite: {fileID: 655426003}
-  sprites: []
-  selections:
-  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
 --- !u!1 &1034887116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2966,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1823413436}
+      - m_Target: {fileID: 481483846}
         m_MethodName: nextSprite
         m_Mode: 1
         m_Arguments:
@@ -3054,7 +3081,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1823413436}
+      - m_Target: {fileID: 481483846}
         m_MethodName: prevSprite
         m_Mode: 1
         m_Arguments:
@@ -3533,7 +3560,7 @@ GameObject:
   - 114: {fileID: 1186720431}
   - 114: {fileID: 1186720430}
   m_Layer: 5
-  m_Name: sprite
+  m_Name: sprite-p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3595,14 +3622,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721068023}
-        m_MethodName: selectSprite
+      - m_Target: {fileID: 1930552108}
+        m_MethodName: buySprite
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3648,7 +3675,7 @@ GameObject:
   - 114: {fileID: 1189690889}
   - 114: {fileID: 1189690888}
   m_Layer: 5
-  m_Name: owned
+  m_Name: owned-p2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3710,14 +3737,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1823413436}
+      - m_Target: {fileID: 481483846}
         m_MethodName: buySprite
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3940,7 +3967,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964143451}
+      - m_Target: {fileID: 1413638804}
         m_MethodName: nextSprite
         m_Mode: 1
         m_Arguments:
@@ -3981,6 +4008,56 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401220182}
+--- !u!1 &1413638803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1413638805}
+  - 114: {fileID: 1413638804}
+  m_Layer: 0
+  m_Name: PuckSelection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1413638804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413638803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteType: 1
+  LOGO_COST: 10
+  owned: {fileID: 189004277}
+  selectionSprite: {fileID: 655426003}
+  sprites: []
+  selections:
+  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+--- !u!4 &1413638805
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413638803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 681.815918, y: 310.378662, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &1476756314
 GameObject:
   m_ObjectHideFlags: 0
@@ -4314,7 +4391,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721068023}
+      - m_Target: {fileID: 1930552108}
         m_MethodName: nextSprite
         m_Mode: 1
         m_Arguments:
@@ -5577,7 +5654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles1: {fileID: 206766829}
-  particles2: {fileID: 1640673565}
 --- !u!1 &1666167717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5701,7 +5777,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1721068022}
-  - 114: {fileID: 1721068023}
   m_Layer: 5
   m_Name: Racket1Selection
   m_TagString: Untagged
@@ -5729,28 +5804,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1778, y: -263}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1721068023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721068021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteType: 1
-  LOGO_COST: 1
-  owned: {fileID: 1873995813}
-  selectionSprite: {fileID: 1186720428}
-  sprites: []
-  selections:
-  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
 --- !u!1 &1738167473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6562,7 +6615,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1823413435}
-  - 114: {fileID: 1823413436}
   m_Layer: 5
   m_Name: Racket2Selection
   m_TagString: Untagged
@@ -6590,28 +6642,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1778, y: -545}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1823413436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1823413434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteType: 2
-  LOGO_COST: 1
-  owned: {fileID: 1189690886}
-  selectionSprite: {fileID: 716048438}
-  sprites: []
-  selections:
-  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
-  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
 --- !u!1001 &1842371444
 Prefab:
   m_ObjectHideFlags: 0
@@ -6761,7 +6791,7 @@ GameObject:
   - 114: {fileID: 1873995816}
   - 114: {fileID: 1873995815}
   m_Layer: 5
-  m_Name: owned
+  m_Name: owned-p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6823,14 +6853,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721068023}
+      - m_Target: {fileID: 1930552108}
         m_MethodName: buySprite
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6864,6 +6894,56 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1873995813}
+--- !u!1 &1930552107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1930552109}
+  - 114: {fileID: 1930552108}
+  m_Layer: 0
+  m_Name: Racket1Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1930552108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930552107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89199e02668e4ef4b1b2d6a1e94b502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteType: 2
+  LOGO_COST: 10
+  owned: {fileID: 1873995813}
+  selectionSprite: {fileID: 1186720428}
+  sprites: []
+  selections:
+  - {fileID: 21300218, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+--- !u!4 &1930552109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930552107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 681.815918, y: 310.378662, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1962253824
 GameObject:
   m_ObjectHideFlags: 0
