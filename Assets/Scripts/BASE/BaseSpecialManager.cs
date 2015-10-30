@@ -57,7 +57,9 @@ public class BaseSpecialManager : TimedPowerUp {
 
     public override void setUpPowerUp(PowerUpType powerUpType) {
         float arenaHalfLength = GameController.Instance.ARENA_HALF_LENGTH;
-        gameObject.transform.position = new Vector3(0, Random.Range(-arenaHalfLength, arenaHalfLength), 0);
+        gameObject.transform.position = new Vector3(0,
+        RandomUtility.randomNegativeOrPositive() * Random.Range(100, arenaHalfLength),
+        0);
         switch (powerUpType) {
             case PowerUpType.HOMING:
             gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[8];

@@ -8,6 +8,7 @@ public class RacketManager : MonoBehaviour, SpriteChangeable {
     private bool isShielded = false;
 
     public GameObject logo;
+    public GameObject shield;
 
     public void makeRacketLonger() {
         if (!enlarged) {
@@ -27,9 +28,9 @@ public class RacketManager : MonoBehaviour, SpriteChangeable {
 
     public void toggleShield() {
         if (isShielded) {
-            ObjectUtility.disableGameObject(ObjectUtility.findChild(gameObject, "Shield"));
+            ObjectUtility.disableGameObject(shield);
         } else {
-            ObjectUtility.enableGameObject(ObjectUtility.findChild(gameObject, "Shield"));
+            ObjectUtility.enableGameObject(shield);
         }
         isShielded = !isShielded;
     }
