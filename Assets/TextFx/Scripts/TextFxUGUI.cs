@@ -108,14 +108,14 @@ namespace TextFx
 
 		[HideInInspector, SerializeField]
 		string m_cachedText = string.Empty;
-		[SerializeField]
+		[HideInInspector, SerializeField]
 		TextGenerationSettings m_cachedTextSettings;
 		[HideInInspector, SerializeField]
 		List<UIVertex> m_cachedVerts;
 
 		public string Text { get { return m_cachedText; } }
 
-		[SerializeField]
+		[HideInInspector, SerializeField]
 		Vector3[] m_forced_state_verts;		// Verts stored for a one time rendering call
 		[HideInInspector, SerializeField]
 		Color[] m_forced_state_cols;		// Verts stored for a one time rendering call
@@ -231,7 +231,7 @@ namespace TextFx
 				UIVertex new_vert;
 
 				// Add each cached vert into the VBO buffer. Verts seem to need to be added one by one using Add(), can't just copy the list over
-                for(int idx=0; idx < m_cachedVerts.Count; idx++)
+				for(int idx=0; idx < m_cachedVerts.Count; idx++)
 				{
 					vbo.Add(m_cachedVerts[idx]);
 
@@ -242,7 +242,7 @@ namespace TextFx
 						new_vert.color = m_animation_manager.MeshColours[idx];
 						vbo[vbo.Count - 1] = new_vert;
 
-                        m_forced_state_verts[idx] = m_animation_manager.MeshVerts[idx];
+						m_forced_state_verts[idx] = m_animation_manager.MeshVerts[idx];
 						m_forced_state_cols[idx] = m_animation_manager.MeshColours[idx];
 					}
 					else if(m_forced_state_verts != null && idx < m_forced_state_verts.Length)

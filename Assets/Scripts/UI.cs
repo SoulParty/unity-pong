@@ -45,6 +45,12 @@ public class UI : BaseUI {
         Instance = this;
     }
 
+    public void Start() {
+        if (SettingsController.Instance != null) {
+            showTotals();
+        }
+    }
+
     public void showTotals() {
         display4CharNumber(coinTotal, SettingsController.Instance.getCoins());
         display4CharNumber(highScoreTotal, ScoreController.Instance.getCombo());
@@ -63,14 +69,14 @@ public class UI : BaseUI {
             combo = 9999; //TODO move out of here
         }
         highScoreAnimation.transform.position = new Vector3(28, -214, 0);
-        highScoreAnimation.GetComponent<TextFxNative>().SetText("HIGH SCORE! " + combo.ToString());
-        highScoreAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
+        highScoreAnimation.GetComponent<DynamicText>().SetText("HIGH SCORE! " + combo.ToString());
+        highScoreAnimation.GetComponent<Animator>().Play("HighScoreIn");
         StartCoroutine(cleanUp());
     }
 
     public void showComboInARow(int combo) {
-        comboAnimation.GetComponent<TextFxNative>().SetText(combo.ToString() + " IN A ROW");
-        comboAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
+        comboAnimation.GetComponent<DynamicText>().SetText(combo.ToString() + " IN A ROW");
+        comboAnimation.GetComponent<Animator>().Play("ComboIn");
     }
 
     public void showWinner(GameObject winner) {
@@ -78,9 +84,7 @@ public class UI : BaseUI {
         if (winner.name.Equals("RacketRight")) {
             direction = -1;
         }
-        winnerAnimation.transform.position = new Vector3(direction * 500, 400, 0);
-        winnerAnimation.GetComponent<TextFxNative>().SetText("WINNER");
-        winnerAnimation.GetComponent<TextFxNative>().AnimationManager.PlayAnimation();
+        winnerAnimation.transform.position = new Vector3(direction * 260, 35, 0);
         StartCoroutine(cleanUp());
 
     }
@@ -121,7 +125,9 @@ public class UI : BaseUI {
             StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
         }
         if (TimeUtility.getIsFreeRollAvailable()) {
+            deactivate(notEnoughCoins);
             deactivate(paidRoll);
+            activate(roll);
             activate(freeRoll);
         } else {
             activate(tillFree);
@@ -137,8 +143,7 @@ public class UI : BaseUI {
 
     public IEnumerator cleanUp() {
         yield return new WaitForSeconds(highScoreAnimationLength);
-        winnerAnimation.GetComponent<TextFxNative>().SetText("");
-        highScoreAnimation.GetComponent<TextFxNative>().SetText("");
+        highScoreAnimation.GetComponent<DynamicText>().SetText("");
     }
 
     public Sprite toImage(char symbol) {

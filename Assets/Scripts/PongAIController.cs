@@ -93,7 +93,7 @@ public class PongAIController : MonoBehaviour {
             }
             Vector2 vector = new Vector2(aIPlayer.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
 //            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
-            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(vector, position, Time.fixedDeltaTime));
+            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(vector, position, Time.fixedDeltaTime / 10));
         }
     }
 

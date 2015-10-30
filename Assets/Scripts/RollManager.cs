@@ -15,12 +15,16 @@ public class RollManager : MonoBehaviour {
         if (TimeUtility.getIsFreeRollAvailable()) {
             TimeUtility.saveLastRollTime();
             UI.Instance.showWinMenu(); //Refresh menu
+            winPrize();
         } else {
-            if (SettingsController.Instance.checkFunds(SettingsController.Instance.getCoins())) {
+            if (SettingsController.Instance.checkFunds(100)) {
                 SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 100);
+                winPrize();
             }
         }
+    }
 
+    private void winPrize() {
         ObjectUtility.enableGameObject(rollFinishedParticles);
         StartCoroutine(disableCoinImpactTimer());
 

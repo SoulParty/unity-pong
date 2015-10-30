@@ -49,10 +49,6 @@ public class SettingsController : MonoBehaviour {
 
         maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
         coins = PlayerPrefs.GetInt(Const.COINS);
-
-        if (UI.Instance != null) {
-            UI.Instance.showTotals();
-        }
     }
 
     public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
@@ -75,6 +71,9 @@ public class SettingsController : MonoBehaviour {
     }
 
     public void setCoins(int coins) {
+        if (coins <= 0) {
+            coins = 0;
+        }
         PlayerPrefs.SetInt(Const.COINS, coins);
         this.coins = coins;
         if (UI.Instance != null) {
