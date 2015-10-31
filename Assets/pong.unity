@@ -1324,6 +1324,7 @@ GameObject:
   - 198: {fileID: 160855079}
   - 199: {fileID: 160855078}
   - 114: {fileID: 160855077}
+  - 58: {fileID: 160855080}
   m_Layer: 11
   m_Name: ShieldFX
   m_TagString: Untagged
@@ -2427,6 +2428,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!58 &160855080
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160855075}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 180
 --- !u!1 &162895756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8414,6 +8428,7 @@ GameObject:
   - 198: {fileID: 1078059998}
   - 199: {fileID: 1078059997}
   - 114: {fileID: 1078059996}
+  - 58: {fileID: 1078059999}
   m_Layer: 11
   m_Name: ShieldFX
   m_TagString: Untagged
@@ -9517,6 +9532,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!58 &1078059999
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078059994}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 180
 --- !u!1 &1093896400
 GameObject:
   m_ObjectHideFlags: 0
@@ -12553,7 +12581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277693948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -114.725243, y: -28.3516464, z: -199.973511}
+  m_LocalPosition: {x: -115.130768, y: -27.7006283, z: -199.960312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 370447024}

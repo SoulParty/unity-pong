@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1446152935
+timeCreated: 1446303006
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -145,6 +145,10 @@ TextureImporter:
     21300276: H
     21300278: not_enough_coins
     21300280: score
+    21300282: vibrate
+    21300284: block
+    21300286: p1
+    21300288: p2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -193,20 +197,20 @@ TextureImporter:
     - name: 1player
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1723
+        x: 4
+        y: 1699
         width: 512
-        height: 256
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 2player
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1506
+        x: 3
+        y: 1575
         width: 512
-        height: 256
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1597,6 +1601,46 @@ TextureImporter:
         y: 1113
         width: 256
         height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vibrate
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1946
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: block
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1826
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: p1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1691
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: p2
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1692
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
