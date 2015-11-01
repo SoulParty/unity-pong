@@ -41,26 +41,23 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
             PongAIController.Instance.wildBall++;
         }
 
-        if (collision.gameObject.name == "RacketLeft") {
+        if (collision.gameObject.name == "RacketRight") {
             // Calculate hit Factor
             float y = hitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.y);
             // Calculate direction, make length=1 via .normalized
-            Vector2 dir = new Vector2(1, y).normalized;
+            Vector2 dir = new Vector2(-1, y).normalized;
 
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;
             hitRacket = true;
             if (SettingsController.Instance.isVersusAI && y != 0) {
                 PongAIController.Instance.isFollowBall = false;
-                //Debug.Log("Angle (orig)" + Vector2.Angle(new Vector2(1, 0), dir));
+
                 double angle = Math.Abs(90 - Vector2.Angle(new Vector2(1, 0), dir));
-                //                angle = MathUtility.angleSanityCheck(angle);
                 y = y * collision.collider.bounds.size.y;
                 if (y > 0) {
-                    //Debug.Log("Angle " + angle);
                     PongAIController.Instance.calculateBallCrossPoint(1, MathUtility.convertToRadians(angle), y);
                 } else if (y < 0) {
-                    //Debug.Log("Angle " + angle);
                     PongAIController.Instance.calculateBallCrossPoint(-1, MathUtility.convertToRadians(angle), y);
                 } else {
                     PongAIController.Instance.calculateBallCrossPoint(0, MathUtility.convertToRadians(angle), y);
@@ -73,12 +70,12 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
         }
 
         // Hit the right Racket?
-        if (collision.gameObject.name == "RacketRight") {
+        if (collision.gameObject.name == "RacketLeft") {
             // Calculate hit Factor
             float y = hitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.y);
 
             // Calculate direction, make length=1 via .normalized
-            Vector2 dir = new Vector2(-1, y).normalized;
+            Vector2 dir = new Vector2(1, y).normalized;
 
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;

@@ -37,7 +37,17 @@ public class SettingsController : MonoBehaviour {
     public Difficulty difficulty = Difficulty.INSANE;
     public MultiplayerType multiplayerType = MultiplayerType.LOCAL;
 
-    public bool isVibrate = false;
+    [SerializeField]
+    private bool _isVibrate;
+    public bool isVibrate {
+        get {
+            return _isVibrate;
+        }
+        set {
+            _isVibrate = value;
+            PlayerPrefs.SetInt(Const.VIBRATE, Convert.ToInt32(value));
+        }
+    }
 
     public SettingsController() {
         Instance = this;
@@ -49,6 +59,12 @@ public class SettingsController : MonoBehaviour {
 
         maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
         coins = PlayerPrefs.GetInt(Const.COINS);
+
+    }
+
+    public void Awake () {
+        DontDestroyOnLoad(gameObject);
+        isVibrate = PlayerPrefs.GetInt(Const.VIBRATE) == 0 ? false : true;
     }
 
     public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
@@ -56,10 +72,6 @@ public class SettingsController : MonoBehaviour {
             yield return null;
         }
         ObjectUtility.enableGameObject(adButton);
-    }
-
-    public void Awake () {
-        DontDestroyOnLoad(gameObject);
     }
 
     public int getMaxCombo() {

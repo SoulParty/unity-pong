@@ -19,6 +19,10 @@ public class UI : BaseUI {
     public GameObject watchAd;
     public GameObject roll;
 
+    public GameObject p1;
+    public GameObject p2;
+    public GameObject ai;
+
     public GameObject coinTotal;
     public GameObject highScoreTotal;
     public GameObject bestScoreTotal;
@@ -48,6 +52,7 @@ public class UI : BaseUI {
     public void Start() {
         if (SettingsController.Instance != null) {
             showTotals();
+            showPlayers();
         }
     }
 
@@ -205,6 +210,22 @@ public class UI : BaseUI {
 
     public void refreshScore(int score) {
         display4CharNumber(highScoreTotal, score);
+    }
+
+    public void showPlayers() {
+        if (SettingsController.Instance.isVersusAI) {
+            activate(ai);
+            deactivate(p2);
+        }
+        StartCoroutine(hidePlayers());
+    }
+
+    public IEnumerator hidePlayers() {
+        yield return new WaitForSeconds(15);
+        deactivate(ai);
+        deactivate(p1);
+        deactivate(p2);
+        yield break;
     }
 
 }

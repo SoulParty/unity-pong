@@ -105,7 +105,7 @@ public class BaseSpecialManager : TimedPowerUp {
             break;
             case PowerUpType.COIN:
             logo.GetComponent<SpriteRenderer>().sprite = logoSprites[10];
-            gameObject.transform.position += new Vector3(RandomUtility.randomNegativeOrPositive() * GameController.DISTANCE_FROM_GOAL, 0, 0);
+            gameObject.transform.position += new Vector3(RandomUtility.randomNegativeOrPositive() * GameController.Instance.DISTANCE_FROM_GOAL, 0, 0);
             particles.GetComponent<ParticleSystem>().startColor = coin;
             GetComponent<SpriteRenderer>().sprite = ballSprites[3];
             break;

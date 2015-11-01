@@ -87,6 +87,162 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &63831849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 63831850}
+  - 222: {fileID: 63831852}
+  - 114: {fileID: 63831851}
+  m_Layer: 5
+  m_Name: Text 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &63831850
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63831849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
+  m_Children: []
+  m_Father: {fileID: 1565396599}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 383, y: -117}
+  m_SizeDelta: {x: 600, y: 1000}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &63831851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63831849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 15cc0f40ff265b146a7e56930fd003d1, type: 2}
+  m_Color: {r: 1, g: .666666687, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+    m_FontSize: 41
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Andrey Vasiliev
+
+    Pulmrose Fern
+
+    Mike Ashley
+
+    Outlier Solutions
+
+    Ealancheliyan S
+
+    Jack Knoebber
+
+    M. Turan Ercan
+
+    Sergey Demushkin
+
+    Zille Sophie Bostinius
+
+    Jonah Bethlehem
+
+    Michele Zamparo
+
+    Lucid Formation
+
+    Henry Ryder'
+--- !u!222 &63831852
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63831849}
+--- !u!1 &73460861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 73460862}
+  - 222: {fileID: 73460867}
+  - 114: {fileID: 73460866}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &73460862
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73460861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
+  m_Children: []
+  m_Father: {fileID: 1565396599}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 113, y: 124}
+  m_SizeDelta: {x: 900, y: 300}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &73460866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73460861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 15cc0f40ff265b146a7e56930fd003d1, type: 2}
+  m_Color: {r: 1, g: .666666687, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+    m_FontSize: 41
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Game developed \nby KiTech\nicons from noun.com under CC3, credits below:"
+--- !u!222 &73460867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73460861}
 --- !u!1 &122760584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &507138266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2939,7 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1565654300}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 549, y: -480}
@@ -4234,6 +4390,230 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476756314}
+--- !u!1 &1482621866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1482621870}
+  - 23: {fileID: 1482621869}
+  - 114: {fileID: 1482621868}
+  - 33: {fileID: 1482621867}
+  m_Layer: 0
+  m_Name: Dynamic Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &1482621867
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482621866}
+  m_Mesh: {fileID: 0}
+--- !u!114 &1482621868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482621866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 102134242, guid: dbf2cb1c3153ed044bbab71e267498cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1138225043}
+  offsetZ: 0
+  size: 40
+  lineSpacing: 1.25
+  letterSpacing: 0
+  anchor: 9
+  alignment: 0
+  tabSize: 1
+  fontStyle: 0
+  font: {fileID: 12800000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+  autoSetFontMaterial: 1
+  color: {r: 0, g: 0, b: 0, a: 1}
+  baselineRefChar: x
+  metricsRefChars: xgjpflXOQ09
+  pixelSnapTransformPos: 1
+  minFontPxSize: 6
+  maxFontPxSize: 150
+  autoFaceCam: 0
+  text: 
+  serializedText: 'Icons
+
+
+    Simon Child
+
+    George Agpoon
+
+    Claudio Gomboli
+
+'
+  version: 1060
+  suppressDebugLogs: 0
+--- !u!23 &1482621869
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482621866}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!4 &1482621870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482621866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 471.86438, y: 265.423737, z: 0}
+  m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!1 &1552876536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1552876537}
+  - 222: {fileID: 1552876539}
+  - 114: {fileID: 1552876538}
+  m_Layer: 5
+  m_Name: Text 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1552876537
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552876536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
+  m_Children: []
+  m_Father: {fileID: 1565396599}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 24, y: -119}
+  m_SizeDelta: {x: 600, y: 1000}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1552876538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552876536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 15cc0f40ff265b146a7e56930fd003d1, type: 2}
+  m_Color: {r: 1, g: .666666687, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+    m_FontSize: 41
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Simon Child
+
+    George Agpoon
+
+    Claudio Gomboli
+
+    EliRatus
+
+    Erik Wagner
+
+    Tns
+
+    Hernan D. Shlosman
+
+    Megan Mitchell
+
+    Sergey Demushkin
+
+    Anthony Hamill
+
+    Jake Schirmer
+
+    Martin Lebret
+
+    Alejandro Cappelan'
+--- !u!222 &1552876539
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552876536}
+--- !u!1 &1565396598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1565396599}
+  m_Layer: 5
+  m_Name: Credits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1565396599
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565396598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.999855, y: -98.4310455, z: 0}
+  m_LocalScale: {x: 2.03389835, y: 2.03389835, z: 2.03389835}
+  m_Children:
+  - {fileID: 73460862}
+  - {fileID: 2037094103}
+  - {fileID: 63831850}
+  - {fileID: 1552876537}
+  m_Father: {fileID: 1565654300}
+  m_RootOrder: 14
 --- !u!1 &1565654299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4275,9 +4655,10 @@ RectTransform:
   - {fileID: 451184843}
   - {fileID: 1865161753}
   - {fileID: 916626216}
-  - {fileID: 1842371445}
   - {fileID: 940690711}
+  - {fileID: 1842371445}
   - {fileID: 1131886602}
+  - {fileID: 1565396599}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -4353,6 +4734,7 @@ MonoBehaviour:
   multiPlayer: {fileID: 122760584}
   aISelection: {fileID: 451184842}
   spendCoins: {fileID: 1865161752}
+  credits: {fileID: 1565396598}
   disabled: {fileID: 2113770095}
 --- !u!114 &1565654305
 MonoBehaviour:
@@ -6746,7 +7128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22436678, guid: a47ce072d428148b8a690a60f288abb2, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 22436678, guid: a47ce072d428148b8a690a60f288abb2, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -6830,7 +7212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1865161753
 Transform:
   m_ObjectHideFlags: 0
@@ -7046,7 +7428,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -533, y: 207}
+  m_AnchoredPosition: {x: -520, y: 207}
   m_SizeDelta: {x: 232, y: 58}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1962253826
@@ -7251,6 +7633,96 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1985812176}
+--- !u!1 &2037094102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2037094103}
+  - 222: {fileID: 2037094105}
+  - 114: {fileID: 2037094104}
+  m_Layer: 5
+  m_Name: Text 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2037094103
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037094102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
+  m_Children: []
+  m_Father: {fileID: 1565396599}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 210, y: -120}
+  m_SizeDelta: {x: 600, y: 1000}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2037094104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037094102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 15cc0f40ff265b146a7e56930fd003d1, type: 2}
+  m_Color: {r: 1, g: .666666687, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cff6246d8c05cdd429e946e7b25bf44a, type: 3}
+    m_FontSize: 41
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Alex Waza
+
+    Guilherme Simoes
+
+    Zoe Austin
+
+    Natan Corrado
+
+    Alban Champliau
+
+    Sergey Demushkin
+
+    Arthur Shlain
+
+    Micheal Wohlwend
+
+    Ervin Bolat
+
+    Creative Stall
+
+    Barbushwillanswer
+
+    Anbileru Adelaru
+
+    Louis Dawson'
+--- !u!222 &2037094105
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037094102}
 --- !u!1 &2040480758
 GameObject:
   m_ObjectHideFlags: 0

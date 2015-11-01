@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1446303006
+timeCreated: 1446409210
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -149,6 +149,7 @@ TextureImporter:
     21300284: block
     21300286: p1
     21300288: p2
+    21300290: AI
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1639,6 +1640,16 @@ TextureImporter:
         serializedVersion: 2
         x: 1180
         y: 1692
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AI
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1690
         width: 128
         height: 64
       alignment: 0

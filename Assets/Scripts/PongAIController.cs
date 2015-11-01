@@ -62,7 +62,7 @@ public class PongAIController : MonoBehaviour {
         arenaWidth = GameController.Instance.DISTANCE_BETWEEN_WALLS; //Wall width
         halfArena = (arenaWidth / 2);
         nearestBall = ball;
-        distanceFromGoal = GameController.DISTANCE_FROM_GOAL;
+        distanceFromGoal = GameController.Instance.DISTANCE_FROM_GOAL;
     }
 
     public void FixedUpdate () {
@@ -98,8 +98,7 @@ public class PongAIController : MonoBehaviour {
     }
 
     public void calculateBallCrossPoint(int direction, double hitAngle, double hitPosition) {
-
-        double xTotal = MathUtility.roundToNearestTenth(distanceFromGoal - playerOne.transform.position.x);
+		double xTotal = Math.Abs(MathUtility.roundToNearestTenth(distanceFromGoal - playerOne.transform.position.x));
         int scenario = determineScenario(direction, xTotal, hitAngle, hitPosition);
         switch (scenario) {
             case 1:
@@ -179,30 +178,30 @@ public class PongAIController : MonoBehaviour {
         if (direction == 1 && positionY > 0) {
             double y = positionY + (xTotal / Math.Tan(hitAngle));
             if (y > halfArena) {
-                return 2;
+                return 2;//+
             } else {
-                return 3;
+                return 3; //++
             }
         } else if (direction == 1 && positionY <= 0) {
             double y = positionY + (xTotal / Math.Tan(hitAngle));
             if (y > halfArena) {
-                return 6;
+                return 6;//+
             } else {
-                return 3;
+                return 3;//+
             }
         } else if (direction == -1 && positionY < 0) {
             double y = positionY - (xTotal / Math.Tan(1.57 - hitAngle));
             if (y < -halfArena) {
-                return 4;
+                return 4;//+
             } else {
                 return 1;
             }
         } else if (direction == -1 && positionY >= 0) {
             double y = positionY - (xTotal / Math.Tan(hitAngle));
             if (y < -halfArena) {
-                return 7;
+                return 7; //+
             } else {
-                return 8;
+                return 8;//+
             }
         } else if (direction == 0) {
             return 0;

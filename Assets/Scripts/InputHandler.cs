@@ -11,10 +11,10 @@ public class InputHandler : MonoBehaviour {
         #if UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
             foreach (Touch touch in Input.touches) {
                 Vector3 point = mainCamera.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 0));
-                if (point.x < 0) {
+                if (point.x > 0) {
                     player1.GetComponent<PlayerController>().handleInput(point);
                 }
-                if (point.x > 0 && !SettingsController.Instance.isVersusAI) {
+                if (point.x < 0 && !SettingsController.Instance.isVersusAI) {
                     player2.GetComponent<PlayerController>().handleInput(point);
                 }
             }

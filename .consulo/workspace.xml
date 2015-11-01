@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/Totem.prefab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/Totem.prefab.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/metadata/2e/2e38e6c7007a74281b28e577d0d1171f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/metadata/2e/2e38e6c7007a74281b28e577d0d1171f.info" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/Arena-Spritesheet.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/dice-spritesheet.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/icon.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/start-bg.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/start.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202.info" afterPath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202" afterPath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202" />
@@ -37,7 +38,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1b/1b6f6b4520da0a54dbbf54076ba6fb9f" afterPath="$PROJECT_DIR$/Library/metadata/1b/1b6f6b4520da0a54dbbf54076ba6fb9f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1b/1bb35c780ab2c5344b2b535d0239600d.info" afterPath="$PROJECT_DIR$/Library/metadata/1b/1bb35c780ab2c5344b2b535d0239600d.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1b/1bb35c780ab2c5344b2b535d0239600d" afterPath="$PROJECT_DIR$/Library/metadata/1b/1bb35c780ab2c5344b2b535d0239600d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1f/1fca15dabe7224e05ad123732f23c795.info" afterPath="$PROJECT_DIR$/Library/metadata/1f/1fca15dabe7224e05ad123732f23c795.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1f/1ffceaea412874348886852b151b23ff.info" afterPath="$PROJECT_DIR$/Library/metadata/1f/1ffceaea412874348886852b151b23ff.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/1f/1ffceaea412874348886852b151b23ff" afterPath="$PROJECT_DIR$/Library/metadata/1f/1ffceaea412874348886852b151b23ff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/28/28cc4fdc28bd8164f8e0a302fc0814c8.info" afterPath="$PROJECT_DIR$/Library/metadata/28/28cc4fdc28bd8164f8e0a302fc0814c8.info" />
@@ -50,16 +50,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/34487ea2f31aa17489a59b03570509a2" afterPath="$PROJECT_DIR$/Library/metadata/34/34487ea2f31aa17489a59b03570509a2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012.info" afterPath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012" afterPath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/35/350c38be37aad44b6983da37a55fd612" afterPath="$PROJECT_DIR$/Library/metadata/35/350c38be37aad44b6983da37a55fd612" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/348b9784076194814b6e1074ed9758c3" afterPath="$PROJECT_DIR$/Library/metadata/34/348b9784076194814b6e1074ed9758c3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/36/3660348e7ad0c47d69c948a293b15e3a" afterPath="$PROJECT_DIR$/Library/metadata/36/3660348e7ad0c47d69c948a293b15e3a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0.info" afterPath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0" afterPath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/398da4b026da3fd4dbe04dfc2ba43f09" afterPath="$PROJECT_DIR$/Library/metadata/39/398da4b026da3fd4dbe04dfc2ba43f09" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/3d/3d70761f9ae377945a3aad2a3936df5e" afterPath="$PROJECT_DIR$/Library/metadata/3d/3d70761f9ae377945a3aad2a3936df5e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/42/421266e7da5fc4309bd0a7ae1b1bbc06" afterPath="$PROJECT_DIR$/Library/metadata/42/421266e7da5fc4309bd0a7ae1b1bbc06" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/49/49c44a6d8e04bc5458e75bc7ab71e16f.info" afterPath="$PROJECT_DIR$/Library/metadata/49/49c44a6d8e04bc5458e75bc7ab71e16f.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/49/49c44a6d8e04bc5458e75bc7ab71e16f" afterPath="$PROJECT_DIR$/Library/metadata/49/49c44a6d8e04bc5458e75bc7ab71e16f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4b/4be0e8aa5e8747240af836ab4904c4a5" afterPath="$PROJECT_DIR$/Library/metadata/4b/4be0e8aa5e8747240af836ab4904c4a5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207.info" afterPath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207" afterPath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fa05759ab0a7473db1d080271237ed0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/52/523ba60c2550741258886434b087f792.info" afterPath="$PROJECT_DIR$/Library/metadata/52/523ba60c2550741258886434b087f792.info" />
@@ -88,8 +91,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6c/6cfb04d83be10e549887ebb5340a46f9" afterPath="$PROJECT_DIR$/Library/metadata/6c/6cfb04d83be10e549887ebb5340a46f9" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b.info" afterPath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b" afterPath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6e/6e810d21561604f559cc636c388a6415.info" afterPath="$PROJECT_DIR$/Library/metadata/6e/6e810d21561604f559cc636c388a6415.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6e/6e810d21561604f559cc636c388a6415" afterPath="$PROJECT_DIR$/Library/metadata/6e/6e810d21561604f559cc636c388a6415" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e.info" afterPath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e" afterPath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" afterPath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244.info" afterPath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244" afterPath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d.info" afterPath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d.info" />
@@ -105,6 +111,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8037018a43c73ce40960ff49fdbf8bfa" afterPath="$PROJECT_DIR$/Library/metadata/80/8037018a43c73ce40960ff49fdbf8bfa" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c.info" afterPath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c" afterPath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/83/83af5924bd91c4dca813d152b9e0eab4" afterPath="$PROJECT_DIR$/Library/metadata/83/83af5924bd91c4dca813d152b9e0eab4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/89/89b0fbc47c2c34dfd93007f820c148f3" afterPath="$PROJECT_DIR$/Library/metadata/89/89b0fbc47c2c34dfd93007f820c148f3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8.info" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8b/8b61535684d3b3243a077d250c9c1c33.info" afterPath="$PROJECT_DIR$/Library/metadata/8b/8b61535684d3b3243a077d250c9c1c33.info" />
@@ -141,9 +149,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Resources/Ball.prefab" afterPath="$PROJECT_DIR$/Assets/Resources/Ball.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Resources/Special.prefab" afterPath="$PROJECT_DIR$/Assets/Resources/Special.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__EditModeScene" afterPath="$PROJECT_DIR$/Temp/__EditModeScene" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/ab/ab0798f7c7918474d8ad298d57480232.info" afterPath="$PROJECT_DIR$/Library/metadata/ab/ab0798f7c7918474d8ad298d57480232.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/ab/ab0798f7c7918474d8ad298d57480232" afterPath="$PROJECT_DIR$/Library/metadata/ab/ab0798f7c7918474d8ad298d57480232" />
@@ -166,7 +173,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/b8/b8c77fc49c28810448ac83d2136a8b51.info" afterPath="$PROJECT_DIR$/Library/metadata/b8/b8c77fc49c28810448ac83d2136a8b51.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/b8/b8c77fc49c28810448ac83d2136a8b51" afterPath="$PROJECT_DIR$/Library/metadata/b8/b8c77fc49c28810448ac83d2136a8b51" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/bb/bb3532b7918ed45a8a9ffe4df6f8e73a" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb3532b7918ed45a8a9ffe4df6f8e73a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/bb/bb78d2ad26b6c44debabbfbc60c4a3f4" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb78d2ad26b6c44debabbfbc60c4a3f4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/c1/c11799b336ca242d887ed4c37275e9c7" afterPath="$PROJECT_DIR$/Library/metadata/c1/c11799b336ca242d887ed4c37275e9c7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/c3/c319bdb56075e462c8b6afe786c315f7.info" afterPath="$PROJECT_DIR$/Library/metadata/c3/c319bdb56075e462c8b6afe786c315f7.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/c3/c319bdb56075e462c8b6afe786c315f7" afterPath="$PROJECT_DIR$/Library/metadata/c3/c319bdb56075e462c8b6afe786c315f7" />
@@ -188,6 +194,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d1/d1df5e260d03bda4fb1f5e2b6c1e0989" afterPath="$PROJECT_DIR$/Library/metadata/d1/d1df5e260d03bda4fb1f5e2b6c1e0989" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d1/d1ed24bc20f2aeb4b87d6da154367037.info" afterPath="$PROJECT_DIR$/Library/metadata/d1/d1ed24bc20f2aeb4b87d6da154367037.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d1/d1ed24bc20f2aeb4b87d6da154367037" afterPath="$PROJECT_DIR$/Library/metadata/d1/d1ed24bc20f2aeb4b87d6da154367037" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" afterPath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034.info" afterPath="$PROJECT_DIR$/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034" afterPath="$PROJECT_DIR$/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d4/d43bcf5a88415a348b8916c21e5c92d8.info" afterPath="$PROJECT_DIR$/Library/metadata/d4/d43bcf5a88415a348b8916c21e5c92d8.info" />
@@ -210,6 +217,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/ef/ef578d48d4897b14f92f12df68503089" afterPath="$PROJECT_DIR$/Library/metadata/ef/ef578d48d4897b14f92f12df68503089" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9.info" afterPath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9" afterPath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" afterPath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" afterPath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f5/f5b5ae8a975e541c8b7cc0d467695d0d" afterPath="$PROJECT_DIR$/Library/metadata/f5/f5b5ae8a975e541c8b7cc0d467695d0d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a.info" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a" />
@@ -219,12 +228,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c" afterPath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8.info" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong.apk" afterPath="$PROJECT_DIR$/pong.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start.png" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/AssetImportState" afterPath="$PROJECT_DIR$/Library/AssetImportState" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SpecialController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SpecialController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Type/Const.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Type/Const.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/menu.unity" afterPath="$PROJECT_DIR$/Assets/menu.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/pong.unity" afterPath="$PROJECT_DIR$/Assets/pong.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start.png.meta" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start.png.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/workspace.xml" afterPath="$PROJECT_DIR$/.consulo/workspace.xml" />
     </list>
     <ignored path=".consulo/workspace.xml" />
@@ -242,14 +263,14 @@
     <file path="/PlayerController_2PGP.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441029390394" ignored="false" />
     <file path="/UI_2PGP.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441038566087" ignored="false" />
     <file path="/Base2DPadel.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444497558802" ignored="false" />
-    <file path="/a.dummy" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446390275467" ignored="false" />
+    <file path="/a.dummy" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446411502068" ignored="false" />
     <file path="/SpawnController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441030207877" ignored="false" />
     <file path="/ScoreManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445158239403" ignored="false" />
     <file path="/ScoreController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446124782557" ignored="false" />
     <file path="/BallController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443203408669" ignored="false" />
-    <file path="/UI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446241239643" ignored="false" />
-    <file path="/BallManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446142966027" ignored="false" />
-    <file path="/BaseSpecialManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446371476914" ignored="false" />
+    <file path="/UI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446410260014" ignored="false" />
+    <file path="/BallManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446391849173" ignored="false" />
+    <file path="/BaseSpecialManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446393866761" ignored="false" />
     <file path="/SpecialController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446301619951" ignored="false" />
     <file path="/RacketManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446236805536" ignored="false" />
     <file path="/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446142130067" ignored="false" />
@@ -260,12 +281,12 @@
     <file path="/PointsTextManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441223388783" ignored="false" />
     <file path="/SpecialType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442085533489" ignored="false" />
     <file path="/SettingsManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441310527210" ignored="false" />
-    <file path="/Const.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445765162497" ignored="false" />
-    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446237834174" ignored="false" />
+    <file path="/Const.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446411368371" ignored="false" />
+    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446412245659" ignored="false" />
     <file path="/RandomUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443354452878" ignored="false" />
     <file path="/PongAIController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446237397856" ignored="false" />
     <file path="/MathUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443211802739" ignored="false" />
-    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446303455696" ignored="false" />
+    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446416052361" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442068817390" ignored="false" />
     <file path="/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442057422355" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442074666387" ignored="false" />
@@ -297,6 +318,7 @@
     <file path="/RandomParticleManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445808132297" ignored="false" />
     <file path="/DontGoThrough.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446151781656" ignored="false" />
     <file path="/DoNotGoThroughThings.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446151707142" ignored="false" />
+    <file path="$PROJECT_DIR$/Assets/Sprites/Components/Arena-Spritesheet.png.meta" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446409015079" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +344,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+              <caret line="215" column="20" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -334,7 +356,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
               <folding>
                 <element signature="e#0#187#0" expanded="true" />
               </folding>
@@ -342,62 +364,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraShake.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
+      <file leaf-file-name="SpriteChangeable.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteChangeable.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RollManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecialController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpecialController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5395257">
-              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#140#0" expanded="true" />
-              </folding>
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -414,11 +386,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
+      <file leaf-file-name="SpriteSelectionManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScoreManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RollManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6551724">
+              <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -426,11 +432,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseSpecialManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs">
+      <file leaf-file-name="InputHandler.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+              <caret line="12" column="114" selection-start-line="12" selection-start-column="114" selection-end-line="12" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RacketManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RacketManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -468,19 +486,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/CameraShakeType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/AnimationType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibrate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtillity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Type/Const.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/StringUltil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/SpriteType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DontGoThrough.cs" />
@@ -488,15 +502,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DoNotGoThroughThings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RacketManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RollManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpecialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitAnimationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Type/Const.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
       </list>
     </option>
   </component>
@@ -755,8 +773,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -831,6 +849,14 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="#DotNetConfigurationType" factoryName=".NET Application">
       <module name="" />
       <option name="envs">
@@ -843,6 +869,14 @@
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
       <option name="workingDirectory" value="" />
+      <coverage enabled="false" sample_coverage="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#UnityAttachApplication" factoryName="Unity Attach">
+      <method />
+    </configuration>
+    <configuration default="true" type="#NUnitConfigurationType" factoryName="NUnit">
+      <module name="" />
       <coverage enabled="false" sample_coverage="true" />
       <method />
     </configuration>
@@ -865,19 +899,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="#NUnitConfigurationType" factoryName="NUnit">
-      <module name="" />
-      <coverage enabled="false" sample_coverage="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Consulo In Sandbox">
@@ -929,7 +950,8 @@
       <workItem from="1445713931275" duration="27708000" />
       <workItem from="1446109581219" duration="17582000" />
       <workItem from="1446234767630" duration="7950000" />
-      <workItem from="1446300490284" duration="7513000" />
+      <workItem from="1446300490284" duration="12856000" />
+      <workItem from="1446409930552" duration="4000000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -995,11 +1017,15 @@
       <created>1446389576867</created>
       <updated>1446389576867</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="pre reverse">
+      <created>1446391224936</created>
+      <updated>1446391224936</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442808000" />
+    <option name="totallyTimeSpent" value="452151000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1022,28 +1048,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="834" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29110512" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37601078" sideWeight="0.42071882" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28032345" sideWeight="0.55884427" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26954177" sideWeight="0.5313601" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26881722" sideWeight="0.5313601" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2795699" sideWeight="0.55884427" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37601078" sideWeight="0.5792812" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37601078" sideWeight="0.5792812" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1159,7 +1185,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="392" />
+      <option name="time" value="394" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1181,9 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,23 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteChangeable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,7 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,6 +1249,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,9 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,17 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,17 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArenaController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,7 +1310,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1349,15 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,9 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1382,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,7 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20689656">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,15 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1724138">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Type/Const.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10344828">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1438,16 +1393,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BASE/PowerUp/PowerUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
           <folding>
-            <element signature="e#0#153#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Sprites/Components/start.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpecialController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="68" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Type/Const.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArenaController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1462,6 +1503,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1470,41 +1521,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BASE/PowerUp/PowerUp.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RacketManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1518,65 +1539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CAMERA/CameraShake.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RacketManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Sprites/Components/start.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpecialController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -1593,22 +1559,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteChangeable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <caret line="215" column="20" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5395257">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding>
-            <element signature="e#0#140#0" expanded="true" />
+            <element signature="e#0#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="114" selection-start-line="12" selection-start-column="114" selection-end-line="12" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6551724">
+          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>

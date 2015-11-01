@@ -10,10 +10,10 @@ public class GameController : MonoBehaviour {
     public float coinInterval = 3f;
     public float impactLength = 0.75f;
 
-    public static int DISTANCE_FROM_GOAL = 840;
+    public int DISTANCE_FROM_GOAL = -840;
     public float ARENA_HALF_LENGTH = 840;
-    public float DISTANCE_BETWEEN_WALLS = 1800;
-    public float WALL_THICKNESS = 90;
+    public float DISTANCE_BETWEEN_WALLS = 1080;
+    public float WALL_THICKNESS = 110;
     public int playerPosition = 840;
 
     public int GOALS_TO_WIN = 10;
@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour {
         InvokeRepeating("spawnRandomSpecial", initialSpawnDelay, specialInterval);
         InvokeRepeating("spawnRandomCoin", initialSpawnDelay, coinInterval);
 
-        DISTANCE_BETWEEN_WALLS = Vector3.Distance(bottomWall.gameObject.transform.position, topWall.gameObject.transform.position) - WALL_THICKNESS;
+//        DISTANCE_BETWEEN_WALLS = Vector3.Distance(bottomWall.gameObject.transform.position, topWall.gameObject.transform.position) - WALL_THICKNESS;
         ARENA_HALF_LENGTH = DISTANCE_BETWEEN_WALLS / 2;
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.Init();
