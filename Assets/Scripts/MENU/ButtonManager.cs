@@ -9,6 +9,7 @@ public class ButtonManager : MonoBehaviour {
     public GameObject multiPlayer;
     public GameObject aISelection;
     public GameObject spendCoins;
+    public GameObject disabled;
 
     void Awake() {
         hideSubMenus();
@@ -51,6 +52,11 @@ public class ButtonManager : MonoBehaviour {
         hideSubMenus();
         SettingsController.Instance.isVersusAI = true;
         aISelection.SetActive(true);
+    }
+
+    public void toggleVibrations() {
+        SettingsController.Instance.isVibrate = !SettingsController.Instance.isVibrate;
+        disabled.SetActive(SettingsController.Instance.isVibrate);
     }
 
     public void showPlayerVersusPlayer() {

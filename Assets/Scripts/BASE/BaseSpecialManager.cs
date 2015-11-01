@@ -4,8 +4,15 @@ using System.Collections;
 public class BaseSpecialManager : TimedPowerUp {
 
     public Sprite[] ballSprites;
-
     public Sprite[] logoSprites;
+    
+    public GameObject logo;
+    public GameObject particles;
+
+    public Color buff;
+    public Color neutral;
+    public Color coin;
+    public Color nerf;
 
     public override void Start() {
         base.Start();
@@ -61,45 +68,45 @@ public class BaseSpecialManager : TimedPowerUp {
         RandomUtility.randomNegativeOrPositive() * Random.Range(100, arenaHalfLength),
         0);
         switch (powerUpType) {
-            case PowerUpType.HOMING:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[8];
-            GetComponent<SpriteRenderer>().sprite = ballSprites[0];
-            break;
             case PowerUpType.LONG:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[0];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[0];
+            particles.GetComponent<ParticleSystem>().startColor = buff;
             GetComponent<SpriteRenderer>().sprite = ballSprites[0];
             break;
             case PowerUpType.SHIELD:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[1];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[1];
+            particles.GetComponent<ParticleSystem>().startColor = buff;
             GetComponent<SpriteRenderer>().sprite = ballSprites[0];
             break;
-            case PowerUpType.POINT:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[5];
-            GetComponent<SpriteRenderer>().sprite = ballSprites[3];
-            break;
             case PowerUpType.SHORT:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[1];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[5];
+            particles.GetComponent<ParticleSystem>().startColor = nerf;
             GetComponent<SpriteRenderer>().sprite = ballSprites[1];
             break;
             case PowerUpType.SPEED:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[2];
-            GetComponent<SpriteRenderer>().sprite = ballSprites[1];
-            break;
-            case PowerUpType.DOUBLE:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[4];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[2];
+            particles.GetComponent<ParticleSystem>().startColor = neutral;
             GetComponent<SpriteRenderer>().sprite = ballSprites[2];
             break;
+            case PowerUpType.DOUBLE:
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[4];
+            particles.GetComponent<ParticleSystem>().startColor = nerf;
+            GetComponent<SpriteRenderer>().sprite = ballSprites[1];
+            break;
             case PowerUpType.NO_GOALS:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[6];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[6];
+            particles.GetComponent<ParticleSystem>().startColor = neutral;
             GetComponent<SpriteRenderer>().sprite = ballSprites[2];
             break;
             case PowerUpType.MOVING_GOALS:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[9];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[9];
+            particles.GetComponent<ParticleSystem>().startColor = neutral;
             GetComponent<SpriteRenderer>().sprite = ballSprites[2];
             break;
             case PowerUpType.COIN:
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = logoSprites[10];
+            logo.GetComponent<SpriteRenderer>().sprite = logoSprites[10];
             gameObject.transform.position += new Vector3(RandomUtility.randomNegativeOrPositive() * GameController.DISTANCE_FROM_GOAL, 0, 0);
+            particles.GetComponent<ParticleSystem>().startColor = coin;
             GetComponent<SpriteRenderer>().sprite = ballSprites[3];
             break;
         }
