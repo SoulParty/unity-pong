@@ -74,13 +74,16 @@ public class SpecialController : MonoBehaviour{
 //        switch (8) {
             case 1: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.LONG); break;
             case 2: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHORT); break;
-            case 3: if (!SettingsController.Instance.isVersusAI) { special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE); }break;
+            case 3:
+            if (!SettingsController.Instance.isVersusAI) {
+                special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE);
+            }
+            break;
             case 4: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SPEED); break;
             case 5: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.MOVING_GOALS); break;
             case 6: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.NO_GOALS); break;
             case 7: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHIELD); break;
-//            case 8: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.POINT); break;
-//            case 9: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.HOMING); break;
+
         }
     }
 

@@ -14,7 +14,7 @@ public class HitAnimationManager : MonoBehaviour {
     public GameObject hitImpactParticles;
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.name.Equals("Ball")) {
+        if (collision.gameObject.tag.Equals("Ball")) {
             BallManager ballManager = collision.gameObject.GetComponent<BallManager>();
             float speed = ballManager.speed;
             if (speed > GameController.Instance.defaultBallStartSpeed * 3) {
