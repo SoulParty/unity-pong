@@ -122,6 +122,9 @@ public class GameController : MonoBehaviour {
     public void gameFinished(GameObject winner) {
 //        this.winnerId = winnerId;
         UIControl.showWinner(winner);
+        foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
+            ball.GetComponent<Rigidbody2D>().isKinematic = true;
+        }
 //        startGameAnimation(AnimationType.WIN);
         StartCoroutine(showGameEndMenu());
     }
@@ -143,9 +146,7 @@ public class GameController : MonoBehaviour {
                 gameFinished(player);
             }
         }
-        if (highScoreCheck()) {
-            UIControl.showNewHighScore(ScoreController.Instance.getCombo());
-        }
+        highScoreCheck();
     }
 
     public GameObject getLastTouchedBy() {

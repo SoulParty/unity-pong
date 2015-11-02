@@ -98,6 +98,7 @@ public class ButtonManager : MonoBehaviour {
                     Debug.Log(result.ToString());
                     if (result.ToString().Equals("Finished")) {
                         SettingsController.Instance.addCoins(100);
+                        UI.Instance.showTotals();
                         if (UI.Instance != null) {
                             UI.Instance.enoughCoins();
                         }

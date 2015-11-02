@@ -36,8 +36,8 @@ public class UI : BaseUI {
 
     public float goalAnimationLength = 3f;
     public float specialAnimationLength = 1.5f;
-    public float winAnimationLength = 5f;
-    public float highScoreAnimationLength = 1f;
+    public float winAnimationLength = 1f;
+    public float highScoreAnimationLength = 2f;
 
     public GameObject scoreLeft;
     public GameObject scoreRight;
@@ -73,10 +73,9 @@ public class UI : BaseUI {
         if (combo > 9999) {
             combo = 9999; //TODO move out of here
         }
-        highScoreAnimation.transform.position = new Vector3(28, -214, 0);
-        highScoreAnimation.GetComponent<DynamicText>().SetText("HIGH SCORE! " + combo.ToString());
+        string highscore = "HIGH SCORE! " + combo;
+        highScoreAnimation.GetComponent<DynamicText>().SetText(highscore);
         highScoreAnimation.GetComponent<Animator>().Play("HighScoreIn");
-        StartCoroutine(cleanUp());
     }
 
     public void showComboInARow(int combo) {
@@ -85,11 +84,11 @@ public class UI : BaseUI {
     }
 
     public void showWinner(GameObject winner) {
-        int direction = 1;
+        int direction = -1;
         if (winner.name.Equals("RacketRight")) {
-            direction = -1;
+            direction = 1;
         }
-        winnerAnimation.transform.position = new Vector3(direction * 260, 35, 0);
+        winnerAnimation.transform.position = new Vector3(direction * 700, 35, 0);
         StartCoroutine(cleanUp());
 
     }
@@ -116,6 +115,9 @@ public class UI : BaseUI {
     }
 
     public void showWinMenu() {
+        deactivate(p1);
+        deactivate(p2);
+        deactivate(ai);
         activate(winMenu);
         activate(roll);
         display4CharNumber(bestScoreTotal, SettingsController.Instance.getMaxCombo());

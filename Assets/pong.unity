@@ -1009,6 +1009,10 @@ Prefab:
       propertyPath: VelocityModule.x.minCurve.m_Curve.Array.data[0].value
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 413844, guid: 8ae7fb60714d346edbcf54c63d2fd69b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ae7fb60714d346edbcf54c63d2fd69b, type: 2}
   m_IsPrefabParent: 0
@@ -2205,7 +2209,7 @@ MonoBehaviour:
   - {fileID: 21300270, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
   goalAnimationLength: 3
   specialAnimationLength: 1
-  winAnimationLength: 5
+  winAnimationLength: 1
   highScoreAnimationLength: 1
   scoreLeft: {fileID: 816274685}
   scoreRight: {fileID: 661265879}
@@ -2335,6 +2339,7 @@ MonoBehaviour:
   multiPlayer: {fileID: 0}
   aISelection: {fileID: 0}
   spendCoins: {fileID: 0}
+  credits: {fileID: 0}
   disabled: {fileID: 0}
 --- !u!1 &452008905
 GameObject:
@@ -10269,7 +10274,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277693948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -117.894745, y: -29.4736958, z: -199.960358}
+  m_LocalPosition: {x: -117.966095, y: -29.4915314, z: -199.960327}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 370447024}
@@ -10385,7 +10390,7 @@ MonoBehaviour:
   ballManager: {fileID: 1481788234}
   leftRacketManager: {fileID: 1330673422}
   rightRacketManager: {fileID: 1108538302}
-  SPEED_UP: 300
+  SPEED_UP: 500
   SHIELD_DURATION: 5
   NO_GOALS_DURATION: 5
   MOVING_GOAL_AMOUNT: 4
@@ -10773,7 +10778,7 @@ GameObject:
   - 114: {fileID: 1357160171}
   - 33: {fileID: 1357160170}
   - 95: {fileID: 1357160173}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Highscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10812,7 +10817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1479319894}
   offsetZ: 0
-  size: 160
+  size: 300
   lineSpacing: 1.25
   letterSpacing: 0
   anchor: 9
@@ -12068,6 +12073,10 @@ Prefab:
     - target: {fileID: 19802704, guid: 9985722eb716147a5a6b7e03658a6d92, type: 2}
       propertyPath: VelocityModule.x.minCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424522, guid: 9985722eb716147a5a6b7e03658a6d92, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9985722eb716147a5a6b7e03658a6d92, type: 2}

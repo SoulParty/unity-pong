@@ -23,6 +23,17 @@ public class ArenaController : MonoBehaviour {
     public GameObject rightWall1;
     public GameObject rightWall2;
 
+    private Vector3 leftWall1Transform;
+    private Vector3 leftWall2Transform;
+    private Vector3 rightWall1Transform;
+    private Vector3 rightWall2Transform;
+
+    public void Start() {
+        leftWall1Transform = leftWall1.transform.position;
+        leftWall2Transform = leftWall2.transform.position;
+        rightWall1Transform = rightWall1.transform.position;
+        rightWall2Transform = rightWall2.transform.position;
+    }
     private void moveWalls() {
         movingGoalsScale += SpecialController.Instance.MOVING_GOALS_STEP;
         if (movingGoalsScale > 1.2f) {
@@ -48,6 +59,10 @@ public class ArenaController : MonoBehaviour {
 
     public IEnumerator stopMovingGoals() {
         yield return new WaitForSeconds(SpecialController.Instance.MOVING_GOALS_DURATION);
+        leftWall1.transform.position = leftWall1Transform;
+        leftWall2.transform.position = leftWall2Transform;
+        rightWall1.transform.position = rightWall1Transform;
+        rightWall2.transform.position = rightWall2Transform;
         CancelInvoke("moveWalls");
     }
 

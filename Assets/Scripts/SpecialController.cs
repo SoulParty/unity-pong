@@ -8,7 +8,7 @@ public class SpecialController : MonoBehaviour{
     public RacketManager leftRacketManager;
     public RacketManager rightRacketManager;
 
-    public int SPEED_UP = 300;
+    public int SPEED_UP = 500;
 
     public float SHIELD_DURATION = 5;
 
