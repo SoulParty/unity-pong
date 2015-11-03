@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7ba8057f9cb454f38ac82eae5975d94e
-timeCreated: 1446388588
+timeCreated: 1446573352
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -47,6 +47,7 @@ TextureImporter:
     21300080: racket2
     21300082: nogoals
     21300084: Sh
+    21300086: middle
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -95,10 +96,10 @@ TextureImporter:
     - name: circle-line
       rect:
         serializedVersion: 2
-        x: 628
-        y: 568
-        width: 1024
-        height: 512
+        x: 850
+        y: 824
+        width: 512
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +186,8 @@ TextureImporter:
     - name: homing
       rect:
         serializedVersion: 2
-        x: 836
-        y: 500
+        x: 829
+        y: 499
         width: 64
         height: 64
       alignment: 0
@@ -225,8 +226,8 @@ TextureImporter:
     - name: long
       rect:
         serializedVersion: 2
-        x: 900
-        y: 500
+        x: 893
+        y: 497
         width: 64
         height: 64
       alignment: 0
@@ -235,8 +236,8 @@ TextureImporter:
     - name: S
       rect:
         serializedVersion: 2
-        x: 957
-        y: 495
+        x: 948
+        y: 499
         width: 64
         height: 64
       alignment: 0
@@ -245,8 +246,8 @@ TextureImporter:
     - name: D
       rect:
         serializedVersion: 2
-        x: 1021
-        y: 496
+        x: 1017
+        y: 494
         width: 64
         height: 64
       alignment: 0
@@ -255,8 +256,8 @@ TextureImporter:
     - name: SS
       rect:
         serializedVersion: 2
-        x: 1078
-        y: 497
+        x: 1072
+        y: 495
         width: 64
         height: 64
       alignment: 0
@@ -265,8 +266,8 @@ TextureImporter:
     - name: N
       rect:
         serializedVersion: 2
-        x: 1141
-        y: 498
+        x: 1208
+        y: 494
         width: 64
         height: 64
       alignment: 0
@@ -275,8 +276,8 @@ TextureImporter:
     - name: M
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 498
+        x: 1267
+        y: 497
         width: 64
         height: 64
       alignment: 0
@@ -285,8 +286,8 @@ TextureImporter:
     - name: C
       rect:
         serializedVersion: 2
-        x: 768
-        y: 500
+        x: 765
+        y: 499
         width: 64
         height: 64
       alignment: 0
@@ -315,10 +316,20 @@ TextureImporter:
     - name: Sh
       rect:
         serializedVersion: 2
-        x: 1267
-        y: 498
+        x: 1135
+        y: 499
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: middle
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 637
+        width: 512
+        height: 443
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
