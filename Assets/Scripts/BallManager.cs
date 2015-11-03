@@ -95,6 +95,7 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
 
         if (hitRacket) {
             GameController.Instance.incrementCombo();
+            MusicController.Instance.playImpact();
         }
     }
 

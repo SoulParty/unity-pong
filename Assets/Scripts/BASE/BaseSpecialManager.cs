@@ -50,6 +50,7 @@ public class BaseSpecialManager : TimedPowerUp {
                 break;
             }
             GameController.Instance.explodeSpecial(gameObject.transform.position);
+            MusicController.Instance.playSpecial();
         }
         if (collision.gameObject.name == "RacketLeft" || collision.gameObject.name == "RacketRight") {
             switch (powerUpType) {
@@ -58,6 +59,7 @@ public class BaseSpecialManager : TimedPowerUp {
                 break;
             }
             GameController.Instance.explodeCoin(gameObject.transform.position);
+            MusicController.Instance.playCoin();
         }
         SelfDestruct();
     }

@@ -25,8 +25,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadPlayerVersusAI(int difficulty) {
-//        source.Play();
-//        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         SettingsController.Instance.isVersusAI = true;
         switch (difficulty) {
             case 1: SettingsController.Instance.setAIDifficulty(Difficulty.EASY); break;
@@ -38,8 +37,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadPlayerVersusPlayer(int multiplayerType) {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         SettingsController.Instance.isVersusAI = false;
         switch (multiplayerType) {
             case 1: SettingsController.Instance.setMultiplayerType(MultiplayerType.LOCAL); break;
@@ -50,8 +48,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void showPlayerVersusAI() {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         hideSubMenus();
         SettingsController.Instance.isVersusAI = true;
         aISelection.SetActive(true);
@@ -63,24 +60,20 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void showPlayerVersusPlayer() {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         hideSubMenus();
         SettingsController.Instance.isVersusAI = false;
         multiPlayer.SetActive(true);
     }
 
     public void ShowSpendCoins() {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
-
+        MusicController.Instance.playImpact();
         hideSubMenus();
         spendCoins.SetActive(true);
     }
 
     public void ShowCredits() {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         hideSubMenus();
         credits.SetActive(true);
     }
@@ -90,8 +83,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadWatchAd() { //TODO make an Ad Manager
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
+        MusicController.Instance.playImpact();
         if (Advertisement.IsReady()) {
             Advertisement.Show(null, new ShowOptions {
                 resultCallback = result => {
@@ -107,18 +99,4 @@ public class ButtonManager : MonoBehaviour {
             });
         }
     }
-
-    public void next(int selection) {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
-    }
-
-    public void prev(int selection) {
-        //        source.Play();
-        //        StartCoroutine ("playSound", level);
-    }
-//    IEnumerator playSound(int level) {
-//        yield return new WaitForSeconds(0.5f);
-//        Application.LoadLevel(level);
-//    }
 }

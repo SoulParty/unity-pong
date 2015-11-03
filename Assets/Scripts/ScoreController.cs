@@ -26,8 +26,8 @@ public class ScoreController : MonoBehaviour {
 
     public bool highScoreCheck() {
         if (newHighScore > SettingsController.Instance.getMaxCombo()) {
-//        if (true) {
             GameController.Instance.newHighScore(newHighScore);
+            newHighScore = 0;
             return true;
         } else {
             return false;

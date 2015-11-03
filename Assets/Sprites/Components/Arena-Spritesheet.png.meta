@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7ba8057f9cb454f38ac82eae5975d94e
-timeCreated: 1446573352
+timeCreated: 1446577247
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -126,20 +126,20 @@ TextureImporter:
     - name: coin
       rect:
         serializedVersion: 2
-        x: 1687
-        y: 689
-        width: 96
-        height: 96
+        x: 1674
+        y: 675
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nerf
       rect:
         serializedVersion: 2
-        x: 1873
-        y: 689
-        width: 96
-        height: 96
+        x: 1856
+        y: 675
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
     - name: buff
       rect:
         serializedVersion: 2
-        x: 1688
-        y: 883
-        width: 96
-        height: 96
+        x: 1675
+        y: 866
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: neutral
       rect:
         serializedVersion: 2
-        x: 1873
-        y: 883
-        width: 96
-        height: 96
+        x: 1857
+        y: 866
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

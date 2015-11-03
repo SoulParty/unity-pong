@@ -6,8 +6,8 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameController : MonoBehaviour {
 
-    public float specialInterval = 5f;
-    public float coinInterval = 3f;
+    public float specialInterval = 3f;
+    public float coinInterval = 5f;
     public float impactLength = 0.75f;
 
     public int DISTANCE_FROM_GOAL = -840;
@@ -65,6 +65,10 @@ public class GameController : MonoBehaviour {
             ball.GetComponent<BallManager>().setSprite(SettingsController.Instance.selectedPuck);
         }
 
+        if (GameObject.Find("SoundController") == null) {
+            Instantiate(Resources.Load("SoundController"));
+        }
+
         InvokeRepeating("spawnRandomSpecial", initialSpawnDelay, specialInterval);
         InvokeRepeating("spawnRandomCoin", initialSpawnDelay, coinInterval);
 
@@ -111,22 +115,13 @@ public class GameController : MonoBehaviour {
         UIControl.showComboInARow(combo);
     }
 
-    public bool highScoreCheck() {
-        if (ScoreController.Instance.highScoreCheck()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     public void gameFinished(GameObject winner) {
-//        this.winnerId = winnerId;
         UIControl.showWinner(winner);
         foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
             ball.GetComponent<Rigidbody2D>().isKinematic = true;
         }
-//        startGameAnimation(AnimationType.WIN);
         StartCoroutine(showGameEndMenu());
+        MusicController.Instance.playWin();
     }
 
     public bool getIsDoubleBallMode() {
@@ -146,7 +141,8 @@ public class GameController : MonoBehaviour {
                 gameFinished(player);
             }
         }
-        highScoreCheck();
+        ScoreController.Instance.highScoreCheck();
+        MusicController.Instance.playGoal();
     }
 
     public GameObject getLastTouchedBy() {
