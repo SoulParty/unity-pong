@@ -51,8 +51,10 @@ public class SpriteSelectionManager : MonoBehaviour {
             SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - LOGO_COST);
             SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 1);
             showSprite(currentSprite);
+            MusicController.Instance.playCoin();
         } else {
             selectSprite(sprite);
+            MusicController.Instance.playImpact();
         }
     }
 
@@ -93,11 +95,13 @@ public class SpriteSelectionManager : MonoBehaviour {
     public void nextSprite() {
         currentSprite++;
         showSprite(currentSprite);
+        MusicController.Instance.playImpact();
     }
 
     public void prevSprite() {
         currentSprite--;
         showSprite(currentSprite);
+        MusicController.Instance.playImpact();
     }
 
     public void showSprite(int index) {

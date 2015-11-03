@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" line="67" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" line="69" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Music/MusicController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/2f/2fe9e4608e9f5412da3040206efadcd2" afterPath="$PROJECT_DIR$/Library/metadata/2f/2fe9e4608e9f5412da3040206efadcd2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/42/421266e7da5fc4309bd0a7ae1b1bbc06" afterPath="$PROJECT_DIR$/Library/metadata/42/421266e7da5fc4309bd0a7ae1b1bbc06" />
@@ -19,21 +18,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-UnityScript.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Resources/Coin.prefab" afterPath="$PROJECT_DIR$/Assets/Resources/Coin.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Resources/Special.prefab" afterPath="$PROJECT_DIR$/Assets/Resources/Special.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__EditModeScene" afterPath="$PROJECT_DIR$/Temp/__EditModeScene" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/c8/c87b01452c9ba461ea7ffb8ebdad819b.info" afterPath="$PROJECT_DIR$/Library/metadata/c8/c87b01452c9ba461ea7ffb8ebdad819b.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong.apk" afterPath="$PROJECT_DIR$/pong.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/Arena-Spritesheet.png.meta" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/Arena-Spritesheet.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BASE/BaseSpecialManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/modules.xml" afterPath="$PROJECT_DIR$/.consulo/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/pong.unity" afterPath="$PROJECT_DIR$/Assets/pong.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" />
@@ -89,7 +79,7 @@
     <file path="/CameraManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443266537610" ignored="false" />
     <file path="/HitAnimationManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446390222560" ignored="false" />
     <file path="/SpriteChangeable.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443555067392" ignored="false" />
-    <file path="/SpriteSelectionManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446149706027" ignored="false" />
+    <file path="/SpriteSelectionManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446583343258" ignored="false" />
     <file path="/RollManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446238120466" ignored="false" />
     <file path="/PlayerController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446243455917" ignored="false" />
     <file path="/InputHandler.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445543447546" ignored="false" />
@@ -98,7 +88,7 @@
     <file path="/BaseUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444982436101" ignored="false" />
     <file path="/LogoStatus.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445000606448" ignored="false" />
     <file path="/PauseManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445007037200" ignored="false" />
-    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446575954126" ignored="false" />
+    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446583299050" ignored="false" />
     <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446234889281" ignored="false" />
     <file path="/CameraShakeType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445087073374" ignored="false" />
     <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445537923884" ignored="false" />
@@ -133,18 +123,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UI.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SettingsController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -181,6 +159,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SpriteSelectionManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6983806">
+              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ScoreController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScoreController.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -191,11 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ButtonManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61538464">
-              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -283,7 +273,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/SpriteType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DontGoThrough.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoNotGoThrough.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoNotGoThroughThings.cs" />
@@ -306,6 +295,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Music/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
       </list>
     </option>
   </component>
@@ -787,7 +777,7 @@
       <workItem from="1446234767630" duration="7950000" />
       <workItem from="1446300490284" duration="12856000" />
       <workItem from="1446409930552" duration="4048000" />
-      <workItem from="1446484860538" duration="10482000" />
+      <workItem from="1446484860538" duration="10559000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -869,11 +859,15 @@
       <created>1446575962830</created>
       <updated>1446575962831</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added sounds">
+      <created>1446583305873</created>
+      <updated>1446583305873</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462681000" />
+    <option name="totallyTimeSpent" value="462758000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -991,7 +985,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sounds" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1021,6 +1015,7 @@
     <MESSAGE value="pre reverse" />
     <MESSAGE value="getting closer" />
     <MESSAGE value="fix bugs" />
+    <MESSAGE value="added sounds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1332,16 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1462,10 +1447,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61538464">
-          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6983806">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
