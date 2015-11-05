@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1446491502
+timeCreated: 1446746314
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -126,7 +126,7 @@ TextureImporter:
     21300238: rng2
     21300240: rng3
     21300242: rng4
-    21300244: rng5
+    21300244: back
     21300246: quit
     21300248: 1
     21300250: 2
@@ -210,6 +210,7 @@ TextureImporter:
     21300406: start_145
     21300408: start_146
     21300410: start_147
+    21300412: start_148
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -398,8 +399,8 @@ TextureImporter:
     - name: select
       rect:
         serializedVersion: 2
-        x: 502
-        y: 1777
+        x: 504
+        y: 1733
         width: 512
         height: 256
       alignment: 0
@@ -1438,50 +1439,20 @@ TextureImporter:
     - name: rng1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 2115
+        x: 34
+        y: 2119
         width: 128
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rng2
+    - name: back
       rect:
         serializedVersion: 2
-        x: 171
-        y: 2112
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rng3
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 2112
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rng4
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 2121
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rng5
-      rect:
-        serializedVersion: 2
-        x: 693
-        y: 2109
-        width: 128
-        height: 128
+        x: 632
+        y: 2000
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1668,8 +1639,8 @@ TextureImporter:
     - name: vibrate
       rect:
         serializedVersion: 2
-        x: 69
-        y: 1946
+        x: 8
+        y: 1905
         width: 128
         height: 128
       alignment: 0
@@ -1678,8 +1649,8 @@ TextureImporter:
     - name: block
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1826
+        x: 259
+        y: 1839
         width: 256
         height: 256
       alignment: 0
@@ -2311,6 +2282,16 @@ TextureImporter:
         x: 1854
         y: 1495
         width: 123
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_148
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1906
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}

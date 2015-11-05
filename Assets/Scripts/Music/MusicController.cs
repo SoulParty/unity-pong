@@ -14,8 +14,13 @@ public class MusicController : MonoBehaviour {
         Instance = this;
     }
 
-    public void Awake () {
-        DontDestroyOnLoad(gameObject);
+    void Awake() {
+        if (Instance) {
+            DestroyImmediate(gameObject);
+        } else {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
     }
 
     public void playWin() {
