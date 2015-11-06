@@ -49,6 +49,19 @@ public class SettingsController : MonoBehaviour {
         }
     }
 
+    [SerializeField]
+    private bool _isMusic;
+    public bool isMusic {
+        get {
+            return _isMusic;
+        }
+        set {
+            _isMusic = value;
+            PlayerPrefs.SetInt(Const.MUSIC, Convert.ToInt32(value));
+        }
+    }
+
+
     public SettingsController() {
         Instance = this;
     }

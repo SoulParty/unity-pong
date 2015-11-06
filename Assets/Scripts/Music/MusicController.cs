@@ -10,9 +10,9 @@ public class MusicController : MonoBehaviour {
     [System.NonSerialized]
     public static MusicController Instance;
 
-    public MusicController() {
-        Instance = this;
-    }
+//    public MusicController() {
+//        Instance = this;
+//    }
 
     void Awake() {
         if (Instance) {

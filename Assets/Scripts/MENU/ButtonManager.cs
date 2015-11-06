@@ -10,11 +10,17 @@ public class ButtonManager : MonoBehaviour {
     public GameObject aISelection;
     public GameObject spendCoins;
     public GameObject credits;
-    public GameObject disabled;
+    public GameObject settings;
+
+    public GameObject[] mainMenu;
+
+    public GameObject music;
+    public GameObject vibrate;
+    public GameObject disabled1;
+    public GameObject disabled2;
 
     void Awake() {
         hideSubMenus();
-        disabled.SetActive(!SettingsController.Instance.isVibrate);
     }
 
     private void hideSubMenus() {
@@ -22,6 +28,7 @@ public class ButtonManager : MonoBehaviour {
         aISelection.SetActive(false);
         spendCoins.SetActive(false);
         credits.SetActive(false);
+        settings.SetActive(false);
     }
 
     public void LoadPlayerVersusAI(int difficulty) {
@@ -54,9 +61,22 @@ public class ButtonManager : MonoBehaviour {
         aISelection.SetActive(true);
     }
 
+    public void showSettings() {
+        MusicController.Instance.playImpact();
+        hideSubMenus();
+        settings.SetActive(true);
+        disabled1.SetActive(!SettingsController.Instance.isVibrate);
+        disabled2.SetActive(!SettingsController.Instance.isMusic);
+    }
+
     public void toggleVibrations() {
         SettingsController.Instance.isVibrate = !SettingsController.Instance.isVibrate;
-        disabled.SetActive(!SettingsController.Instance.isVibrate);
+        disabled1.SetActive(!SettingsController.Instance.isVibrate);
+    }
+
+    public void toggleMusic() {
+        SettingsController.Instance.isMusic = !SettingsController.Instance.isMusic;
+        disabled2.SetActive(!SettingsController.Instance.isMusic);
     }
 
     public void showPlayerVersusPlayer() {
