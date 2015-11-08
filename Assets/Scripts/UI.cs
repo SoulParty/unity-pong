@@ -45,6 +45,8 @@ public class UI : BaseUI {
     public GameObject winnerLeft;
     public GameObject winnerRight;
 
+    public GameObject winAnimationController;
+
     [System.NonSerialized]
     public static UI Instance;
 
@@ -87,12 +89,10 @@ public class UI : BaseUI {
     }
 
     public void showWinner(GameObject winner) {
-        deactivate(winnerLeft);
-        deactivate(winnerRight);
         if (winner.name.Equals("RacketRight")) {
-            activate(winnerRight);
+            winAnimationController.GetComponent<Animator>().Play("WinRight");
         } else {
-            activate(winnerLeft);
+            winAnimationController.GetComponent<Animator>().Play("WinLeft");
         }
         StartCoroutine(cleanUp());
 

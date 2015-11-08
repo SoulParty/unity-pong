@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     public float specialInterval = 3f;
     public float coinInterval = 5f;
     public float impactLength = 0.75f;
+    public float timeBeforeWinMenuLength = 1f;
 
     public int DISTANCE_FROM_GOAL = -840;
     public float ARENA_HALF_LENGTH = 840;
@@ -116,11 +117,11 @@ public class GameController : MonoBehaviour {
     }
 
     public void gameFinished(GameObject winner) {
-        UIControl.showWinner(winner);
+
         foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
             ball.GetComponent<Rigidbody2D>().isKinematic = true;
         }
-        StartCoroutine(showGameEndMenu());
+        StartCoroutine(showGameEndMenu(winner));
         MusicController.Instance.playWin();
     }
 
@@ -164,14 +165,15 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public IEnumerator showGameEndMenu() {
-        yield return new WaitForSeconds(3);
+    public IEnumerator showGameEndMenu(GameObject winner) {
+        yield return new WaitForSeconds(timeBeforeWinMenuLength);
         ObjectUtility.disableGameObject(ball);
         player1.GetComponent<Rigidbody2D>().isKinematic = true;
         player2.GetComponent<Rigidbody2D>().isKinematic = true;
         CancelInvoke("spawnRandomSpecial");
         CancelInvoke("spawnRandomCoin");
         UIControl.showWinMenu();
+        UIControl.showWinner(winner);
     }
 
     public void playAgain() {
