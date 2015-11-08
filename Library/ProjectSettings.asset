@@ -33,7 +33,7 @@ PlayerSettings:
   displayResolutionDialog: 1
   allowedAutorotateToPortrait: 0
   allowedAutorotateToPortraitUpsideDown: 0
-  allowedAutorotateToLandscapeRight: 0
+  allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
@@ -120,9 +120,9 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 1
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
-  AndroidSplashScreenScale: 0
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidSplashScreenScale: 1
+  AndroidKeystoreName: /Users/DK/Desktop/kitechlt.keystore
+  AndroidKeyaliasName: kitech
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1

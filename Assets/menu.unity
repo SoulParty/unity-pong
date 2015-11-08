@@ -1838,7 +1838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1565654304}
-        m_MethodName: toggleVibrations
+        m_MethodName: toggleMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4699,7 +4699,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482621866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 471.34024, y: 265.36084, z: 0}
+  m_LocalPosition: {x: 470.804016, y: 265.929626, z: 0}
   m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
   m_Children: []
   m_Father: {fileID: 0}

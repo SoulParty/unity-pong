@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour {
             if (SettingsController.Instance.isVibrate) {
                 Vibration.Vibrate(90); //TODO centralize vibrations
             }
-            hitImpactParticles.transform.position = new Vector3(transform.position.x, collision.gameObject.transform.position.y, 0);
+            hitImpactParticles.transform.position = new Vector3(hitImpactParticles.transform.position.x, collision.gameObject.transform.position.y, 0);
             ObjectUtility.enableGameObject(hitImpactParticles);
             StartCoroutine(disableImpactTimer());
         }

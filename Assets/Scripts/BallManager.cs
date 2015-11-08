@@ -17,11 +17,28 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
         RED = 3,
     }
 
+    TrailRenderer orangeTrail;
+    TrailRenderer blueTrail;
+    TrailRenderer redTrail;
+    TrailRenderer whiteTrail;
+    
+    
+    
     void Start() {
         speed = GameController.Instance.defaultBallStartSpeed;
         speedCap = GameController.Instance.ballSpeedUp * speedCapMultiplier + GameController.Instance.defaultBallStartSpeed;
         // Initial Velocity
         GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+
+        orangeTrail = gameObject.transform.GetChild((int) TrailColor.ORANGE).GetComponent<TrailRenderer>();
+        blueTrail = gameObject.transform.GetChild((int) TrailColor.BLUE).GetComponent<TrailRenderer>();
+        redTrail = gameObject.transform.GetChild((int) TrailColor.RED).GetComponent<TrailRenderer>();
+        whiteTrail = gameObject.transform.GetChild((int) TrailColor.WHITE).GetComponent<TrailRenderer>();
+        
+        orangeTrail.sortingOrder = -2;
+        blueTrail.sortingOrder = -2;
+        redTrail.sortingOrder = -2;
+        whiteTrail.sortingOrder = -2;
     }
 
     public void setSprite(Sprite sprite) {
@@ -29,13 +46,7 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        // Note: 'col' holds the collision information. If the
-        // Ball collided with a racket, then:
-        //   col.gameObject is the racket
-        //   col.transform.position is the racket's position
-        //   col.collider is the racket's collider
 
-        // Hit the left Racket?
         bool hitRacket = false;
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.wildBall++;
@@ -67,10 +78,7 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
                 PongAIController.Instance.wildBall = 0;
             }
             increaseSpeed(GameController.Instance.ballSpeedUp);
-        }
-
-        // Hit the right Racket?
-        if (collision.gameObject.name == "RacketLeft") {
+        } else if (collision.gameObject.name == "RacketLeft") {
             // Calculate hit Factor
             float y = hitFactor(transform.position, collision.transform.position, collision.collider.bounds.size.y);
 
@@ -84,6 +92,8 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
                 PongAIController.Instance.wildBall = 0;
             }
             increaseSpeed(GameController.Instance.ballSpeedUp);
+        } else { //This way the ball shouldn't loose speed after collisions
+            GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity.normalized * speed;
         }
 
         //        //Debug.Log("Speed:" + speed.ToString());
@@ -131,19 +141,19 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
 
     public void changeTrail() {
         if (speed > GameController.Instance.defaultBallStartSpeed * 2.5) {
-            gameObject.transform.GetChild((int) TrailColor.ORANGE).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.RED).GetComponent<TrailRenderer>().enabled = true;
+            orangeTrail.enabled = false;
+            redTrail.enabled = true;
         } else if (speed > GameController.Instance.defaultBallStartSpeed * 2) {
-            gameObject.transform.GetChild((int) TrailColor.BLUE).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.ORANGE).GetComponent<TrailRenderer>().enabled = true;
+            blueTrail.enabled = false;
+            orangeTrail.enabled = true;
         } else if (speed > GameController.Instance.defaultBallStartSpeed * 1.4) {
-            gameObject.transform.GetChild((int) TrailColor.WHITE).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.BLUE).GetComponent<TrailRenderer>().enabled = true;
+            whiteTrail.enabled = false;
+            blueTrail.enabled = true;
         } else if (speed < GameController.Instance.defaultBallStartSpeed * 1.4) {
-            gameObject.transform.GetChild((int) TrailColor.RED).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.ORANGE).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.BLUE).GetComponent<TrailRenderer>().enabled = false;
-            gameObject.transform.GetChild((int) TrailColor.WHITE).GetComponent<TrailRenderer>().enabled = true;
+            redTrail.enabled = false;
+            orangeTrail.enabled = false;
+            blueTrail.enabled = false;
+            whiteTrail.enabled = true;
         }
     }
 }

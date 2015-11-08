@@ -87,8 +87,8 @@ public class BaseSpecialManager : TimedPowerUp {
             break;
             case PowerUpType.SPEED:
             logo.GetComponent<SpriteRenderer>().sprite = logoSprites[2];
-            particles.GetComponent<ParticleSystem>().startColor = neutral;
-            GetComponent<SpriteRenderer>().sprite = ballSprites[2];
+            particles.GetComponent<ParticleSystem>().startColor = nerf;
+            GetComponent<SpriteRenderer>().sprite = ballSprites[1];
             break;
             case PowerUpType.DOUBLE:
             logo.GetComponent<SpriteRenderer>().sprite = logoSprites[4];

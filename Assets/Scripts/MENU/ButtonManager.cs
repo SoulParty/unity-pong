@@ -76,6 +76,7 @@ public class ButtonManager : MonoBehaviour {
 
     public void toggleMusic() {
         SettingsController.Instance.isMusic = !SettingsController.Instance.isMusic;
+        AudioListener.pause = SettingsController.Instance.isMusic;
         disabled2.SetActive(!SettingsController.Instance.isMusic);
     }
 

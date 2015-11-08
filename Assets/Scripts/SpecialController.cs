@@ -18,6 +18,9 @@ public class SpecialController : MonoBehaviour{
     public float MOVING_GOALS_DURATION = 10;
     public float MOVING_GOALS_STEP = 0.04f;
 
+    public float DOUBLE_BALL_DURATION = 10;
+    public GameObject secondBall;
+
     [System.NonSerialized]
     public static SpecialController Instance;
 
@@ -42,13 +45,20 @@ public class SpecialController : MonoBehaviour{
     }
 
     public void makeDoubleBall(GameObject special) {
-//        GameObject ball = (GameObject) Instantiate(Resources.Load("Ball"));
-//        Vector3 position = ball.transform.position;
-//        position = new Vector3(position.x, special.transform.position.y, position.z);
-        GameObject ball = Instantiate(GameController.Instance.ball);
-        ball.transform.position = new Vector3(ball.transform.position.x, special.transform.position.y, ball.transform.position.z);
-        ball.GetComponent<BallManager>().moveInRandomDirection();
-        GameController.Instance.toggleIsDoubleBallMode();
+        if (!GameController.Instance.getIsDoubleBallMode()) {
+            secondBall = Instantiate(GameController.Instance.ball);
+            secondBall.transform.position = new Vector3(secondBall.transform.position.x, special.transform.position.y, secondBall.transform.position.z);
+            secondBall.GetComponent<BallManager>().moveInRandomDirection();
+            GameController.Instance.toggleIsDoubleBallMode();
+            StartCoroutine(stopDoubleBall());
+        }
+    }
+
+    public IEnumerator stopDoubleBall() {
+        yield return new WaitForSeconds(DOUBLE_BALL_DURATION);
+        if (secondBall != null) {
+            Destroy(secondBall);
+        }
     }
 
     public void makeBallFaster() {
@@ -70,20 +80,15 @@ public class SpecialController : MonoBehaviour{
 
     public void spawnRandom() {
         GameObject special = (GameObject) Instantiate(Resources.Load("Special"));
-        switch (Random.Range(1, 8)) {
+        switch (Random.Range(1, SettingsController.Instance.isVersusAI ? 7 : 8)) {
 //        switch (8) {
             case 1: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.LONG); break;
             case 2: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHORT); break;
-            case 3:
-            if (!SettingsController.Instance.isVersusAI) {
-                special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE);
-            }
-            break;
+            case 3: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHIELD); break;
             case 4: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SPEED); break;
             case 5: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.MOVING_GOALS); break;
             case 6: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.NO_GOALS); break;
-            case 7: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.SHIELD); break;
-
+            case 7: special.GetComponent<BaseSpecialManager>().setPowerUpType(PowerUpType.DOUBLE); break;
         }
     }
 

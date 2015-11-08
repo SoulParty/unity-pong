@@ -42,6 +42,9 @@ public class UI : BaseUI {
     public GameObject scoreLeft;
     public GameObject scoreRight;
 
+    public GameObject winnerLeft;
+    public GameObject winnerRight;
+
     [System.NonSerialized]
     public static UI Instance;
 
@@ -84,11 +87,13 @@ public class UI : BaseUI {
     }
 
     public void showWinner(GameObject winner) {
-        int direction = -1;
+        deactivate(winnerLeft);
+        deactivate(winnerRight);
         if (winner.name.Equals("RacketRight")) {
-            direction = 1;
+            activate(winnerRight);
+        } else {
+            activate(winnerLeft);
         }
-        winnerAnimation.transform.position = new Vector3(direction * 700, 35, 0);
         StartCoroutine(cleanUp());
 
     }
