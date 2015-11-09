@@ -45,6 +45,8 @@ public class UI : BaseUI {
     public GameObject winnerLeft;
     public GameObject winnerRight;
 
+    public GameObject highscore;
+
     public GameObject winAnimationController;
 
     [System.NonSerialized]
@@ -106,7 +108,7 @@ public class UI : BaseUI {
         goalAnimation.GetComponent<Animator>().Play("GoalAnimationIn");
         CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
         yield return new WaitForSeconds(goalAnimationLength);
-        BallController.Instance.moveInRandomDirection(); //TODO move out of here
+        GameController.Instance.startNewRound();
         display4CharNumber(highScoreTotal, 0);
     }
 
@@ -120,6 +122,7 @@ public class UI : BaseUI {
     }
 
     public void showWinMenu() {
+        deactivate(highscore);
         deactivate(p1);
         deactivate(p2);
         deactivate(ai);

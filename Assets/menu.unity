@@ -4699,7 +4699,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482621866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 470.804016, y: 265.929626, z: 0}
+  m_LocalPosition: {x: 470.619202, y: 265.820465, z: 0}
   m_LocalScale: {x: .491666675, y: .491666675, z: .491666675}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6798,11 +6798,13 @@ Prefab:
     - target: {fileID: 11401634, guid: 4a97e630366dc4d8e88544d1cd9388be, type: 2}
       propertyPath: selectedPlayer1Racket
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300270, guid: c319bdb56075e462c8b6afe786c315f7,
+        type: 3}
     - target: {fileID: 11401634, guid: 4a97e630366dc4d8e88544d1cd9388be, type: 2}
       propertyPath: selectedPlayer2Racket
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300270, guid: c319bdb56075e462c8b6afe786c315f7,
+        type: 3}
     - target: {fileID: 11401634, guid: 4a97e630366dc4d8e88544d1cd9388be, type: 2}
       propertyPath: coinsUi
       value: 
@@ -7267,6 +7269,10 @@ Prefab:
       objectReference: {fileID: 1082103734}
     - target: {fileID: 11401634, guid: 4a97e630366dc4d8e88544d1cd9388be, type: 2}
       propertyPath: isVibrate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401634, guid: 4a97e630366dc4d8e88544d1cd9388be, type: 2}
+      propertyPath: _isMusic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

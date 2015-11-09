@@ -42,7 +42,9 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     }
 
     public void setSprite(Sprite sprite) {
-        GetComponent<SpriteRenderer>().sprite = sprite;
+        if (sprite != null) {
+            GetComponent<SpriteRenderer>().sprite = sprite;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {

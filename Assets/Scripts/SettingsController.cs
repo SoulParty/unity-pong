@@ -25,8 +25,6 @@ public class SettingsController : MonoBehaviour {
     public GameObject adButton;
 
     [SerializeField]
-    private int maxCombo = 0;
-    [SerializeField]
     private int coins = 0;
 
     public bool isVersusAI = true;
@@ -67,12 +65,14 @@ public class SettingsController : MonoBehaviour {
     }
 
     void Start () {
+        if (GameObject.FindObjectsOfType<SettingsController>().Length > 1) {
+            Destroy(gameObject);
+        }
+
         Advertisement.Initialize("82920", true);
         StartCoroutine(ShowAdButtonWhenReady(adButton));
 
-        maxCombo = PlayerPrefs.GetInt(Const.MAX_COMBO);
         coins = PlayerPrefs.GetInt(Const.COINS);
-
     }
 
     public void Awake () {
@@ -88,11 +88,11 @@ public class SettingsController : MonoBehaviour {
     }
 
     public int getMaxCombo() {
-        return maxCombo;
+        return PlayerPrefs.GetInt(Const.MAX_COMBO);
     }
 
     public int getCoins() {
-        return coins;
+        return PlayerPrefs.GetInt(Const.COINS);
     }
 
     public void setCoins(int coins) {

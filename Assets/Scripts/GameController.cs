@@ -92,7 +92,6 @@ public class GameController : MonoBehaviour {
 
     public void restart() {
         BallController.Instance.resetBalls();
-        ScoreController.Instance.resetMaxCombo();
         SpecialController.Instance.reset();
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.reset();
@@ -143,6 +142,7 @@ public class GameController : MonoBehaviour {
             }
         }
         ScoreController.Instance.highScoreCheck();
+        ScoreController.Instance.resetMaxCombo();
         MusicController.Instance.playGoal();
     }
 
@@ -208,5 +208,9 @@ public class GameController : MonoBehaviour {
     IEnumerator disableCoinImpactTimer() {
         yield return new WaitForSeconds(impactLength);
         ObjectUtility.disableGameObject(coinHitImpact);
+    }
+
+    public void startNewRound() {
+        BallController.Instance.moveInRandomDirection();
     }
 }

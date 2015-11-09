@@ -10,7 +10,6 @@ public class ScoreController : MonoBehaviour {
     public ScoreManager goalRight;
 
     public int combo = 0;
-    public int newHighScore = 0;
 
     public ScoreController() {
         Instance = this;
@@ -25,9 +24,8 @@ public class ScoreController : MonoBehaviour {
     }
 
     public bool highScoreCheck() {
-        if (newHighScore > SettingsController.Instance.getMaxCombo()) {
-            GameController.Instance.newHighScore(newHighScore);
-            newHighScore = 0;
+        if (combo > SettingsController.Instance.getMaxCombo()) {
+            GameController.Instance.newHighScore(combo);
             return true;
         } else {
             return false;
@@ -35,9 +33,6 @@ public class ScoreController : MonoBehaviour {
     }
 
     public void resetMaxCombo() {
-        if (combo > newHighScore && combo > SettingsController.Instance.getMaxCombo()) {
-            newHighScore = combo;
-        }
         combo = 0;
     }
 
