@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1447000259
+timeCreated: 1447102588
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -211,6 +211,12 @@ TextureImporter:
     21300408: start_146
     21300410: start_147
     21300412: music
+    21300414: more-coins
+    21300416: get
+    21300418: 25C
+    21300420: 50C
+    21300422: 100g
+    21300424: need-coins
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -366,31 +372,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: local
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 201
-        width: 512
-        height: 128
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: try-again
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 1024
-        height: 128
+        y: 104
+        width: 512
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: winner
       rect:
         serializedVersion: 2
-        x: 1229
-        y: 34
+        x: 0
+        y: 0
         width: 512
         height: 128
       alignment: 0
@@ -2292,6 +2288,66 @@ TextureImporter:
         x: 141
         y: 1906
         width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: more-coins
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 475
+        width: 512
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: get
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 25C
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 0
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 50C
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 0
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 100g
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 0
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: need-coins
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 512
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
