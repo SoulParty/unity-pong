@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" afterPath="$PROJECT_DIR$/Library/metadata/f3/f3d1c411c74f9477cb58e0387dd6bb09" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f8/f89199e02668e4ef4b1b2d6a1e94b502" afterPath="$PROJECT_DIR$/Library/metadata/f8/f89199e02668e4ef4b1b2d6a1e94b502" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Dao/SpriteDao.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Dao/SpriteDao.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" afterPath="$PROJECT_DIR$/Library/metadata/d2/d260ed208d555471c8fc997935cc2a26" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/menu.unity" afterPath="$PROJECT_DIR$/Assets/menu.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/workspace.xml" afterPath="$PROJECT_DIR$/.consulo/workspace.xml" />
     </list>
@@ -75,7 +68,7 @@
     <file path="/BaseUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444982436101" ignored="false" />
     <file path="/LogoStatus.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445000606448" ignored="false" />
     <file path="/PauseManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445007037200" ignored="false" />
-    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447517914014" ignored="false" />
+    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447530792048" ignored="false" />
     <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446234889281" ignored="false" />
     <file path="/CameraShakeType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445087073374" ignored="false" />
     <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445537923884" ignored="false" />
@@ -142,8 +135,8 @@
       <file leaf-file-name="SpriteSelectionManager.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5570292">
-              <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.67639256">
+              <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
               <folding>
                 <element signature="e#0#153#0" expanded="true" />
               </folding>
@@ -795,7 +788,7 @@
       <workItem from="1447096837765" duration="3068000" />
       <workItem from="1447221869497" duration="2730000" />
       <workItem from="1447357289752" duration="11164000" />
-      <workItem from="1447499775577" duration="20591000" />
+      <workItem from="1447499775577" duration="22751000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -913,11 +906,15 @@
       <created>1447517909317</created>
       <updated>1447517909317</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="on new shop architecture">
+      <created>1447530788981</created>
+      <updated>1447530788981</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522462000" />
+    <option name="totallyTimeSpent" value="524622000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1467,8 +1464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5570292">
-          <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.67639256">
+          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
           <folding>
             <element signature="e#0#153#0" expanded="true" />
           </folding>
