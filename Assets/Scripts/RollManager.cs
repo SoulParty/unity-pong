@@ -35,7 +35,7 @@ public class RollManager : MonoBehaviour {
 
         Sprite sprite = puckSprites[UnityEngine.Random.Range(0, puckSprites.Length - 1)];
         rng.GetComponent<Image>().sprite = sprite;
-        SettingsController.Instance.setStatus(sprite.ToString(), 1);
+        SpriteDao.Instance.setStatus(sprite, (int) SpriteStatus.OWNED);
     }
 
     IEnumerator disableCoinImpactTimer() {

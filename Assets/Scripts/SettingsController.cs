@@ -15,9 +15,8 @@ public class SettingsController : MonoBehaviour {
     public Sprite selectedPlayer2Racket;
     public Sprite selectedPuck;
 
-    private Dictionary<string, int> ownedPuckSpritesCache = new Dictionary<string, int>();
-    private Dictionary<string, int> ownedRacket1SpritesCache = new Dictionary<string, int>();
-    private Dictionary<string, int> ownedRacket2SpritesCache = new Dictionary<string, int>();
+    private Dictionary<string, Sprite> ownedPuckSpritesCache = new Dictionary<string, Sprite>();
+    private Dictionary<string, Sprite> ownedRacketSpritesCache = new Dictionary<string, Sprite>();
 
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
@@ -59,7 +58,6 @@ public class SettingsController : MonoBehaviour {
         }
     }
 
-
     public SettingsController() {
         Instance = this;
     }
@@ -73,6 +71,13 @@ public class SettingsController : MonoBehaviour {
         StartCoroutine(ShowAdButtonWhenReady(adButton));
 
         coins = PlayerPrefs.GetInt(Const.COINS);
+
+        loadSprites(SpriteType.PUCK);
+        selectedPuck = getSpriteFromCache(SpriteType.PUCK, SpriteDao.Instance.getSelected(SpriteType.PUCK));
+
+        loadSprites(SpriteType.RACKET1);
+        selectedPlayer1Racket = getSpriteFromCache(SpriteType.RACKET1, SpriteDao.Instance.getSelected(SpriteType.RACKET1));
+        selectedPlayer2Racket = getSpriteFromCache(SpriteType.RACKET2, SpriteDao.Instance.getSelected(SpriteType.RACKET2));
     }
 
     public void Awake () {
@@ -149,96 +154,34 @@ public class SettingsController : MonoBehaviour {
         return racketLogos;
     }
 
-    public void setStatus(string sprite, int status) {
-        PlayerPrefs.SetInt(sprite, status);
-    }
-
     public Sprite[] loadSprites(SpriteType spriteType) {
         Debug.Log("-------- LOADING SPRITES ---------");
         if (spriteType == SpriteType.PUCK) {
             foreach (Sprite sprite in getPuckSprites()) {
                 if (sprite != null) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
-                    ownedPuckSpritesCache.Add(sprite.ToString(), status);
+                    ownedPuckSpritesCache.Add(sprite.ToString(), sprite);
                     Debug.Log("Puck sprite: " + sprite.ToString() + "status: " + status);
-                    if (status == 2) {
-                        selectedPuck = sprite;
-                        Debug.Log("Selected sprite: " + sprite.ToString() + "status: " + status);
-                    }
                 }
             }
             return getPuckSprites();
-        } else if (spriteType == SpriteType.RACKET1) {
-            foreach (Sprite sprite in getRacketSprites()) {
-                if (sprite != null && !ownedRacket1SpritesCache.ContainsKey(sprite.ToString())) {
-                    int status = PlayerPrefs.GetInt(sprite.ToString());
-                    ownedRacket1SpritesCache.Add(sprite.ToString(), status);
-                    Debug.Log("Racket 1 sprite: " + sprite.ToString() + "status: " + status);
-                    if (status == 3) {
-                        selectedPlayer1Racket = sprite;
-                        Debug.Log("Selected racket 1: " + sprite.ToString() + "status: " + status);
-                    }
-                }
-            }
-            return getRacketSprites();
         } else {
             foreach (Sprite sprite in getRacketSprites()) {
-                if (sprite != null && !ownedRacket2SpritesCache.ContainsKey(sprite.ToString())) {
+                if (sprite != null && !ownedRacketSpritesCache.ContainsKey(sprite.ToString())) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
-                    Debug.Log("Racket 2 sprite: " + sprite.ToString() + "status: " + status);
-                    if (status == 4) {
-                        selectedPlayer2Racket = sprite;
-                        Debug.Log("Selected racket 2: " + sprite.ToString() + "status: " + status);
-                    }
+                    ownedRacketSpritesCache.Add(sprite.ToString(), sprite);
+                    Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
                 }
             }
             return getRacketSprites();
         }
     }
 
-    public void setStatus(SpriteType spriteType, string sprite, int status) {
-        PlayerPrefs.SetInt(sprite, status);
-        if (spriteType == SpriteType.PUCK) {
-            if (!ownedPuckSpritesCache.ContainsKey(sprite)) {
-                ownedPuckSpritesCache.Add(sprite, status);
-            } else {
-                ownedPuckSpritesCache.Remove(sprite);
-                ownedPuckSpritesCache.Add(sprite, status);
-            }
-        } else if (spriteType == SpriteType.RACKET1) {
-            if (!ownedRacket1SpritesCache.ContainsKey(sprite)) {
-                ownedRacket1SpritesCache.Add(sprite, status);
-            } else {
-                ownedRacket1SpritesCache.Remove(sprite);
-                ownedRacket1SpritesCache.Add(sprite, status);
-            }
-        } else {
-            if (!ownedRacket2SpritesCache.ContainsKey(sprite)) {
-                ownedRacket2SpritesCache.Add(sprite, status);
-            } else {
-                ownedRacket2SpritesCache.Remove(sprite);
-                ownedRacket2SpritesCache.Add(sprite, status);
-            }
-        }
-    }
-
-    public int spriteStatus(SpriteType spriteType, string sprite) {
-        if (spriteType == SpriteType.PUCK) {
+    public Sprite getSpriteFromCache(SpriteType spriteType, string sprite) {
+        if (spriteType.Equals(SpriteType.PUCK)) {
             return ownedPuckSpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
-        } else if (spriteType == SpriteType.RACKET1) {
-            return ownedRacket1SpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
         } else {
-            return ownedRacket2SpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
-        }
-    }
-
-    public string spriteKeyByStatus(SpriteType spriteType, int status) {
-        if (spriteType == SpriteType.PUCK) {
-            return ownedPuckSpritesCache.FirstOrDefault(x => x.Value == status).Key;
-        } else if (spriteType == SpriteType.RACKET1) {
-            return ownedRacket1SpritesCache.FirstOrDefault(x => x.Value == status).Key;
-        } else {
-            return ownedRacket2SpritesCache.FirstOrDefault(x => x.Value == status).Key;
+            return ownedRacketSpritesCache.FirstOrDefault(x => x.Key == sprite).Value;
         }
     }
 

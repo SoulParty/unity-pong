@@ -10,116 +10,58 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public SpriteType spriteType;
 
-    public int LOGO_COST = 10;
-    public GameObject owned;
-    public GameObject selectionSprite;
-    public Sprite[] sprites;
-    public Sprite[] selections;
+    public GameObject status;
+    public GameObject price;
+    public GameObject current;
 
-    private int _currentSprite = 0;
-    public int currentSprite {
-        get {
-            return this._currentSprite;
-        }
-        set {
-            if (value >= sprites.Length - 1) {
-                this._currentSprite = 0;
-            } else if (value < 0) {
-                this._currentSprite = sprites.Length - 1;
-            } else {
-                this._currentSprite = value;
-            }
-        }
-    }
+    private Image statusIcon;
+    private Image priceIcon;
+    private Image currentSprite;
 
-    public void Start () {
-        SettingsController.Instance.loadSprites(spriteType);
-        if (spriteType == SpriteType.PUCK) {
-            sprites = SettingsController.Instance.getPuckSprites();
-            showSprite(System.Array.IndexOf (sprites, SettingsController.Instance.selectedPuck));
-        } else if (spriteType == SpriteType.RACKET1) {
-            sprites = SettingsController.Instance.getRacketSprites();
-            showSprite(System.Array.IndexOf (sprites, SettingsController.Instance.selectedPlayer1Racket));
+    public GameObject currentSpriteNumber;
+    public GameObject totalNumberOfSprites;
+
+    private Sprite[] sprites;
+    private SettingsController settingsController;
+
+    public void Start() {
+        settingsController = SettingsController.Instance;
+
+        statusIcon = status.GetComponent<Image>();
+        priceIcon = price.GetComponent<Image>();
+        currentSprite = current.GetComponent<Image>();
+
+        if (spriteType.Equals(SpriteType.PUCK)) {
+//            currentSprite = settingsController.getSpriteFromCache(SpriteType.PUCK, SpriteDao.Instance.getSelected(SpriteType.PUCK));
+            sprites = settingsController.getPuckSprites();
+        } else if (spriteType.Equals(SpriteType.RACKET1)) {
+//            currentSprite = settingsController.getSpriteFromCache(SpriteType.RACKET1, SpriteDao.Instance.getSelected(SpriteType.RACKET1));
+            sprites = settingsController.getRacketSprites();
         } else {
-            sprites = SettingsController.Instance.getRacketSprites();
-            showSprite(System.Array.IndexOf (sprites, SettingsController.Instance.selectedPlayer2Racket));
+//            currentSprite = settingsController.getSpriteFromCache(SpriteType.RACKET2, SpriteDao.Instance.getSelected(SpriteType.RACKET2));
+            sprites = settingsController.getRacketSprites();
         }
+        SpriteService.Instance.total(totalNumberOfSprites, sprites);
+        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 
-    public void buySprite(int sprite) {
-        if (SettingsController.Instance.spriteStatus(spriteType, sprites[currentSprite].ToString()) == 0 && SettingsController.Instance.checkFunds(LOGO_COST)) {
-            SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - LOGO_COST);
-            SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 1);
-            showSprite(currentSprite);
-            MusicController.Instance.playCoin();
-        } else {
-            selectSprite(sprite);
-            MusicController.Instance.playImpact();
-        }
+    public void prev() {
+        currentSprite.sprite = SpriteService.Instance.prev(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 
-    public void selectSprite(int sprite) {
-        string exSprite = null;
-        switch (sprite) {
-            case 2:
-            exSprite = SettingsController.Instance.selectedPuck.ToString();
-            SettingsController.Instance.setPuck(sprites[currentSprite]);
-            SettingsController.Instance.spriteKeyByStatus(spriteType, 2); break;
-            case 3:
-            exSprite = SettingsController.Instance.selectedPlayer1Racket.ToString();
-            SettingsController.Instance.setPlayer1Racket(sprites[currentSprite]);
-            SettingsController.Instance.spriteKeyByStatus(spriteType, 3); break;
-            case 4:
-            exSprite = SettingsController.Instance.selectedPlayer2Racket.ToString();
-            SettingsController.Instance.setPlayer2Racket(sprites[currentSprite]);
-            SettingsController.Instance.spriteKeyByStatus(spriteType, 4); break;
-        }
-        if (exSprite != null) {
-            SettingsController.Instance.setStatus(spriteType, exSprite, 1);
-        }
-
-        switch (sprite) {
-            case 2: SettingsController.Instance.setPuck(sprites[currentSprite]);
-            SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 2);
-            break;
-            case 3: SettingsController.Instance.setPlayer1Racket(sprites[currentSprite]);
-            SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 3);
-            break;
-            case 4: SettingsController.Instance.setPlayer2Racket(sprites[currentSprite]);
-            SettingsController.Instance.setStatus(spriteType, sprites[currentSprite].ToString(), 4);
-            break;
-        }
-        showSprite(currentSprite);
+    public void next() {
+        currentSprite.sprite = SpriteService.Instance.next(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 
-    public void nextSprite() {
-        currentSprite++;
-        showSprite(currentSprite);
-        MusicController.Instance.playImpact();
+    public void buy() {
+        currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 
-    public void prevSprite() {
-        currentSprite--;
-        showSprite(currentSprite);
-        MusicController.Instance.playImpact();
+    public void select() {
+        currentSprite.sprite = SpriteService.Instance.select(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 
-    public void showSprite(int index) {
-        if (index != -1) {
-            selectionSprite.GetComponent<Image>().sprite = sprites[index];
-            int spriteStatus = SettingsController.Instance.spriteStatus(spriteType, sprites[index].ToString());
-            switch (spriteStatus) {
-                case 2: if (spriteType != SpriteType.PUCK) {
-                    spriteStatus = 1;
-                } break;
-                case 3: if (spriteType != SpriteType.RACKET1) {
-                    spriteStatus = 1;
-                } break;
-                case 4: if (spriteType != SpriteType.RACKET2) {
-                    spriteStatus = 1;
-                } break;
-            }
-            owned.GetComponent<Image>().sprite = selections[spriteStatus];
-        }
+    public void unSelect() {
+        currentSprite.sprite = SpriteService.Instance.unSelect(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
     }
 }

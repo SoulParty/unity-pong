@@ -179,7 +179,7 @@ public class UI : BaseUI {
         }
     }
 
-    private void display4CharNumber(GameObject display, int number) {
+    public void display4CharNumber(GameObject display, int number) {
         Image[] componentImages = display.GetComponentsInChildren<Image>();
         char[] charArray = number.ToString().ToCharArray();
         for (int i = 0; i < 4; i++) {
