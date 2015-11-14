@@ -123,19 +123,24 @@ public class SettingsController : MonoBehaviour {
         this.multiplayerType = multiplayerType;
     }
 
+    public void setSelected(Sprite sprite, SpriteType spriteType) {
+        switch (spriteType) {
+            case SpriteType.PUCK:this.selectedPuck = sprite; break;
+            case SpriteType.RACKET1:this.selectedPlayer1Racket = sprite; break;
+            case SpriteType.RACKET2:this.selectedPlayer2Racket = sprite; break;
+        }
+    }
+
     public void setPuck(Sprite puck) {
         this.selectedPuck = puck;
-        PlayerPrefs.SetInt(puck.ToString(), 2);
     }
 
     public void setPlayer1Racket(Sprite racket1) {
         this.selectedPlayer1Racket = racket1;
-        PlayerPrefs.SetInt(racket1.ToString(), 3);
     }
 
     public void setPlayer2Racket(Sprite racket2) {
         this.selectedPlayer2Racket = racket2;
-        PlayerPrefs.SetInt(racket2.ToString(), 4);
     }
 
     public bool checkFunds(int cost) {

@@ -12,6 +12,8 @@ public class ButtonManager : MonoBehaviour {
     public GameObject credits;
     public GameObject settings;
 
+    public GameObject coinsTotal;
+
     public GameObject[] mainMenu;
 
     public GameObject music;
@@ -111,10 +113,8 @@ public class ButtonManager : MonoBehaviour {
                     Debug.Log(result.ToString());
                     if (result.ToString().Equals("Finished")) {
                         SettingsController.Instance.addCoins(100);
-                        UI.Instance.showTotals();
-                        if (UI.Instance != null) {
-                            UI.Instance.enoughCoins();
-                        }
+                        SpriteService.Instance.display4CharNumber(
+                                SpriteService.Instance.coinsTotal, SettingsController.Instance.getCoins());
                     }
                 }
             });

@@ -13,6 +13,10 @@ public class SpriteDao : MonoBehaviour {
         PlayerPrefs.SetInt(sprite.ToString(), spriteStatus);
     }
 
+    public void unSelect(string sprite) {
+        PlayerPrefs.SetInt(sprite, (int) SpriteStatus.OWNED);
+    }
+
     public SpriteStatus getStatus(Sprite sprite) {
         int status = PlayerPrefs.GetInt(sprite.ToString());
         return (SpriteStatus) status;

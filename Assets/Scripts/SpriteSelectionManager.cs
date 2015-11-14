@@ -32,36 +32,25 @@ public class SpriteSelectionManager : MonoBehaviour {
         currentSprite = current.GetComponent<Image>();
 
         if (spriteType.Equals(SpriteType.PUCK)) {
-//            currentSprite = settingsController.getSpriteFromCache(SpriteType.PUCK, SpriteDao.Instance.getSelected(SpriteType.PUCK));
             sprites = settingsController.getPuckSprites();
         } else if (spriteType.Equals(SpriteType.RACKET1)) {
-//            currentSprite = settingsController.getSpriteFromCache(SpriteType.RACKET1, SpriteDao.Instance.getSelected(SpriteType.RACKET1));
             sprites = settingsController.getRacketSprites();
         } else {
-//            currentSprite = settingsController.getSpriteFromCache(SpriteType.RACKET2, SpriteDao.Instance.getSelected(SpriteType.RACKET2));
-            sprites = settingsController.getRacketSprites();
+              sprites = settingsController.getRacketSprites();
         }
         SpriteService.Instance.total(totalNumberOfSprites, sprites);
-        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
+        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
     }
 
     public void prev() {
-        currentSprite.sprite = SpriteService.Instance.prev(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
+        currentSprite.sprite = SpriteService.Instance.prev(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
     }
 
     public void next() {
-        currentSprite.sprite = SpriteService.Instance.next(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
+        currentSprite.sprite = SpriteService.Instance.next(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
     }
 
     public void buy() {
-        currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
-    }
-
-    public void select() {
-        currentSprite.sprite = SpriteService.Instance.select(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
-    }
-
-    public void unSelect() {
-        currentSprite.sprite = SpriteService.Instance.unSelect(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites);
+        currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
     }
 }

@@ -1,11 +1,12 @@
+using Mono.Xml.Xsl;
 using System;
+using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SpriteService : MonoBehaviour {
 
     SpriteDao spriteDao;
-    UI UI;
 
     public Sprite get;
     public Sprite needCoins;
@@ -17,8 +18,11 @@ public class SpriteService : MonoBehaviour {
     public Sprite price25c;
     public Sprite price50c;
     public Sprite price100c;
+    public Sprite nullIcon;
 
     public Sprite[] symbolArray;
+
+    public GameObject coinsTotal;
 
     [System.NonSerialized]
     public static SpriteService Instance;
@@ -29,22 +33,29 @@ public class SpriteService : MonoBehaviour {
 
     public void Start() {
         spriteDao = SpriteDao.Instance;
-        UI = UI.Instance;
     }
 
-    public Sprite buy(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites) {
-        spriteDao.setStatus(currentSprite, (int) SpriteStatus.OWNED);
-        return displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite, sprites);
+    public Sprite buy(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites, SpriteType spriteType) {
+        int price = SpriteService.Instance.price(currentSprite, sprites);
+        SpriteStatus status = getStatus(currentSprite, spriteType);
+        if (status.Equals(SpriteStatus.NOT_OWNED) && SettingsController.Instance.checkFunds(price)) {
+            SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - price);
+            display4CharNumber(coinsTotal, SettingsController.Instance.getCoins());
+            SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - price);
+            spriteDao.setStatus(currentSprite, (int) SpriteStatus.OWNED);
+        } else if (status.Equals(SpriteStatus.OWNED)) {
+            select(currentSprite, spriteType);
+        }
+        return displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite, sprites, spriteType);
     }
 
-    public Sprite select(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites) {
-        spriteDao.setStatus(currentSprite, (int) SpriteStatus.SELECTED);
-        return displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite, sprites);
-    }
-
-    public Sprite unSelect(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites) {
-        spriteDao.setStatus(currentSprite, (int) SpriteStatus.OWNED);
-        return displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite, sprites);
+    public void select(Sprite currentSprite, SpriteType spriteType) {
+        if (!spriteDao.getStatus(currentSprite).Equals(SpriteStatus.NOT_OWNED)) {
+            spriteDao.unSelect(spriteDao.getSelected(spriteType));
+            spriteDao.setStatus(currentSprite, (int) SpriteStatus.SELECTED);
+            spriteDao.setSelected(currentSprite, spriteType);
+            SettingsController.Instance.setSelected(currentSprite, spriteType);
+        }
     }
 
     private int number(Sprite currentSprite, Sprite[] sprites) {
@@ -78,7 +89,7 @@ public class SpriteService : MonoBehaviour {
         }
     }
 
-    public Sprite next(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites) {
+    public Sprite next(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites, SpriteType spriteType) {
         Sprite sprite;
         if (Array.IndexOf(sprites, currentSprite) != sprites.Length - 1) {
             sprite = sprites[Array.IndexOf(sprites, currentSprite) + 1];
@@ -86,12 +97,12 @@ public class SpriteService : MonoBehaviour {
             sprite = sprites[0];
         }
 
-        displaySprite(currentSpriteNumber, statusIcon, priceIcon, sprite, sprites);
+        displaySprite(currentSpriteNumber, statusIcon, priceIcon, sprite, sprites, spriteType);
 
         return sprite;
     }
 
-    public Sprite prev(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites) {
+    public Sprite prev(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite currentSprite, Sprite[] sprites, SpriteType spriteType) {
         Sprite sprite;
         if (Array.IndexOf(sprites, currentSprite) != 0) {
             sprite = sprites[Array.IndexOf(sprites, currentSprite) - 1];
@@ -99,15 +110,23 @@ public class SpriteService : MonoBehaviour {
             sprite = sprites[sprites.Length - 1];
         }
 
-        displaySprite(currentSpriteNumber, statusIcon, priceIcon, sprite, sprites);
+        displaySprite(currentSpriteNumber, statusIcon, priceIcon, sprite, sprites, spriteType);
 
         return sprite;
     }
 
-    public Sprite displaySprite(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite sprite, Sprite[] sprites) {
+    public Sprite displaySprite(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite sprite, Sprite[] sprites, SpriteType spriteType) {
         display2CharNumber(currentSpriteNumber, number(sprite, sprites));
-        statusIcon.sprite = statusSprite(sprite);
-        priceIcon.sprite = priceSprite(sprite, sprites);
+        statusIcon.sprite = statusSprite(sprite, spriteType);
+        if (statusIcon.sprite.Equals(notOwned)) {
+            priceIcon.sprite = priceSprite(sprite, sprites);
+            if (!SettingsController.Instance.checkFunds(price(sprite, sprites))) {
+                statusIcon.sprite = needCoins;
+                //TODO play animation
+            }
+        } else {
+            priceIcon.sprite = nullIcon;
+        }
         //change neighbors
         return sprite;
     }
@@ -121,6 +140,18 @@ public class SpriteService : MonoBehaviour {
         } else {
             componentImages[0].sprite = toImage('0');
             componentImages[1].sprite = toImage(charArray[0]);
+        }
+    }
+
+    public void display4CharNumber(GameObject display, int number) {
+        Image[] componentImages = display.GetComponentsInChildren<Image>();
+        char[] charArray = number.ToString().ToCharArray();
+        for (int i = 0; i < 4; i++) {
+            if (i < charArray.Length) {
+                componentImages[i].sprite = toImage(charArray[i]);
+            } else {
+                componentImages[i].sprite = toImage(' ');
+            }
         }
     }
 
@@ -142,12 +173,27 @@ public class SpriteService : MonoBehaviour {
         }
     }
 
-    public Sprite statusSprite(Sprite sprite) {
-        SpriteStatus status = spriteDao.getStatus(sprite);
+    public Sprite statusSprite(Sprite sprite, SpriteType spriteType) {
+        SpriteStatus status = getStatus(sprite, spriteType);
         switch (status) {
             case SpriteStatus.SELECTED: return selected;
             case SpriteStatus.OWNED: return owned;
             default: return notOwned;
+        }
+    }
+
+    public SpriteStatus getStatus(Sprite sprite, SpriteType spriteType) {
+        SpriteStatus status = spriteDao.getStatus(sprite);
+        string selected = spriteDao.getSelected(spriteType);
+        if (status.Equals(SpriteStatus.SELECTED) && sprite.ToString().Equals(selected)) {
+            return SpriteStatus.SELECTED;
+        } else if (status.Equals(SpriteStatus.SELECTED) && selected.Equals("")) {
+            spriteDao.setSelected(sprite, spriteType);
+            return SpriteStatus.SELECTED;
+        } else if (status.Equals(SpriteStatus.OWNED) || status.Equals(SpriteStatus.SELECTED)) {
+            return SpriteStatus.OWNED;
+        } else {
+            return SpriteStatus.NOT_OWNED;
         }
     }
 }
