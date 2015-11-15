@@ -31,7 +31,7 @@ public class SettingsController : MonoBehaviour {
     [System.NonSerialized]
     public static SettingsController Instance;
 
-    public Difficulty difficulty = Difficulty.INSANE;
+    public Difficulty difficulty = Difficulty.EASY;
     public MultiplayerType multiplayerType = MultiplayerType.LOCAL;
 
     [SerializeField]

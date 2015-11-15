@@ -1366,8 +1366,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162895756}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
-  m_LocalPosition: {x: -31, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1271497766}
   m_RootOrder: 1
@@ -1409,7 +1409,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1023.99988, y: 130}
+  m_Size: {x: 1023.99988, y: 11}
 --- !u!1001 &252289076
 Prefab:
   m_ObjectHideFlags: 0
@@ -3009,7 +3009,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -523, y: 38}
-  m_SizeDelta: {x: 465, y: 58}
+  m_SizeDelta: {x: 232, y: 116}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &349293007
 MonoBehaviour:
@@ -3475,6 +3475,7 @@ MonoBehaviour:
   spendCoins: {fileID: 0}
   credits: {fileID: 0}
   settings: {fileID: 0}
+  coinsTotal: {fileID: 0}
   mainMenu: []
   music: {fileID: 0}
   vibrate: {fileID: 0}
@@ -3983,6 +3984,10 @@ MonoBehaviour:
   leftWall2: {fileID: 1842584089}
   rightWall1: {fileID: 506540449}
   rightWall2: {fileID: 1668038813}
+  leftWall1Transform: {x: 0, y: 0, z: 0}
+  leftWall2Transform: {x: 0, y: 0, z: 0}
+  rightWall1Transform: {x: 0, y: 0, z: 0}
+  rightWall2Transform: {x: 0, y: 0, z: 0}
 --- !u!1 &562649466
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,6 +7096,9 @@ MonoBehaviour:
   referenceWallUp: {fileID: 353169277}
   FOLLOW_BALL_SPEED: 700
   MOVEMENT_SPEED: 1000
+  BASE_BALL_FOLLOW_SPEED: 1000
+  BASE_MOVEMENT_SPEED: 1000
+  minimumTargetDistance: 20
   isFollowBall: 0
   wildBall: 0
   halfArena: 0
@@ -7367,7 +7375,7 @@ MonoBehaviour:
   DISTANCE_BETWEEN_WALLS: 1020
   WALL_THICKNESS: 122
   playerPosition: 840
-  GOALS_TO_WIN: 2
+  GOALS_TO_WIN: 5
   topWall: {fileID: 353169277}
   bottomWall: {fileID: 45686390}
   player1: {fileID: 1330673421}
@@ -7470,7 +7478,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901815758}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
-  m_LocalPosition: {x: 889, y: 20, z: 0}
+  m_LocalPosition: {x: 888, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1664703713}
@@ -8725,7 +8733,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 971616755}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
-  m_LocalPosition: {x: -889, y: 24, z: 0}
+  m_LocalPosition: {x: -888, y: 24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1346821954}
@@ -8782,8 +8790,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979112808}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
-  m_LocalPosition: {x: 37, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 650125802}
   m_RootOrder: 1
@@ -8825,7 +8833,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1023.99988, y: 130}
+  m_Size: {x: 1023.99988, y: 11}
 --- !u!1 &983902505
 GameObject:
   m_ObjectHideFlags: 0
@@ -8858,7 +8866,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 573, y: 0}
-  m_SizeDelta: {x: 465, y: 58}
+  m_SizeDelta: {x: 232, y: 116}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &983902507
 MonoBehaviour:
@@ -9309,7 +9317,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1936521e67d264a35b5e234ac52ef47f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &1046064176
 Transform:
   m_ObjectHideFlags: 0
@@ -12352,7 +12360,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277693948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.2820015, y: -13.3681536, z: -243.244781}
+  m_LocalPosition: {x: -43.3082809, y: -13.233079, z: -243.244476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 370447024}

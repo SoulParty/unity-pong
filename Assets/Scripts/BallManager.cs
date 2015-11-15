@@ -22,13 +22,14 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     TrailRenderer redTrail;
     TrailRenderer whiteTrail;
     
-    
+    Rigidbody2D rigidBody2D;
     
     void Start() {
         speed = GameController.Instance.defaultBallStartSpeed;
         speedCap = GameController.Instance.ballSpeedUp * speedCapMultiplier + GameController.Instance.defaultBallStartSpeed;
+        rigidBody2D = GetComponent<Rigidbody2D>();
         // Initial Velocity
-        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+        rigidBody2D.velocity = Vector2.right * speed;
 
         orangeTrail = gameObject.transform.GetChild((int) TrailColor.ORANGE).GetComponent<TrailRenderer>();
         blueTrail = gameObject.transform.GetChild((int) TrailColor.BLUE).GetComponent<TrailRenderer>();
@@ -61,7 +62,7 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
             Vector2 dir = new Vector2(-1, y).normalized;
 
             // Set Velocity with dir * speed
-            GetComponent<Rigidbody2D>().velocity = dir * speed;
+            rigidBody2D.velocity = dir * speed;
             hitRacket = true;
             if (SettingsController.Instance.isVersusAI && y != 0) {
                 PongAIController.Instance.isFollowBall = false;
@@ -88,14 +89,14 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
             Vector2 dir = new Vector2(1, y).normalized;
 
             // Set Velocity with dir * speed
-            GetComponent<Rigidbody2D>().velocity = dir * speed;
+            rigidBody2D.velocity = dir * speed;
             hitRacket = true;
             if (SettingsController.Instance.isVersusAI) {
                 PongAIController.Instance.wildBall = 0;
             }
             increaseSpeed(GameController.Instance.ballSpeedUp);
         } else { //This way the ball shouldn't loose speed after collisions
-            GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity.normalized * speed;
+            rigidBody2D.velocity = rigidBody2D.velocity.normalized * speed;
         }
 
         //        //Debug.Log("Speed:" + speed.ToString());
@@ -125,13 +126,13 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     public void reset() {
         speed = GameController.Instance.defaultBallStartSpeed;
         transform.position = new Vector3(0, 0, 0);
-        GetComponent<Rigidbody2D>().isKinematic = true;
+        rigidBody2D.isKinematic = true;
     }
 
     public void moveInRandomDirection() {
-        GetComponent<Rigidbody2D>().isKinematic = false;
+        rigidBody2D.isKinematic = false;
         var direction = RandomUtility.randomNegativeOrPositive();
-        GetComponent<Rigidbody2D>().velocity = direction * Vector2.right * speed;
+        rigidBody2D.velocity = direction * Vector2.right * speed;
     }
 
     public void increaseSpeed(int speedUp) {

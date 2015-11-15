@@ -56,4 +56,30 @@ public class RandomUtility {
         PongAIController.Instance.FOLLOW_BALL_SPEED = followSpeed;
         PongAIController.Instance.MOVEMENT_SPEED = movementSpeed;
     }
+
+    public static int doMistakes() {
+        switch (SettingsController.Instance.getAIDifficulty()) {
+            case Difficulty.EASY:
+            if (Random.Range(0, 1f) < 0.33) {
+                return 70;
+            } else {
+                return 20;
+            }
+            case Difficulty.MEDIUM:
+            if (Random.Range(0, 1f) < 0.33) {
+                return 70;
+            } else {
+                return 20;
+            }
+            case Difficulty.HARD:
+            if (Random.Range(0, 1f) < 0.2) {
+                return 70;
+            } else {
+                return 20;
+            }
+            case Difficulty.INSANE:
+                return 20;
+            default: return 20;
+        }
+    }
 }

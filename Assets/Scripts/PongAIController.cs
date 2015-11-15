@@ -14,6 +14,11 @@ public class PongAIController : MonoBehaviour {
 
     public int FOLLOW_BALL_SPEED = 1000;
     public int MOVEMENT_SPEED = 1000;
+    public int BASE_BALL_FOLLOW_SPEED = 1000;
+    public int BASE_MOVEMENT_SPEED = 1000;
+
+    public int minimumTargetDistance = 20;
+
     private float distanceFromGoal;
 
     private GameObject nearestBall;
@@ -24,6 +29,8 @@ public class PongAIController : MonoBehaviour {
     public bool isFollowBall = false;
     public int wildBall = 0;
     public double halfArena;
+
+    private Rigidbody2D aiPlayerRigidBody;
 
     [System.NonSerialized]
     public static PongAIController Instance;
@@ -42,20 +49,22 @@ public class PongAIController : MonoBehaviour {
         }
         switch (difficulty) {
             case Difficulty.EASY:
-            FOLLOW_BALL_SPEED = 500;
-            MOVEMENT_SPEED = 600;
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.3);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.3);
             break;
             case Difficulty.MEDIUM: break;
-            FOLLOW_BALL_SPEED = 700;
-            MOVEMENT_SPEED = 800;
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.6);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.6);
             case Difficulty.HARD: break;
-            FOLLOW_BALL_SPEED = 900;
-            MOVEMENT_SPEED = 1000;
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 1.5);
             case Difficulty.INSANE:
-            FOLLOW_BALL_SPEED = 1200;
-            MOVEMENT_SPEED = 1100;
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1.5);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 3);
             break;
         }
+
+        aiPlayerRigidBody = aIPlayer.GetComponent<Rigidbody2D>();
     }
 
     public void Init() {
@@ -65,12 +74,13 @@ public class PongAIController : MonoBehaviour {
         distanceFromGoal = GameController.Instance.DISTANCE_FROM_GOAL;
     }
 
-    public void FixedUpdate () {
-        if (MathUtility.roundToNearestHalf(aIPlayer.transform.position.y) == MathUtility.roundToNearestHalf(target.transform.position.y)) {
+    public void Update () {
+        if (Vector2.Distance(aIPlayer.transform.position, target.transform.position) < minimumTargetDistance) {
             isArrived = true;
         }
 
         if (GameController.Instance.getIsDoubleBallMode()) {
+//        if (true) {
             double nearestDistance = 20000;
             foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
                 float distance = Vector3.Distance(aIPlayer.transform.position, ball.transform.position);
@@ -83,17 +93,18 @@ public class PongAIController : MonoBehaviour {
         }
 
         if (!isArrived) {
-            Vector2 position = aIPlayer.GetComponent<Rigidbody2D>().position;
+            Vector2 position = aiPlayerRigidBody.position;
             Vector2 vector = new Vector2(target.transform.position.x, target.transform.position.y);
-            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
+            aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
+//            aiPlayerRigidBody.AddRelativeForce((vector - position).normalized * MOVEMENT_SPEED, ForceMode2D.Force);
         } else if (isFollowBall || wildBall > 1) {
-            Vector2 position = aIPlayer.GetComponent<Rigidbody2D>().position;
+            Vector2 position = aiPlayerRigidBody.position;
             if (nearestBall == null) {
                 nearestBall = ball;
             }
-            Vector2 vector = new Vector2(aIPlayer.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
-//            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
-            aIPlayer.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(vector, position, Time.fixedDeltaTime / 10));
+            Vector2 vector = new Vector2(target.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
+            aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * FOLLOW_BALL_SPEED);
+//            aiPlayerRigidBody.AddRelativeForce((vector - position).normalized * FOLLOW_BALL_SPEED, ForceMode2D.Force);
         }
     }
 
@@ -163,7 +174,8 @@ public class PongAIController : MonoBehaviour {
         if (target.transform.position.y > halfArena || target.transform.position.y < -halfArena) {
             target.transform.position = new Vector3(distanceFromGoal, 0, 0);
         }
-        RandomUtility.setSlowDownByDifficulty();
+
+        minimumTargetDistance = RandomUtility.doMistakes();
         isArrived = false;
     }
 

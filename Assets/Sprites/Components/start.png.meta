@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1447511217
+timeCreated: 1447576252
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -218,6 +218,9 @@ TextureImporter:
     21300422: 100g
     21300424: need-coins
     21300426: slash
+    21300428: sounds
+    21300430: vibration
+    21300432: balls-logos
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -426,9 +429,9 @@ TextureImporter:
     - name: selected
       rect:
         serializedVersion: 2
-        x: 1036
-        y: 1768
-        width: 128
+        x: 1041
+        y: 1757
+        width: 256
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -436,9 +439,9 @@ TextureImporter:
     - name: not-selected
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 1768
-        width: 128
+        x: 1490
+        y: 2014
+        width: 256
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -2359,6 +2362,36 @@ TextureImporter:
         x: 1436
         y: 1693
         width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sounds
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2190
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vibration
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2192
+        width: 512
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balls-logos
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2106
+        width: 512
         height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
