@@ -43,6 +43,7 @@ public class SpriteService : MonoBehaviour {
             display4CharNumber(coinsTotal, SettingsController.Instance.getCoins());
             SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - price);
             spriteDao.setStatus(currentSprite, (int) SpriteStatus.OWNED);
+            SettingsController.Instance.removeFromNotOwnedSprites(currentSprite);
         } else if (status.Equals(SpriteStatus.OWNED)) {
             select(currentSprite, spriteType);
         }

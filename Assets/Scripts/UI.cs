@@ -1,3 +1,5 @@
+using GoogleMobileAds.Api;
+using Scripts.Ads;
 using System;
 using System.Collections;
 using TextFx;
@@ -115,9 +117,11 @@ public class UI : BaseUI {
     public void showPauseMenu() {
         if (Time.timeScale == 0) {
             activate(pauseMenu);
+            StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
         }
         else {
             deactivate(pauseMenu);
+            AdManager.Instance.hideBannerAd();
         }
     }
 
@@ -129,16 +133,7 @@ public class UI : BaseUI {
         activate(winMenu);
         activate(roll);
         display4CharNumber(bestScoreTotal, SettingsController.Instance.getMaxCombo());
-        if (SettingsController.Instance.getCoins() > 100) {
-            activate(paidRoll);
-            deactivate(freeRoll);
-        } else {
-            deactivate(roll);
-            deactivate(paidRoll);
-            deactivate(freeRoll);
-            activate(notEnoughCoins);
-            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
-        }
+        rollRefresh();
         if (TimeUtility.getIsFreeRollAvailable()) {
             deactivate(notEnoughCoins);
             deactivate(paidRoll);
@@ -149,6 +144,7 @@ public class UI : BaseUI {
             TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
             displayTime(passedSinceLastRoll.Hours, passedSinceLastRoll.Minutes);
         }
+        StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
     }
 
     public void enoughCoins() {
@@ -236,6 +232,19 @@ public class UI : BaseUI {
         deactivate(p1);
         deactivate(p2);
         yield break;
+    }
+
+    public void rollRefresh() {
+        if (SettingsController.Instance.getCoins() > 33) {
+            activate(paidRoll);
+            deactivate(freeRoll);
+        } else {
+            deactivate(roll);
+            deactivate(paidRoll);
+            deactivate(freeRoll);
+            activate(notEnoughCoins);
+            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
+        }
     }
 
 }

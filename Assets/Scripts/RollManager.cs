@@ -1,6 +1,7 @@
 using Mono.Xml.Xsl;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,24 +18,26 @@ public class RollManager : MonoBehaviour {
             UI.Instance.showWinMenu(); //Refresh menu
             winPrize();
         } else {
-            if (SettingsController.Instance.checkFunds(100)) {
-                SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 100);
+            if (SettingsController.Instance.checkFunds(33)) {
+                SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 33);
                 winPrize();
             }
         }
+        UI.Instance.rollRefresh();
     }
 
     private void winPrize() {
         ObjectUtility.enableGameObject(rollFinishedParticles);
         StartCoroutine(disableCoinImpactTimer());
 
-        Sprite[] puckSprites = pucks;
+        List<Sprite> prizes = new List<Sprite>();
         if (SettingsController.Instance.getPuckSprites().Length != 0) {
-            puckSprites = SettingsController.Instance.getPuckSprites();
+            prizes.AddRange(SettingsController.Instance.getPuckSprites());
+            prizes.AddRange(SettingsController.Instance.getRacketSprites());
         }
-
-        Sprite sprite = puckSprites[UnityEngine.Random.Range(0, puckSprites.Length - 1)];
+        Sprite sprite = prizes[UnityEngine.Random.Range(0, prizes.Count - 1)];
         rng.GetComponent<Image>().sprite = sprite;
+        SettingsController.Instance.removeFromNotOwnedSprites(sprite);
         SpriteDao.Instance.setStatus(sprite, (int) SpriteStatus.OWNED);
     }
 

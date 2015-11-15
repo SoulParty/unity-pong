@@ -18,6 +18,8 @@ public class SettingsController : MonoBehaviour {
     private Dictionary<string, Sprite> ownedPuckSpritesCache = new Dictionary<string, Sprite>();
     private Dictionary<string, Sprite> ownedRacketSpritesCache = new Dictionary<string, Sprite>();
 
+    List<Sprite> notOwnedSprites = new List<Sprite>();
+
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
 
@@ -159,6 +161,14 @@ public class SettingsController : MonoBehaviour {
         return racketLogos;
     }
 
+    public List<Sprite> getNotOwnedSprites() {
+        return notOwnedSprites;
+    }
+
+    public void removeFromNotOwnedSprites(Sprite sprite) {
+        notOwnedSprites.Remove(sprite);
+    }
+
     public Sprite[] loadSprites(SpriteType spriteType) {
         Debug.Log("-------- LOADING SPRITES ---------");
         if (spriteType == SpriteType.PUCK) {
@@ -167,6 +177,9 @@ public class SettingsController : MonoBehaviour {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
                     ownedPuckSpritesCache.Add(sprite.ToString(), sprite);
                     Debug.Log("Puck sprite: " + sprite.ToString() + "status: " + status);
+                    if (SpriteStatus.NOT_OWNED.Equals(status)) {
+                        notOwnedSprites.Add(sprite);
+                    }
                 }
             }
             return getPuckSprites();
@@ -176,6 +189,9 @@ public class SettingsController : MonoBehaviour {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
                     ownedRacketSpritesCache.Add(sprite.ToString(), sprite);
                     Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
+                    if (SpriteStatus.NOT_OWNED.Equals(status)) {
+                        notOwnedSprites.Add(sprite);
+                    }
                 }
             }
             return getRacketSprites();

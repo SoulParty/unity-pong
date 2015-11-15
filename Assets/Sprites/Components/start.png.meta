@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c319bdb56075e462c8b6afe786c315f7
-timeCreated: 1447576252
+timeCreated: 1447608963
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -2349,9 +2349,9 @@ TextureImporter:
     - name: need-coins
       rect:
         serializedVersion: 2
-        x: 530
-        y: 0
-        width: 512
+        x: 644
+        y: 18
+        width: 256
         height: 128
       alignment: 0
       pivot: {x: .5, y: .5}

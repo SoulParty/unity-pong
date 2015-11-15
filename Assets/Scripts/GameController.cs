@@ -1,3 +1,4 @@
+using Scripts.Ads;
 using System.Collections;
 using System.Collections.Generic;
 using TextFx;
@@ -80,6 +81,8 @@ public class GameController : MonoBehaviour {
         } else {
             ObjectUtility.disableGameObject(aiDot);
         }
+
+        AdManager.Instance.hideBannerAd();
     }
 
     public void spawnRandomSpecial() {

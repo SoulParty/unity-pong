@@ -49,12 +49,12 @@ public class PongAIController : MonoBehaviour {
         }
         switch (difficulty) {
             case Difficulty.EASY:
-            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.3);
-            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.3);
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.5);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.5);
             break;
             case Difficulty.MEDIUM: break;
-            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.6);
-            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.6);
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.7);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.7);
             case Difficulty.HARD: break;
             FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
             MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 1.5);
