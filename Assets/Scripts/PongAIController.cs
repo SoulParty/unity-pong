@@ -59,11 +59,10 @@ public class PongAIController : MonoBehaviour {
             FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
             MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 1.5);
             case Difficulty.INSANE:
-            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1.5);
+            FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
             MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 3);
             break;
         }
-
         aiPlayerRigidBody = aIPlayer.GetComponent<Rigidbody2D>();
     }
 
@@ -80,7 +79,6 @@ public class PongAIController : MonoBehaviour {
         }
 
         if (GameController.Instance.getIsDoubleBallMode()) {
-//        if (true) {
             double nearestDistance = 20000;
             foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
                 float distance = Vector3.Distance(aIPlayer.transform.position, ball.transform.position);
@@ -93,23 +91,23 @@ public class PongAIController : MonoBehaviour {
         }
 
         if (!isArrived) {
-            Vector2 position = aiPlayerRigidBody.position;
-            Vector2 vector = new Vector2(target.transform.position.x, target.transform.position.y);
-            aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
-//            aiPlayerRigidBody.AddRelativeForce((vector - position).normalized * MOVEMENT_SPEED, ForceMode2D.Force);
-        } else if (isFollowBall || wildBall > 1) {
-            Vector2 position = aiPlayerRigidBody.position;
-            if (nearestBall == null) {
-                nearestBall = ball;
+            if (!(isFollowBall || wildBall > 1)) {
+                Vector2 position = aiPlayerRigidBody.position;
+                Vector2 vector = new Vector2(target.transform.position.x, target.transform.position.y);
+                aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
+            } else {
+                Vector2 position = aiPlayerRigidBody.position;
+                if (nearestBall == null) {
+                    nearestBall = ball;
+                }
+                Vector2 vector = new Vector2(target.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
+                aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * FOLLOW_BALL_SPEED);
             }
-            Vector2 vector = new Vector2(target.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
-            aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * FOLLOW_BALL_SPEED);
-//            aiPlayerRigidBody.AddRelativeForce((vector - position).normalized * FOLLOW_BALL_SPEED, ForceMode2D.Force);
         }
     }
 
     public void calculateBallCrossPoint(int direction, double hitAngle, double hitPosition) {
-		double xTotal = Math.Abs(MathUtility.roundToNearestTenth(distanceFromGoal - playerOne.transform.position.x));
+        double xTotal = Math.Abs(MathUtility.roundToNearestTenth(distanceFromGoal - playerOne.transform.position.x));
         int scenario = determineScenario(direction, xTotal, hitAngle, hitPosition);
         switch (scenario) {
             case 1:

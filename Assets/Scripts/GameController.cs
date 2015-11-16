@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour {
     }
 
     public void Init() {
+        AdManager.Instance.hideBannerAd();
         if (GameObject.Find("SettingsController") == null) {
             Instantiate(Resources.Load("SettingsController"));
         } else {
@@ -82,7 +83,7 @@ public class GameController : MonoBehaviour {
             ObjectUtility.disableGameObject(aiDot);
         }
 
-        AdManager.Instance.hideBannerAd();
+        UI.Instance.refreshCoins(SettingsController.Instance.getCoins());
     }
 
     public void spawnRandomSpecial() {
@@ -159,11 +160,13 @@ public class GameController : MonoBehaviour {
 
     public void pauseGame() {
         if (Time.timeScale == 1) {
+            StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
             Time.timeScale = 0;
             UIControl.showPauseMenu();
         }
         else {
             Time.timeScale = 1;
+            AdManager.Instance.hideBannerAd();
             UIControl.showPauseMenu();
         }
     }

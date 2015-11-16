@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Scripts.Ads {
     public class AdManager : MonoBehaviour {
 
-        public BannerView bannerView;
+        private BannerView bannerView;
         public bool bannerAdReady;
 
         [System.NonSerialized]
@@ -33,10 +33,17 @@ namespace Scripts.Ads {
             bannerView.LoadAd(request);
             // Called when an ad request has successfully loaded.
             bannerView.AdLoaded += HandleAdLoaded;
+            bannerView.AdFailedToLoad += HandleAdFailedToLoad;
+            hideBannerAd();
         }
 
         public void HandleAdLoaded(object sender, EventArgs args) {
-            print("HandleAdLoaded event received.");
+            Debug.Log("HandleAdLoaded event received.");
+            bannerAdReady = true;
+        }
+        public void HandleAdFailedToLoad(object sender, EventArgs args) {
+            Debug.Log("HandleAdFailedToLoaded event received.");
+            bannerAdReady = false;
         }
 
         void Awake() {
@@ -44,6 +51,7 @@ namespace Scripts.Ads {
         }
 
         public void showBannerAd() {
+            Debug.Log("showBannerAd()");
             bannerView.Show();
         }
 

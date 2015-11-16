@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af33635-89a3-4f22-ac05-599a7d885d68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/metadata/4a/4abd69b18c4ab45ec976851430122248" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/metadata/4a/4abd69b18c4ab45ec976851430122248.info" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202.info" afterPath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202" afterPath="$PROJECT_DIR$/Library/metadata/06/062924a9ad22f40eba86ad67a9d12202" />
@@ -13,6 +16,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/08/08f28e42a647e2a4cbd32e793359aa3c" afterPath="$PROJECT_DIR$/Library/metadata/08/08f28e42a647e2a4cbd32e793359aa3c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0a/0ac30ce8b58074957a9d9bc7265b437b.info" afterPath="$PROJECT_DIR$/Library/metadata/0a/0ac30ce8b58074957a9d9bc7265b437b.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0a/0ac30ce8b58074957a9d9bc7265b437b" afterPath="$PROJECT_DIR$/Library/metadata/0a/0ac30ce8b58074957a9d9bc7265b437b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0d/0d9dfb8d9a4c543dda9863cc18950756" afterPath="$PROJECT_DIR$/Library/metadata/0d/0d9dfb8d9a4c543dda9863cc18950756" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0f/0f22700a72c6767439a2124061522e18.info" afterPath="$PROJECT_DIR$/Library/metadata/0f/0f22700a72c6767439a2124061522e18.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0f/0f22700a72c6767439a2124061522e18" afterPath="$PROJECT_DIR$/Library/metadata/0f/0f22700a72c6767439a2124061522e18" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/0f/0f41946f2c07ecd429bf6f543b7268a6.info" afterPath="$PROJECT_DIR$/Library/metadata/0f/0f41946f2c07ecd429bf6f543b7268a6.info" />
@@ -45,7 +49,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012" afterPath="$PROJECT_DIR$/Library/metadata/34/347a4af640f58824d8438fae9b34a012" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/34/348b9784076194814b6e1074ed9758c3" afterPath="$PROJECT_DIR$/Library/metadata/34/348b9784076194814b6e1074ed9758c3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/36/3660348e7ad0c47d69c948a293b15e3a" afterPath="$PROJECT_DIR$/Library/metadata/36/3660348e7ad0c47d69c948a293b15e3a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/37/37591032fc9894ee8b729aca740fe742" afterPath="$PROJECT_DIR$/Library/metadata/37/37591032fc9894ee8b729aca740fe742" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0.info" afterPath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0" afterPath="$PROJECT_DIR$/Library/metadata/39/3969cf589b2988049a241dd586d40df0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/39/398da4b026da3fd4dbe04dfc2ba43f09" afterPath="$PROJECT_DIR$/Library/metadata/39/398da4b026da3fd4dbe04dfc2ba43f09" />
@@ -55,7 +58,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4b/4be0e8aa5e8747240af836ab4904c4a5" afterPath="$PROJECT_DIR$/Library/metadata/4b/4be0e8aa5e8747240af836ab4904c4a5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207.info" afterPath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207" afterPath="$PROJECT_DIR$/Library/metadata/4c/4cf56acadc8dfa74ba2fbfe951e89207" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fe531643c9a24a94a210d034e0fc79a" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fe531643c9a24a94a210d034e0fc79a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fe6da3a01cd5406aafdc0f05fb49acd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/52/523ba60c2550741258886434b087f792.info" afterPath="$PROJECT_DIR$/Library/metadata/52/523ba60c2550741258886434b087f792.info" />
@@ -86,11 +88,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b" afterPath="$PROJECT_DIR$/Library/metadata/6d/6d4a73b4e57ad274db7f476b430edf8b" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e.info" afterPath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e" afterPath="$PROJECT_DIR$/Library/metadata/75/75f168bf7d265dd44b08b5f61ae4388e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" afterPath="$PROJECT_DIR$/Library/metadata/79/79d29caecd189411caa678169771b5cb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244.info" afterPath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244" afterPath="$PROJECT_DIR$/Library/metadata/79/79ee47d0d7d8347459a63ae804788244" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d.info" afterPath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d" afterPath="$PROJECT_DIR$/Library/metadata/7a/7a8f3f5d1f3ffee4ca6d216e217d1e0d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7b/7b0e6fd757dbf46e98998333b428c721" afterPath="$PROJECT_DIR$/Library/metadata/7b/7b0e6fd757dbf46e98998333b428c721" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7b/7b11eec997e4c3044a59e4a2ff710b4e.info" afterPath="$PROJECT_DIR$/Library/metadata/7b/7b11eec997e4c3044a59e4a2ff710b4e.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7b/7b11eec997e4c3044a59e4a2ff710b4e" afterPath="$PROJECT_DIR$/Library/metadata/7b/7b11eec997e4c3044a59e4a2ff710b4e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/7b/7b307a75dc728dd45a8d3c3605600317.info" afterPath="$PROJECT_DIR$/Library/metadata/7b/7b307a75dc728dd45a8d3c3605600317.info" />
@@ -102,7 +104,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8037018a43c73ce40960ff49fdbf8bfa" afterPath="$PROJECT_DIR$/Library/metadata/80/8037018a43c73ce40960ff49fdbf8bfa" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c.info" afterPath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c" afterPath="$PROJECT_DIR$/Library/metadata/81/819bed0ca271e47ccb02193bce23343c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/83/83af5924bd91c4dca813d152b9e0eab4" afterPath="$PROJECT_DIR$/Library/metadata/83/83af5924bd91c4dca813d152b9e0eab4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8.info" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8" afterPath="$PROJECT_DIR$/Library/metadata/8a/8a8ff27f2ee9b2f449eb4934b461a1f8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/8b/8b61535684d3b3243a077d250c9c1c33.info" afterPath="$PROJECT_DIR$/Library/metadata/8b/8b61535684d3b3243a077d250c9c1c33.info" />
@@ -205,34 +206,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/ef/ef578d48d4897b14f92f12df68503089" afterPath="$PROJECT_DIR$/Library/metadata/ef/ef578d48d4897b14f92f12df68503089" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9.info" afterPath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9" afterPath="$PROJECT_DIR$/Library/metadata/f1/f103820c13bdb524b9416caf8fa215b9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" afterPath="$PROJECT_DIR$/Library/metadata/f2/f2b245c37066f42669837280c00b3b3f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f5/f5b5ae8a975e541c8b7cc0d467695d0d" afterPath="$PROJECT_DIR$/Library/metadata/f5/f5b5ae8a975e541c8b7cc0d467695d0d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a.info" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6568c0c4f320094cb632fc68952b42a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6683516bb77e1f46a24d4b0ed41d448.info" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6683516bb77e1f46a24d4b0ed41d448.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6683516bb77e1f46a24d4b0ed41d448" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6683516bb77e1f46a24d4b0ed41d448" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f6/f6c4d4977a5eb4967b0f745fa45ef1f7" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6c4d4977a5eb4967b0f745fa45ef1f7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c.info" afterPath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c" afterPath="$PROJECT_DIR$/Library/metadata/f8/f86df5368f57248589ad27d7b7da984c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8.info" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc28770ebba079f4bb26df39f31abae8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/guidmapper" afterPath="$PROJECT_DIR$/Library/guidmapper" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start.png" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/PSD/start.psd" afterPath="$PROJECT_DIR$/Assets/Sprites/PSD/start.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pong.apk" afterPath="$PROJECT_DIR$/pong.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/AssetImportState" afterPath="$PROJECT_DIR$/Library/AssetImportState" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/RollManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/RollManager.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/menu.unity" afterPath="$PROJECT_DIR$/Assets/menu.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/modules.xml" afterPath="$PROJECT_DIR$/.consulo/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/pong.unity" afterPath="$PROJECT_DIR$/Assets/pong.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-3.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-64bit-4.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Sprites/Components/start.png.meta" afterPath="$PROJECT_DIR$/Assets/Sprites/Components/start.png.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.consulo/workspace.xml" afterPath="$PROJECT_DIR$/.consulo/workspace.xml" />
     </list>
     <ignored path=".consulo/workspace.xml" />
@@ -255,12 +252,12 @@
     <file path="/ScoreManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445158239403" ignored="false" />
     <file path="/ScoreController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447019898960" ignored="false" />
     <file path="/BallController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443203408669" ignored="false" />
-    <file path="/UI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447615375185" ignored="false" />
+    <file path="/UI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447652853023" ignored="false" />
     <file path="/BallManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447602883003" ignored="false" />
     <file path="/BaseSpecialManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447004211670" ignored="false" />
     <file path="/SpecialController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446805329617" ignored="false" />
     <file path="/RacketManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446236805536" ignored="false" />
-    <file path="/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447015925481" ignored="false" />
+    <file path="/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447657764361" ignored="false" />
     <file path="/TextFxUGUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442092099118" ignored="false" />
     <file path="/LetterAction.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441207933948" ignored="false" />
     <file path="/LetterSetup.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441221797842" ignored="false" />
@@ -269,11 +266,11 @@
     <file path="/SpecialType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442085533489" ignored="false" />
     <file path="/SettingsManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1441310527210" ignored="false" />
     <file path="/Const.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446749831143" ignored="false" />
-    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447613583199" ignored="false" />
+    <file path="/SettingsController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447657666081" ignored="false" />
     <file path="/RandomUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447597733996" ignored="false" />
-    <file path="/PongAIController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447603398728" ignored="false" />
+    <file path="/PongAIController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447660099153" ignored="false" />
     <file path="/MathUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1443211802739" ignored="false" />
-    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447522299526" ignored="false" />
+    <file path="/ButtonManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447657632371" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442068817390" ignored="false" />
     <file path="/TouchControl.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442057422355" ignored="false" />
     <file path="$USER_HOME$/Dice/Assets/Scripts/GameController.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1442074666387" ignored="false" />
@@ -294,14 +291,14 @@
     <file path="/BaseUI.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1444982436101" ignored="false" />
     <file path="/LogoStatus.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445000606448" ignored="false" />
     <file path="/PauseManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445007037200" ignored="false" />
-    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447604125499" ignored="false" />
+    <file path="/Dummy.txt" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447660178186" ignored="false" />
     <file path="/CameraShake.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446234889281" ignored="false" />
     <file path="/CameraShakeType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445087073374" ignored="false" />
     <file path="$PROJECT_DIR$/Temp/StagingArea/res/values/strings.xml" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445537923884" ignored="false" />
     <file path="$PROJECT_DIR$/Temp/StagingArea/gen/lt/kitech/pong/R.java" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445544927693" ignored="false" />
     <file path="/TimeUtility.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446123580626" ignored="false" />
     <file path="/StringUltil.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445767287200" ignored="false" />
-    <file path="/MenuManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447614426770" ignored="false" />
+    <file path="/MenuManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447654612750" ignored="false" />
     <file path="/RandomParticleManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1445808132297" ignored="false" />
     <file path="/DontGoThrough.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446151781656" ignored="false" />
     <file path="/DoNotGoThroughThings.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1446151707142" ignored="false" />
@@ -313,8 +310,8 @@
     <file path="/SpriteDao.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447528363114" ignored="false" />
     <file path="/SpriteType.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447358868762" ignored="false" />
     <file path="/LCDUtil.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447500393652" ignored="false" />
-    <file path="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447615583721" ignored="false" />
-    <file path="/AdManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447615275831" ignored="false" />
+    <file path="/AdManager.cs" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447653335634" ignored="false" />
+    <file path="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" changelist="0af33635-89a3-4f22-ac05-599a7d885d68" time="1447617523711" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,35 +333,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpriteService.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs">
+      <file leaf-file-name="GameController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
               <folding>
-                <element signature="e#0#111#0" expanded="true" />
+                <element signature="e#0#151#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PauseManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs">
+      <file leaf-file-name="PongAIController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameController.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60851926">
-              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.7081545">
+              <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
               <folding>
-                <element signature="e#0#151#0" expanded="true" />
+                <element signature="e#0#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -374,43 +361,9 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="e#0#134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputHandler.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.730769">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -420,7 +373,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+              <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
               <folding>
                 <element signature="e#0#140#0" expanded="true" />
               </folding>
@@ -428,26 +381,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs">
+      <file leaf-file-name="TimeUtility.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtility.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#85#0" expanded="true" />
-              </folding>
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -460,7 +399,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ObjectUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BASE/UI/BaseUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/LogoStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/MultiplayerType.cs" />
@@ -473,7 +411,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/AnimationType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibrate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Vibration.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtillity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/StringUltil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CAMERA/RandomParticleManager.cs" />
@@ -495,7 +432,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/SpriteStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Type/SpriteType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LCDUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteSelectionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dao/SpriteDao.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/RandomUtility.cs" />
@@ -503,15 +439,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArenaController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/SpriteService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RollManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PongAIController.cs" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -545,7 +491,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -860,9 +806,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2dpong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -874,7 +860,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesC#" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="roll&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/RollManager.cs&#10;pongaic&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/PongAIController.cs&#10;special&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/SpecialController.cs&#10;ponga&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/PongAIController.cs&#10;TextFx&#9;FILE&#9;file:///Users/DK/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs&#10;ui&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/UI.cs&#10;game&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/GameController.cs&#10;score&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/ScoreManager.cs&#10;spec&#9;PSI&#9;C#://SpecialController&#10;sp&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/SpecialController.cs&#10;ball&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/BallManager.cs&#10;runtime&#9;PSI&#9;C#://TextFx.LegacyContent.Demo.RuntimeDynamicSceneManager&#10;goal&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Goal.cs" />
+    <property name="SearchEverywhereHistoryKey" value="AndroidManifest&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Plugins/Android/AndroidManifest.xml&#10;roll&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/RollManager.cs&#10;pongaic&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/PongAIController.cs&#10;special&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/SpecialController.cs&#10;ponga&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/PongAIController.cs&#10;TextFx&#9;FILE&#9;file:///Users/DK/2dpong/Assets/TextFx/Scripts/TextFxUGUI.cs&#10;ui&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/UI.cs&#10;game&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/GameController.cs&#10;score&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/ScoreManager.cs&#10;spec&#9;PSI&#9;C#://SpecialController&#10;sp&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/SpecialController.cs&#10;ball&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Scripts/BallManager.cs&#10;runtime&#9;PSI&#9;C#://TextFx.LegacyContent.Demo.RuntimeDynamicSceneManager&#10;goal&#9;FILE&#9;file:///Users/DK/2dpong/Assets/Goal.cs" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -940,7 +926,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="#UnityAttachApplication" factoryName="Unity Attach">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="#DotNetConfigurationType" factoryName=".NET Application">
@@ -955,6 +946,14 @@
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
       <option name="workingDirectory" value="" />
+      <coverage enabled="false" sample_coverage="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#UnityAttachApplication" factoryName="Unity Attach">
+      <method />
+    </configuration>
+    <configuration default="true" type="#NUnitConfigurationType" factoryName="NUnit">
+      <module name="" />
       <coverage enabled="false" sample_coverage="true" />
       <method />
     </configuration>
@@ -977,19 +976,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="#NUnitConfigurationType" factoryName="NUnit">
-      <module name="" />
-      <coverage enabled="false" sample_coverage="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Consulo In Sandbox">
@@ -1052,7 +1038,8 @@
       <workItem from="1447096837765" duration="3068000" />
       <workItem from="1447221869497" duration="2730000" />
       <workItem from="1447357289752" duration="11164000" />
-      <workItem from="1447499775577" duration="43622000" />
+      <workItem from="1447499775577" duration="45385000" />
+      <workItem from="1447620383541" duration="3577000" />
     </task>
     <task id="LOCAL-00001" summary="Camera shake">
       <created>1445087524026</created>
@@ -1182,11 +1169,15 @@
       <created>1447604122332</created>
       <updated>1447604122332</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="google ads">
+      <created>1447615628006</created>
+      <updated>1447615628006</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="545493000" />
+    <option name="totallyTimeSpent" value="550833000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1213,24 +1204,24 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20014094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29110512" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37669376" sideWeight="0.42071882" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19459459" sideWeight="0.5313601" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20014094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27642277" sideWeight="0.55884427" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26558265" sideWeight="0.5792812" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26498422" sideWeight="0.5792812" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16113745" sideWeight="0.55884427" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1304,7 +1295,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="new animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="ai and ad fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1339,13 +1330,29 @@
     <MESSAGE value="start on new shop architecture" />
     <MESSAGE value="on new shop architecture" />
     <MESSAGE value="new animations" />
+    <MESSAGE value="google ads" />
+    <MESSAGE value="ai and ad fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="dotnet-linebreapoint">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI.cs</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="dotnet-linebreapoint">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI.cs</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="461" />
+      <option name="time" value="463" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1355,24 +1362,11 @@
     <option name="MODULE_GROUPING" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/DynamicText/Editor/DynamicTextEditorExtensions.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Android/unityads/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/ScreenSwitcher.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DynamicText/Examples/ExampleHelpers/TextEffect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,13 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1569,14 +1556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RandomUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1645,26 +1624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="54" selection-start-line="113" selection-start-column="54" selection-end-line="113" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DoNotGoThroughThings.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42190668">
@@ -1701,12 +1660,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35080644">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Android/unityads/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21774194">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
-            <element signature="e#0#134#0" expanded="true" />
+            <element signature="e#0#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1714,27 +1689,9 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/PauseManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.730769">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding>
-            <element signature="e#0#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ads/AdManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#85#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1742,9 +1699,57 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/MenuManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RandomUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="208" column="21" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MENU/ButtonManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1752,19 +1757,27 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
           <folding>
             <element signature="e#0#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TimeUtility.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60851926">
-          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PongAIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7081545">
+          <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
+            <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>

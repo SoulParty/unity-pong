@@ -117,11 +117,10 @@ public class UI : BaseUI {
     public void showPauseMenu() {
         if (Time.timeScale == 0) {
             activate(pauseMenu);
-            StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
         }
         else {
-            deactivate(pauseMenu);
             AdManager.Instance.hideBannerAd();
+            deactivate(pauseMenu);
         }
     }
 

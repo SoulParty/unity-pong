@@ -209,5 +209,6 @@ public class SettingsController : MonoBehaviour {
     public void addCoins(int reward) {
         coins += reward;
         PlayerPrefs.SetInt(Const.COINS, coins);
+        UI.Instance.refreshCoins(coins);
     }
 }
