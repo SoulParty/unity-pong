@@ -69,7 +69,7 @@ public class SettingsController : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        Advertisement.Initialize("82920", true);
+        Advertisement.Initialize("82920");
         StartCoroutine(ShowAdButtonWhenReady(adButton));
 
         coins = PlayerPrefs.GetInt(Const.COINS);

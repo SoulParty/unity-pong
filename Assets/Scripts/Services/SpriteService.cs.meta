@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 8535e5e113156438c9ed263701aa4029
+timeCreated: 1447362902
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - buyButton: {instanceID: 0}
+  - statusIcon: {instanceID: 0}
+  - priceIcon: {instanceID: 0}
+  - currentSprite: {instanceID: 0}
+  - get: {fileID: 21300416, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - needCoins: {fileID: 21300424, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - notOwned: {fileID: 21300270, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - owned: {fileID: 21300036, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - selected: {fileID: 21300034, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - price25c: {fileID: 21300418, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - price50c: {fileID: 21300420, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - price100c: {fileID: 21300422, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  - currentSpriteNumber: {instanceID: 0}
+  - totalNumberOfSprites: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

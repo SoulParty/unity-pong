@@ -91,18 +91,23 @@ public class PongAIController : MonoBehaviour {
         }
 
         if (!isArrived) {
+            Vector2 position = new Vector2(target.transform.position.x, aiPlayerRigidBody.position.y);
+            Vector2 targetVector;
             if (!(isFollowBall || wildBall > 1)) {
-                Vector2 position = aiPlayerRigidBody.position;
-                Vector2 vector = new Vector2(target.transform.position.x, target.transform.position.y);
-                aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * MOVEMENT_SPEED);
+                targetVector = new Vector2(target.transform.position.x, target.transform.position.y);
             } else {
-                Vector2 position = aiPlayerRigidBody.position;
                 if (nearestBall == null) {
                     nearestBall = ball;
                 }
-                Vector2 vector = new Vector2(target.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
-                aiPlayerRigidBody.MovePosition(position + (vector - position).normalized * Time.fixedDeltaTime * FOLLOW_BALL_SPEED);
+                targetVector = new Vector2(target.transform.position.x, (float) MathUtility.roundToNearestTenth(nearestBall.transform.position.y));
             }
+            Vector2 direction = (targetVector - position).normalized;
+            Vector2 movementTargetPosition = position + direction * Time.deltaTime * MOVEMENT_SPEED;
+            if (Vector2.Distance(position, targetVector) < (direction * Time.deltaTime * MOVEMENT_SPEED).y) {
+                movementTargetPosition = position + direction * Vector2.Distance(position, targetVector);
+                isArrived = true;
+            }
+            aiPlayerRigidBody.MovePosition(movementTargetPosition);
         }
     }
 

@@ -1,7 +1,6 @@
 using Scripts.Ads;
 using System.Collections;
 using System.Collections.Generic;
-using TextFx;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -59,7 +58,10 @@ public class GameController : MonoBehaviour {
     }
 
     public void Init() {
-        AdManager.Instance.hideBannerAd();
+        if (AdManager.Instance != null) {
+            AdManager.Instance.hideBannerAd();
+        }
+
         if (GameObject.Find("SettingsController") == null) {
             Instantiate(Resources.Load("SettingsController"));
         } else {

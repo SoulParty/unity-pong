@@ -2,7 +2,6 @@ using GoogleMobileAds.Api;
 using Scripts.Ads;
 using System;
 using System.Collections;
-using TextFx;
 using UnityEngine;
 using UnityEngine.UI;
 

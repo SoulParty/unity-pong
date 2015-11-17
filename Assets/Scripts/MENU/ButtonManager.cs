@@ -120,4 +120,10 @@ public class ButtonManager : MonoBehaviour {
             });
         }
     }
+
+    private void pressSound() {
+        if (SettingsController.Instance.isMusic) {
+            MusicController.Instance.playImpact();
+        }
+    }
 }

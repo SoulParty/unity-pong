@@ -75,13 +75,13 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: lt.kitech.pong
-  bundleVersion: 1.04
+  bundleVersion: 1.05
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   productGUID: 675373aba01c74d3a9fcde4a2722b95a
-  AndroidBundleVersionCode: 4
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -101,7 +101,7 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 2800000, guid: 4fa05759ab0a7473db1d080271237ed0, type: 3}
+  iPhoneSplashScreen: {fileID: 2800000, guid: f82417580ba4f4ebfb9d74114a53113f, type: 3}
   iPhoneHighResSplashScreen: {fileID: 0}
   iPhoneTallHighResSplashScreen: {fileID: 0}
   iPhone47inSplashScreen: {fileID: 0}
@@ -120,7 +120,7 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 1
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
-  AndroidSplashScreenScale: 1
+  AndroidSplashScreenScale: 2
   AndroidKeystoreName: /Users/DK/Desktop/kitechlt.keystore
   AndroidKeyaliasName: kitech
   AndroidTVCompatibility: 1
@@ -251,7 +251,8 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: 
   metroPackageName: 2dpong
   metroPackageLogo: 
   metroPackageLogo140: 
