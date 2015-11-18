@@ -4,7 +4,8 @@ using UnityEngine;
 public class PauseManager : MonoBehaviour {
 
     public void returnToMainMenu() {
-        AdManager.Instance.hideBannerAd();
+//        AdManager.Instance.hideBannerAd();
+        GameController.Instance.pauseGame();
         Application.LoadLevel(0);
     }
 
