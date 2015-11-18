@@ -28,6 +28,8 @@ public class UI : BaseUI {
     public GameObject highScoreTotal;
     public GameObject bestScoreTotal;
 
+    public GameObject coinsEarnedImpact;
+
     public GameObject goalAnimation;
     public GameObject highScoreAnimation;
     public GameObject winnerAnimation;
@@ -145,6 +147,21 @@ public class UI : BaseUI {
         StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
     }
 
+    public void rollRefresh() {
+        if (SettingsController.Instance.getCoins() > 33) {
+            activate(paidRoll);
+            deactivate(freeRoll);
+            deactivate(notEnoughCoins);
+            deactivate(watchAd);
+        } else {
+            deactivate(roll);
+            deactivate(paidRoll);
+            deactivate(freeRoll);
+            activate(notEnoughCoins);
+            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
+        }
+    }
+
     public void enoughCoins() {
         ObjectUtility.disableGameObject(notEnoughCoins);
         ObjectUtility.disableGameObject(watchAd);
@@ -175,12 +192,14 @@ public class UI : BaseUI {
 
     public void display4CharNumber(GameObject display, int number) {
         Image[] componentImages = display.GetComponentsInChildren<Image>();
-        char[] charArray = number.ToString().ToCharArray();
-        for (int i = 0; i < 4; i++) {
-            if (i < charArray.Length) {
-                componentImages[i].sprite = toImage(charArray[i]);
-            } else {
-                componentImages[i].sprite = toImage(' ');
+        if (componentImages.Length > 0) {
+            char[] charArray = number.ToString().ToCharArray();
+            for (int i = 0; i < 4; i++) {
+                if (i < charArray.Length) {
+                    componentImages[i].sprite = toImage(charArray[i]);
+                } else {
+                    componentImages[i].sprite = toImage(' ');
+                }
             }
         }
     }
@@ -231,18 +250,4 @@ public class UI : BaseUI {
         deactivate(p2);
         yield break;
     }
-
-    public void rollRefresh() {
-        if (SettingsController.Instance.getCoins() > 33) {
-            activate(paidRoll);
-            deactivate(freeRoll);
-        } else {
-            deactivate(roll);
-            deactivate(paidRoll);
-            deactivate(freeRoll);
-            activate(notEnoughCoins);
-            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
-        }
-    }
-
 }

@@ -74,8 +74,7 @@ public class GameController : MonoBehaviour {
             Instantiate(Resources.Load("SoundController"));
         }
 
-        InvokeRepeating("spawnRandomSpecial", initialSpawnDelay, specialInterval);
-        InvokeRepeating("spawnRandomCoin", initialSpawnDelay, coinInterval);
+        startSpecialSpawning();
 
 //        DISTANCE_BETWEEN_WALLS = Vector3.Distance(bottomWall.gameObject.transform.position, topWall.gameObject.transform.position) - WALL_THICKNESS;
         ARENA_HALF_LENGTH = DISTANCE_BETWEEN_WALLS / 2;
@@ -102,6 +101,7 @@ public class GameController : MonoBehaviour {
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.reset();
         }
+        startSpecialSpawning();
     }
 
     public void showGoal() {
@@ -150,6 +150,7 @@ public class GameController : MonoBehaviour {
         ScoreController.Instance.highScoreCheck();
         ScoreController.Instance.resetMaxCombo();
         MusicController.Instance.playGoal();
+        stopSpecialSpawning();
     }
 
     public GameObject getLastTouchedBy() {
@@ -178,10 +179,21 @@ public class GameController : MonoBehaviour {
         ObjectUtility.disableGameObject(ball);
         player1.GetComponent<Rigidbody2D>().isKinematic = true;
         player2.GetComponent<Rigidbody2D>().isKinematic = true;
-        CancelInvoke("spawnRandomSpecial");
-        CancelInvoke("spawnRandomCoin");
+
+        stopSpecialSpawning();
+
         UIControl.showWinMenu();
         UIControl.showWinner(winner);
+    }
+
+    public void stopSpecialSpawning() {
+        CancelInvoke("spawnRandomSpecial");
+        CancelInvoke("spawnRandomCoin");
+    }
+
+    public void startSpecialSpawning() {
+        InvokeRepeating("spawnRandomSpecial", initialSpawnDelay, specialInterval);
+        InvokeRepeating("spawnRandomCoin", initialSpawnDelay, coinInterval);
     }
 
     public void playAgain() {

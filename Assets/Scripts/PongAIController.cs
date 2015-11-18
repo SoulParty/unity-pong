@@ -54,10 +54,10 @@ public class PongAIController : MonoBehaviour {
             break;
             case Difficulty.MEDIUM: break;
             FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 0.7);
-            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.7);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 0.9);
             case Difficulty.HARD: break;
             FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
-            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 1.5);
+            MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 2);
             case Difficulty.INSANE:
             FOLLOW_BALL_SPEED = (int) (BASE_BALL_FOLLOW_SPEED * 1);
             MOVEMENT_SPEED = (int) (BASE_MOVEMENT_SPEED * 3);

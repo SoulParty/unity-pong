@@ -1,5 +1,6 @@
 using Mono.Xml.Xsl;
 using System;
+using System.Collections;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +24,7 @@ public class SpriteService : MonoBehaviour {
     public Sprite[] symbolArray;
 
     public GameObject coinsTotal;
+    public GameObject coinsEarnedImpact;
 
     [System.NonSerialized]
     public static SpriteService Instance;
@@ -69,12 +71,12 @@ public class SpriteService : MonoBehaviour {
         display2CharNumber(totalNumberOfSprites, spritesLength);
         return spritesLength;
     }
-    
+
     private int price(Sprite currentSprite, Sprite[] sprites) {
         int index = Array.IndexOf(sprites, currentSprite);
-        if (index > sprites.Length * 2/3) {
+        if (index > sprites.Length * 2 / 3) {
             return 100;
-        } else if (index > sprites.Length * 1/3) {
+        } else if (index > sprites.Length * 1 / 3) {
             return 50;
         } else {
             return 25;

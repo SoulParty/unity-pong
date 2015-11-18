@@ -9,7 +9,7 @@ public class TimeUtility {
         //Grab the old time from the player prefs as a long
         string lastRoll = PlayerPrefs.GetString(Const.LAST_ROLL);
         if (lastRoll == null || lastRoll.Equals("")) {
-            return new TimeSpan(4, 0, 0);
+            return new TimeSpan(0, 0, 0);
         }
         long temp = Convert.ToInt64(lastRoll);
         //Convert the old time from binary to a DataTime variable
@@ -23,7 +23,7 @@ public class TimeUtility {
 
     public static bool getIsFreeRollAvailable() {
         TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();
-        if (passedSinceLastRoll.TotalMinutes < 0) {
+        if (passedSinceLastRoll.TotalMinutes <= 0) {
             return true;
         } else {
             return false;

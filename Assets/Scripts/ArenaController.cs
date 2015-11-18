@@ -31,22 +31,20 @@ public class ArenaController : MonoBehaviour {
     public void Start() {
         switch (SettingsController.Instance.difficulty) {
             case Difficulty.EASY:
-            leftWall1.transform.position += new Vector3(0, 160, 0);
-            leftWall2.transform.position -= new Vector3(0, 160, 0);
-            break;
-            case Difficulty.MEDIUM:
             leftWall1.transform.position += new Vector3(0, 120, 0);
             leftWall2.transform.position -= new Vector3(0, 120, 0);
             break;
+            case Difficulty.MEDIUM:
+            leftWall1.transform.position += new Vector3(0, 80, 0);
+            leftWall2.transform.position -= new Vector3(0, 80, 0);
+            break;
             case Difficulty.HARD:
-            leftWall1.transform.position += new Vector3(0, 60, 0);
-            leftWall2.transform.position -= new Vector3(0, 60, 0);
+            leftWall1.transform.position += new Vector3(0, 20, 0);
+            leftWall2.transform.position -= new Vector3(0, 20, 0);
             break;
             case Difficulty.INSANE:
             leftWall1.transform.position += new Vector3(0, 0, 0);
-            rightWall1.transform.position += new Vector3(0, 0, 0);
             leftWall2.transform.position -= new Vector3(0, 0, 0);
-            rightWall2.transform.position -= new Vector3(0, 0, 0);
             break;
         }
 

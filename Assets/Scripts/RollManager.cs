@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Advertisements;
 using UnityEngine.UI;
 
 public class RollManager : MonoBehaviour {
@@ -44,5 +45,25 @@ public class RollManager : MonoBehaviour {
     IEnumerator disableCoinImpactTimer() {
         yield return new WaitForSeconds(3f);
         ObjectUtility.disableGameObject(rollFinishedParticles);
+    }
+
+    public void LoadWatchAdFromRollScreen() {
+        MusicController.Instance.playImpact();
+        if (Advertisement.IsReady()) {
+            Advertisement.Show(null, new ShowOptions {
+                resultCallback = result => {
+                    Debug.Log(result.ToString());
+                    if (result.ToString().Equals("Finished")) {
+                        SettingsController.Instance.addCoins(100);
+
+                        UI.Instance.showWinMenu(); //Refresh menu
+
+                        SpriteService.Instance.display4CharNumber(
+                                UI.Instance.coinTotal, SettingsController.Instance.getCoins());
+                        SettingsController.Instance.playCoinsEarned(UI.Instance.coinsEarnedImpact);
+                    }
+                }
+            });
+        }
     }
 }

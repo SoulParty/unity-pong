@@ -12,14 +12,21 @@ public class ButtonManager : MonoBehaviour {
     public GameObject credits;
     public GameObject settings;
 
-    public GameObject coinsTotal;
-
     public GameObject[] mainMenu;
 
     public GameObject music;
     public GameObject vibrate;
     public GameObject disabled1;
     public GameObject disabled2;
+
+    public GameObject watchAd;
+
+    [System.NonSerialized]
+    public static ButtonManager Instance;
+
+    public ButtonManager() {
+        Instance = this;
+    }
 
     void Awake() {
         hideSubMenus();
@@ -34,7 +41,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadPlayerVersusAI(int difficulty) {
-        MusicController.Instance.playImpact();
+        pressSound();
         SettingsController.Instance.isVersusAI = true;
         switch (difficulty) {
             case 1: SettingsController.Instance.setAIDifficulty(Difficulty.EASY); break;
@@ -46,7 +53,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadPlayerVersusPlayer(int multiplayerType) {
-        MusicController.Instance.playImpact();
+        pressSound();
         SettingsController.Instance.isVersusAI = false;
         switch (multiplayerType) {
             case 1: SettingsController.Instance.setMultiplayerType(MultiplayerType.LOCAL); break;
@@ -57,14 +64,14 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void showPlayerVersusAI() {
-        MusicController.Instance.playImpact();
+        pressSound();
         hideSubMenus();
         SettingsController.Instance.isVersusAI = true;
         aISelection.SetActive(true);
     }
 
     public void showSettings() {
-        MusicController.Instance.playImpact();
+        pressSound();
         hideSubMenus();
         settings.SetActive(true);
         disabled1.SetActive(!SettingsController.Instance.isVibrate);
@@ -83,20 +90,20 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void showPlayerVersusPlayer() {
-        MusicController.Instance.playImpact();
+        pressSound();
         hideSubMenus();
         SettingsController.Instance.isVersusAI = false;
         multiPlayer.SetActive(true);
     }
 
     public void ShowSpendCoins() {
-        MusicController.Instance.playImpact();
+        pressSound();
         hideSubMenus();
         spendCoins.SetActive(true);
     }
 
     public void ShowCredits() {
-        MusicController.Instance.playImpact();
+        pressSound();
         hideSubMenus();
         credits.SetActive(true);
     }
@@ -106,7 +113,7 @@ public class ButtonManager : MonoBehaviour {
     }
 
     public void LoadWatchAd() { //TODO make an Ad Manager
-        MusicController.Instance.playImpact();
+        pressSound();
         if (Advertisement.IsReady()) {
             Advertisement.Show(null, new ShowOptions {
                 resultCallback = result => {
@@ -115,6 +122,7 @@ public class ButtonManager : MonoBehaviour {
                         SettingsController.Instance.addCoins(100);
                         SpriteService.Instance.display4CharNumber(
                                 SpriteService.Instance.coinsTotal, SettingsController.Instance.getCoins());
+                        SettingsController.Instance.playCoinsEarned(SpriteService.Instance.coinsEarnedImpact);
                     }
                 }
             });

@@ -23,8 +23,6 @@ public class SettingsController : MonoBehaviour {
     public Sprite[] puckLogos;
     public Sprite[] racketLogos;
 
-    public GameObject adButton;
-
     [SerializeField]
     private int coins = 0;
 
@@ -69,9 +67,6 @@ public class SettingsController : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        Advertisement.Initialize("82920");
-        StartCoroutine(ShowAdButtonWhenReady(adButton));
-
         coins = PlayerPrefs.GetInt(Const.COINS);
 
         loadSprites(SpriteType.PUCK);
@@ -85,6 +80,19 @@ public class SettingsController : MonoBehaviour {
     public void Awake () {
         DontDestroyOnLoad(gameObject);
         isVibrate = PlayerPrefs.GetInt(Const.VIBRATE) == 0 ? false : true;
+        isMusic = PlayerPrefs.GetInt(Const.MUSIC) == 0 ? false : true;
+
+        Advertisement.Initialize("82920");
+        ButtonManager.Instance.watchAd.GetComponent<Animator>().Play("watch-ad");
+
+        StartCoroutine(ShowAdButtonWhenReady(ButtonManager.Instance.watchAd));
+
+        if (Screen.orientation.Equals(ScreenOrientation.LandscapeLeft)) {
+            Screen.orientation = ScreenOrientation.LandscapeRight;
+        } else if (Screen.orientation.Equals(ScreenOrientation.LandscapeRight)) {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
+        }
+
     }
 
     public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
@@ -209,6 +217,20 @@ public class SettingsController : MonoBehaviour {
     public void addCoins(int reward) {
         coins += reward;
         PlayerPrefs.SetInt(Const.COINS, coins);
-        UI.Instance.refreshCoins(coins);
+        if (UI.Instance != null) {
+            UI.Instance.refreshCoins(coins);
+        } else if (SpriteService.Instance != null) {
+            SpriteService.Instance.display4CharNumber(SpriteService.Instance.coinsTotal, coins);
+        }
+    }
+
+    public void playCoinsEarned(GameObject effect) {
+        ObjectUtility.enableGameObject(effect);
+        StartCoroutine(disableImpactTimer(effect));
+    }
+
+    IEnumerator disableImpactTimer(GameObject effect) {
+        yield return new WaitForSeconds(1.1f);
+        ObjectUtility.disableGameObject(effect);
     }
 }
