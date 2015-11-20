@@ -20,6 +20,7 @@ public class RollManager : MonoBehaviour {
             winPrize();
         } else {
             if (SettingsController.Instance.checkFunds(33)) {
+                MusicController.Instance.playCoin();
                 SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 33);
                 winPrize();
             }

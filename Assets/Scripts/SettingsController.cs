@@ -67,14 +67,18 @@ public class SettingsController : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        UnityAdsHelper.Initialize();
+
         coins = PlayerPrefs.GetInt(Const.COINS);
 
-        loadSprites(SpriteType.PUCK);
-        selectedPuck = getSpriteFromCache(SpriteType.PUCK, SpriteDao.Instance.getSelected(SpriteType.PUCK));
+        if (SpriteDao.Instance != null) {
+            loadSprites(SpriteType.PUCK);
+            selectedPuck = getSpriteFromCache(SpriteType.PUCK, SpriteDao.Instance.getSelected(SpriteType.PUCK));
 
-        loadSprites(SpriteType.RACKET1);
-        selectedPlayer1Racket = getSpriteFromCache(SpriteType.RACKET1, SpriteDao.Instance.getSelected(SpriteType.RACKET1));
-        selectedPlayer2Racket = getSpriteFromCache(SpriteType.RACKET2, SpriteDao.Instance.getSelected(SpriteType.RACKET2));
+            loadSprites(SpriteType.RACKET1);
+            selectedPlayer1Racket = getSpriteFromCache(SpriteType.RACKET1, SpriteDao.Instance.getSelected(SpriteType.RACKET1));
+            selectedPlayer2Racket = getSpriteFromCache(SpriteType.RACKET2, SpriteDao.Instance.getSelected(SpriteType.RACKET2));
+        }
     }
 
     public void Awake () {
@@ -82,24 +86,12 @@ public class SettingsController : MonoBehaviour {
         isVibrate = PlayerPrefs.GetInt(Const.VIBRATE) == 0 ? false : true;
         isMusic = PlayerPrefs.GetInt(Const.MUSIC) == 0 ? false : true;
 
-        Advertisement.Initialize("82920");
-        ButtonManager.Instance.watchAd.GetComponent<Animator>().Play("watch-ad");
-
-        StartCoroutine(ShowAdButtonWhenReady(ButtonManager.Instance.watchAd));
-
         if (Screen.orientation.Equals(ScreenOrientation.LandscapeLeft)) {
-            Screen.orientation = ScreenOrientation.LandscapeRight;
-        } else if (Screen.orientation.Equals(ScreenOrientation.LandscapeRight)) {
             Screen.orientation = ScreenOrientation.LandscapeLeft;
+        } else if (Screen.orientation.Equals(ScreenOrientation.LandscapeRight)) {
+            Screen.orientation = ScreenOrientation.LandscapeRight;
         }
 
-    }
-
-    public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
-        while (!Advertisement.IsReady()) {
-            yield return null;
-        }
-        ObjectUtility.enableGameObject(adButton);
     }
 
     public int getMaxCombo() {
@@ -178,13 +170,13 @@ public class SettingsController : MonoBehaviour {
     }
 
     public Sprite[] loadSprites(SpriteType spriteType) {
-        Debug.Log("-------- LOADING SPRITES ---------");
+//        Debug.Log("-------- LOADING SPRITES ---------");
         if (spriteType == SpriteType.PUCK) {
             foreach (Sprite sprite in getPuckSprites()) {
                 if (sprite != null) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
                     ownedPuckSpritesCache.Add(sprite.ToString(), sprite);
-                    Debug.Log("Puck sprite: " + sprite.ToString() + "status: " + status);
+//                    Debug.Log("Puck sprite: " + sprite.ToString() + "status: " + status);
                     if (SpriteStatus.NOT_OWNED.Equals(status)) {
                         notOwnedSprites.Add(sprite);
                     }
@@ -196,7 +188,7 @@ public class SettingsController : MonoBehaviour {
                 if (sprite != null && !ownedRacketSpritesCache.ContainsKey(sprite.ToString())) {
                     int status = PlayerPrefs.GetInt(sprite.ToString());
                     ownedRacketSpritesCache.Add(sprite.ToString(), sprite);
-                    Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
+//                    Debug.Log("Racket sprite: " + sprite.ToString() + "status: " + status);
                     if (SpriteStatus.NOT_OWNED.Equals(status)) {
                         notOwnedSprites.Add(sprite);
                     }
@@ -225,12 +217,12 @@ public class SettingsController : MonoBehaviour {
     }
 
     public void playCoinsEarned(GameObject effect) {
-        ObjectUtility.enableGameObject(effect);
-        StartCoroutine(disableImpactTimer(effect));
+        StartCoroutine(coinsEarnedImpactTimer(effect));
     }
 
-    IEnumerator disableImpactTimer(GameObject effect) {
-        yield return new WaitForSeconds(1.1f);
+    IEnumerator coinsEarnedImpactTimer(GameObject effect) {
+        ObjectUtility.enableGameObject(effect);
+        yield return new WaitForSeconds(3f);
         ObjectUtility.disableGameObject(effect);
     }
 }

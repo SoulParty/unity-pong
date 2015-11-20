@@ -43,9 +43,10 @@ public class SpriteService : MonoBehaviour {
         if (status.Equals(SpriteStatus.NOT_OWNED) && SettingsController.Instance.checkFunds(price)) {
             SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - price);
             display4CharNumber(coinsTotal, SettingsController.Instance.getCoins());
-            SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - price);
             spriteDao.setStatus(currentSprite, (int) SpriteStatus.OWNED);
             SettingsController.Instance.removeFromNotOwnedSprites(currentSprite);
+
+            MusicController.Instance.playCoin();
         } else if (status.Equals(SpriteStatus.OWNED)) {
             select(currentSprite, spriteType);
         }

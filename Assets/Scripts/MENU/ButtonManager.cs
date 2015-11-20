@@ -28,8 +28,16 @@ public class ButtonManager : MonoBehaviour {
         Instance = this;
     }
 
-    void Awake() {
+    void Start() {
         hideSubMenus();
+        StartCoroutine(ShowAdButtonWhenReady(watchAd));
+    }
+
+    public IEnumerator ShowAdButtonWhenReady(GameObject adButton) {
+        while (!Advertisement.IsReady()) {
+            yield return null;
+        }
+        ObjectUtility.enableGameObject(adButton);
     }
 
     private void hideSubMenus() {
@@ -85,7 +93,6 @@ public class ButtonManager : MonoBehaviour {
 
     public void toggleMusic() {
         SettingsController.Instance.isMusic = !SettingsController.Instance.isMusic;
-        AudioListener.pause = SettingsController.Instance.isMusic;
         disabled2.SetActive(!SettingsController.Instance.isMusic);
     }
 
@@ -123,6 +130,7 @@ public class ButtonManager : MonoBehaviour {
                         SpriteService.Instance.display4CharNumber(
                                 SpriteService.Instance.coinsTotal, SettingsController.Instance.getCoins());
                         SettingsController.Instance.playCoinsEarned(SpriteService.Instance.coinsEarnedImpact);
+                        SpriteSelectionManager.refreshAll();
                     }
                 }
             });
@@ -130,8 +138,6 @@ public class ButtonManager : MonoBehaviour {
     }
 
     private void pressSound() {
-        if (SettingsController.Instance.isMusic) {
-            MusicController.Instance.playImpact();
-        }
+        MusicController.Instance.playClick();
     }
 }

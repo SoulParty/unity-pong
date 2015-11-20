@@ -22,21 +22,25 @@ public class SpriteSelectionManager : MonoBehaviour {
     public GameObject totalNumberOfSprites;
 
     private Sprite[] sprites;
-    private SettingsController settingsController;
+
+    [System.NonSerialized]
+    public static SpriteSelectionManager Instance;
+
+    public SpriteSelectionManager() {
+        Instance = this;
+    }
 
     public void Start() {
-        settingsController = SettingsController.Instance;
-
         statusIcon = status.GetComponent<Image>();
         priceIcon = price.GetComponent<Image>();
         currentSprite = current.GetComponent<Image>();
 
         if (spriteType.Equals(SpriteType.PUCK)) {
-            sprites = settingsController.getPuckSprites();
+            sprites = SettingsController.Instance.getPuckSprites();
         } else if (spriteType.Equals(SpriteType.RACKET1)) {
-            sprites = settingsController.getRacketSprites();
+            sprites = SettingsController.Instance.getRacketSprites();
         } else {
-              sprites = settingsController.getRacketSprites();
+              sprites = SettingsController.Instance.getRacketSprites();
         }
         SpriteService.Instance.total(totalNumberOfSprites, sprites);
         SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
@@ -52,5 +56,16 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public void buy() {
         currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
+        refreshAll();
+    }
+
+    public void refresh() {
+        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, SpriteType.PUCK);
+    }
+
+    public static void refreshAll() {
+        foreach(SpriteSelectionManager selectionManager in FindObjectsOfType<SpriteSelectionManager>()) {
+            selectionManager.refresh();
+        }
     }
 }

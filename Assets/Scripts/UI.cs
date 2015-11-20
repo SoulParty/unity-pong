@@ -40,7 +40,7 @@ public class UI : BaseUI {
     public float goalAnimationLength = 3f;
     public float specialAnimationLength = 1.5f;
     public float winAnimationLength = 1f;
-    public float highScoreAnimationLength = 2f;
+    public float highScoreAnimationLength = 3.5f;
 
     public GameObject scoreLeft;
     public GameObject scoreRight;
@@ -158,7 +158,7 @@ public class UI : BaseUI {
             deactivate(paidRoll);
             deactivate(freeRoll);
             activate(notEnoughCoins);
-            StartCoroutine(SettingsController.Instance.ShowAdButtonWhenReady(watchAd));
+            StartCoroutine(ButtonManager.Instance.ShowAdButtonWhenReady(watchAd));
         }
     }
 

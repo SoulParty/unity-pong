@@ -29,7 +29,7 @@ public class ArenaController : MonoBehaviour {
     public Vector3 rightWall2Transform;
 
     public void Start() {
-        switch (SettingsController.Instance.difficulty) {
+        switch (SettingsController.Instance != null ? SettingsController.Instance.difficulty : Difficulty.INSANE) {
             case Difficulty.EASY:
             leftWall1.transform.position += new Vector3(0, 120, 0);
             leftWall2.transform.position -= new Vector3(0, 120, 0);

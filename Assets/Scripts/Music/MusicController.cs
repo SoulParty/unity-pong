@@ -1,45 +1,75 @@
 using UnityEngine;
 
 public class MusicController : MonoBehaviour {
-    public GameObject impact;
+    public GameObject pingImpact;
+    public GameObject pongImpact;
+    public GameObject click;
     public GameObject special;
     public GameObject win;
     public GameObject coin;
     public GameObject goal;
 
+    bool ping = true;
+
     [System.NonSerialized]
     public static MusicController Instance;
 
-//    public MusicController() {
-//        Instance = this;
-//    }
+    public MusicController() {
+        Instance = this;
+    }
 
-    void Awake() {
-        if (Instance) {
-            DestroyImmediate(gameObject);
-        } else {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
+    void Start() {
+        if (GameObject.FindObjectsOfType<MusicController>().Length > 1) {
+            Destroy(gameObject);
         }
     }
 
+    void Awake() {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void playWin() {
-        win.GetComponent<AudioSource>().Play();
+        if (checkMute())
+            win.GetComponent<AudioSource>().Play();
     }
 
     public void playSpecial() {
-        special.GetComponent<AudioSource>().Play();
+        if (checkMute())
+            special.GetComponent<AudioSource>().Play();
     }
 
     public void playImpact() {
-        impact.GetComponent<AudioSource>().Play();
+        if (checkMute()) {
+            if (ping) {
+                pingImpact.GetComponent<AudioSource>().Play();
+                ping = false;
+            } else {
+                pongImpact.GetComponent<AudioSource>().Play();
+                ping = true;
+            }
+        }
+    }
+
+    public void playClick() {
+        if (checkMute())
+            click.GetComponent<AudioSource>().Play();
     }
 
     public void playCoin() {
-        coin.GetComponent<AudioSource>().Play();
+        if (checkMute())
+            coin.GetComponent<AudioSource>().Play();
     }
 
     public void playGoal() {
-        goal.GetComponent<AudioSource>().Play();
+        if (checkMute())
+            goal.GetComponent<AudioSource>().Play();
+    }
+
+    private bool checkMute() {
+        if (!SettingsController.Instance.isMusic) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

@@ -17,9 +17,6 @@ namespace Scripts.Ads {
         }
 
         void Start() {
-            if (GameObject.FindObjectsOfType<AdManager>().Length > 1) {
-                Destroy(gameObject);
-            }
             loadBanner();
         }
 
@@ -48,6 +45,9 @@ namespace Scripts.Ads {
 
         void Awake() {
             DontDestroyOnLoad(this);
+            if (GameObject.FindObjectsOfType<AdManager>().Length > 1) {
+                Destroy(gameObject);
+            }
         }
 
         public void showBannerAd() {
