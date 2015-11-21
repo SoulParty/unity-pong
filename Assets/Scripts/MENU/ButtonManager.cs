@@ -9,6 +9,10 @@ public class ButtonManager : MonoBehaviour {
     public GameObject multiPlayer;
     public GameObject aISelection;
     public GameObject spendCoins;
+
+    public Animator spendCoinsAnimator;
+    public Animator watchAdAnimator;
+
     public GameObject credits;
     public GameObject settings;
 
@@ -46,6 +50,8 @@ public class ButtonManager : MonoBehaviour {
         spendCoins.SetActive(false);
         credits.SetActive(false);
         settings.SetActive(false);
+        spendCoinsAnimator.SetBool("notInShop", true);
+        watchAdAnimator.SetBool("inShop", false);
     }
 
     public void LoadPlayerVersusAI(int difficulty) {
@@ -107,6 +113,8 @@ public class ButtonManager : MonoBehaviour {
         pressSound();
         hideSubMenus();
         spendCoins.SetActive(true);
+        spendCoinsAnimator.SetBool("notInShop", false);
+        watchAdAnimator.SetBool("inShop", true);
     }
 
     public void ShowCredits() {

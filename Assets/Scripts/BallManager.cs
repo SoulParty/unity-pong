@@ -23,7 +23,12 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     TrailRenderer whiteTrail;
     
     Rigidbody2D rigidBody2D;
-    
+
+    public Sprite empty;
+    public Sprite sprite;
+
+    SpriteRenderer spriteRenderer;
+
     void Start() {
         speed = GameController.Instance.defaultBallStartSpeed;
         speedCap = GameController.Instance.ballSpeedUp * speedCapMultiplier + GameController.Instance.defaultBallStartSpeed;
@@ -40,11 +45,13 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
         blueTrail.sortingOrder = -2;
         redTrail.sortingOrder = -2;
         whiteTrail.sortingOrder = -2;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void setSprite(Sprite sprite) {
         if (sprite != null) {
-            GetComponent<SpriteRenderer>().sprite = sprite;
+            spriteRenderer.sprite = sprite;
         }
     }
 
@@ -126,9 +133,14 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
     }
 
     public void reset() {
+        speed = 0;
+        changeTrail();
+        this.sprite = spriteRenderer.sprite;
+        spriteRenderer.sprite = empty;
         speed = GameController.Instance.defaultBallStartSpeed;
         transform.position = new Vector3(0, 0, 0);
         rigidBody2D.isKinematic = true;
+
     }
 
     public void moveInRandomDirection() {
@@ -154,11 +166,21 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
         } else if (speed > GameController.Instance.defaultBallStartSpeed * 1.4) {
             whiteTrail.enabled = false;
             blueTrail.enabled = true;
-        } else if (speed < GameController.Instance.defaultBallStartSpeed * 1.4) {
+        } else if (speed >= GameController.Instance.defaultBallStartSpeed) {
             redTrail.enabled = false;
             orangeTrail.enabled = false;
             blueTrail.enabled = false;
             whiteTrail.enabled = true;
+        } else {
+            redTrail.enabled = false;
+            orangeTrail.enabled = false;
+            blueTrail.enabled = false;
+            whiteTrail.enabled = false;
         }
+    }
+
+    public void showBall() {
+        changeTrail();
+        spriteRenderer.sprite = sprite;
     }
 }

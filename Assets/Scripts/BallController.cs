@@ -33,4 +33,8 @@ public class BallController : MonoBehaviour {
     public void destroy(GameObject ball) {
         Destroy(ball);
     }
+
+    public void showBall() {
+        ballManager.showBall();
+    }
 }

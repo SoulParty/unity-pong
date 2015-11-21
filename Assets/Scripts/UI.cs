@@ -37,7 +37,8 @@ public class UI : BaseUI {
 
     public Sprite[] symbolArray;
 
-    public float goalAnimationLength = 3f;
+    public float goalAnimationLength = 1.5f;
+    public float newRoundStartAnimationLength = 1.5f;
     public float specialAnimationLength = 1.5f;
     public float winAnimationLength = 1f;
     public float highScoreAnimationLength = 3.5f;
@@ -110,7 +111,10 @@ public class UI : BaseUI {
     IEnumerator startGoal() {
         goalAnimation.GetComponent<Animator>().Play("GoalAnimationIn");
         CameraShake.Instance.cameraShake(CameraShakeType.VERY_STRONG);
-        yield return new WaitForSeconds(goalAnimationLength);
+//        yield return new WaitForSeconds(goalAnimationLength);
+        yield return new WaitForSeconds(0.6f);
+        BallController.Instance.showBall();
+        yield return new WaitForSeconds(1f);
         GameController.Instance.startNewRound();
         display4CharNumber(highScoreTotal, 0);
     }

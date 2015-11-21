@@ -385,6 +385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   speedCapMultiplier: 50
+  empty: {fileID: 21300270, guid: c319bdb56075e462c8b6afe786c315f7, type: 3}
+  sprite: {fileID: 0}
 --- !u!212 &21294574
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -101,7 +101,6 @@ public class GameController : MonoBehaviour {
         if (SettingsController.Instance.isVersusAI) {
             PongAIController.Instance.reset();
         }
-        startSpecialSpawning();
     }
 
     public void showGoal() {
@@ -163,13 +162,17 @@ public class GameController : MonoBehaviour {
 
     public void pauseGame() {
         if (Time.timeScale == 1) {
-            StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
+            if (AdManager.Instance != null) {
+                StartCoroutine(AdManager.Instance.ShowBannerAdWhenReady());
+            }
             Time.timeScale = 0;
             UIControl.showPauseMenu();
         }
         else {
             Time.timeScale = 1;
-            AdManager.Instance.hideBannerAd();
+            if (AdManager.Instance != null) {
+                AdManager.Instance.hideBannerAd();
+            }
             UIControl.showPauseMenu();
         }
     }
@@ -232,5 +235,6 @@ public class GameController : MonoBehaviour {
 
     public void startNewRound() {
         BallController.Instance.moveInRandomDirection();
+        startSpecialSpawning();
     }
 }

@@ -21,6 +21,8 @@ public class SpriteSelectionManager : MonoBehaviour {
     public GameObject currentSpriteNumber;
     public GameObject totalNumberOfSprites;
 
+    public GameObject buySpecialEffect;
+
     private Sprite[] sprites;
 
     [System.NonSerialized]
@@ -56,11 +58,18 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public void buy() {
         currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
+        StartCoroutine(disableImpactTimer());
         refreshAll();
     }
 
+    IEnumerator disableImpactTimer() {
+        ObjectUtility.enableGameObject(buySpecialEffect);
+        yield return new WaitForSeconds(3f);
+        ObjectUtility.disableGameObject(buySpecialEffect);
+    }
+
     public void refresh() {
-        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, SpriteType.PUCK);
+        SpriteService.Instance.displaySprite(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
     }
 
     public static void refreshAll() {
