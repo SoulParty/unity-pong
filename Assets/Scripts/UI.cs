@@ -153,7 +153,7 @@ public class UI : BaseUI {
     }
 
     public void rollRefresh() {
-        if (SettingsController.Instance.getCoins() > 33) {
+        if (SettingsController.Instance.getCoins() > 50) {
             activate(paidRoll);
             deactivate(freeRoll);
             deactivate(notEnoughCoins);

@@ -59,7 +59,9 @@ public class SettingsController : MonoBehaviour {
     }
 
     public SettingsController() {
-        Instance = this;
+        if (Instance == null) {
+            Instance = this;
+        }
     }
 
     void Start () {
@@ -82,7 +84,13 @@ public class SettingsController : MonoBehaviour {
     }
 
     public void Awake () {
-        DontDestroyOnLoad(gameObject);
+
+        if (!this.Equals(Instance)) {
+            Destroy(gameObject);
+        } else {
+            DontDestroyOnLoad(gameObject);
+        }
+
         isVibrate = PlayerPrefs.GetInt(Const.VIBRATE) == 0 ? false : true;
         isMusic = PlayerPrefs.GetInt(Const.MUSIC) == 0 ? false : true;
 

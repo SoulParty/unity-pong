@@ -19,9 +19,9 @@ public class RollManager : MonoBehaviour {
             UI.Instance.showWinMenu(); //Refresh menu
             winPrize();
         } else {
-            if (SettingsController.Instance.checkFunds(33)) {
+            if (SettingsController.Instance.checkFunds(50)) {
                 MusicController.Instance.playCoin();
-                SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 33);
+                SettingsController.Instance.setCoins(SettingsController.Instance.getCoins() - 50);
                 winPrize();
             }
         }

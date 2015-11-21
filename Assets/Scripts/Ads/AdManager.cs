@@ -13,7 +13,17 @@ namespace Scripts.Ads {
         public static AdManager Instance;
 
         public AdManager() {
-            Instance = this;
+            if (Instance == null) {
+                Instance = this;
+            }
+        }
+
+        void Awake() {
+            if (!this.Equals(Instance)) {
+                Destroy(gameObject);
+            } else {
+                DontDestroyOnLoad(gameObject);
+            }
         }
 
         void Start() {
@@ -41,13 +51,6 @@ namespace Scripts.Ads {
         public void HandleAdFailedToLoad(object sender, EventArgs args) {
             Debug.Log("HandleAdFailedToLoaded event received.");
             bannerAdReady = false;
-        }
-
-        void Awake() {
-            DontDestroyOnLoad(this);
-            if (GameObject.FindObjectsOfType<AdManager>().Length > 1) {
-                Destroy(gameObject);
-            }
         }
 
         public void showBannerAd() {

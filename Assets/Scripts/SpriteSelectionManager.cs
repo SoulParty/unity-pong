@@ -23,6 +23,8 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public GameObject buySpecialEffect;
 
+    public RectTransform spriteRectTransform;
+
     private Sprite[] sprites;
 
     [System.NonSerialized]
@@ -58,6 +60,7 @@ public class SpriteSelectionManager : MonoBehaviour {
 
     public void buy() {
         currentSprite.sprite = SpriteService.Instance.buy(currentSpriteNumber, statusIcon, priceIcon, currentSprite.sprite, sprites, spriteType);
+        buySpecialEffect.transform.position = spriteRectTransform.TransformPoint(spriteRectTransform.rect.center);
         StartCoroutine(disableImpactTimer());
         refreshAll();
     }
