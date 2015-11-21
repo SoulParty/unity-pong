@@ -122,7 +122,6 @@ public class SpriteService : MonoBehaviour {
     public Sprite displaySprite(GameObject currentSpriteNumber, Image statusIcon, Image priceIcon, Sprite sprite, Sprite[] sprites, SpriteType spriteType) {
         display2CharNumber(currentSpriteNumber, number(sprite, sprites));
         statusIcon.sprite = statusSprite(sprite, spriteType);
-        Debug.Log(spriteType + " " + statusIcon.sprite);
         if (statusIcon.sprite.Equals(notOwned)) {
             priceIcon.sprite = priceSprite(sprite, sprites);
             if (!SettingsController.Instance.checkFunds(price(sprite, sprites))) {
@@ -179,7 +178,6 @@ public class SpriteService : MonoBehaviour {
 
     public Sprite statusSprite(Sprite sprite, SpriteType spriteType) {
         SpriteStatus status = getStatus(sprite, spriteType);
-        Debug.Log(status);
         switch (status) {
             case SpriteStatus.SELECTED: return selected;
             case SpriteStatus.OWNED: return owned;

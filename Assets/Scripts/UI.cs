@@ -143,6 +143,7 @@ public class UI : BaseUI {
             deactivate(paidRoll);
             activate(roll);
             activate(freeRoll);
+            deactivate(watchAd);
         } else {
             activate(tillFree);
             TimeSpan passedSinceLastRoll = TimeUtility.getTimePassedSinceLastRoll();

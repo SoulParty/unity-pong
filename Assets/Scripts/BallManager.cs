@@ -29,6 +29,10 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
 
     SpriteRenderer spriteRenderer;
 
+    void Awake() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     void Start() {
         speed = GameController.Instance.defaultBallStartSpeed;
         speedCap = GameController.Instance.ballSpeedUp * speedCapMultiplier + GameController.Instance.defaultBallStartSpeed;
@@ -45,8 +49,6 @@ public class BallManager : MonoBehaviour, SpriteChangeable {
         blueTrail.sortingOrder = -2;
         redTrail.sortingOrder = -2;
         whiteTrail.sortingOrder = -2;
-
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void setSprite(Sprite sprite) {

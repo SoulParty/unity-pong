@@ -15,17 +15,17 @@ public class MusicController : MonoBehaviour {
     public static MusicController Instance;
 
     public MusicController() {
-        Instance = this;
-    }
-
-    void Start() {
-        if (GameObject.FindObjectsOfType<MusicController>().Length > 1) {
-            Destroy(gameObject);
+        if (Instance == null) {
+            Instance = this;
         }
     }
 
     void Awake() {
-        DontDestroyOnLoad(gameObject);
+        if (!this.Equals(Instance)) {
+            Destroy(gameObject);
+        } else {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void playWin() {

@@ -49,7 +49,6 @@ public class RollManager : MonoBehaviour {
     }
 
     public void LoadWatchAdFromRollScreen() {
-        MusicController.Instance.playImpact();
         if (Advertisement.IsReady()) {
             Advertisement.Show(null, new ShowOptions {
                 resultCallback = result => {
@@ -61,6 +60,7 @@ public class RollManager : MonoBehaviour {
 
                         SpriteService.Instance.display4CharNumber(
                                 UI.Instance.coinTotal, SettingsController.Instance.getCoins());
+                        MusicController.Instance.playCoin();
                         SettingsController.Instance.playCoinsEarned(UI.Instance.coinsEarnedImpact);
                     }
                 }

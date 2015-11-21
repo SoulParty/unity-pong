@@ -45,6 +45,8 @@ public class GameController : MonoBehaviour {
 
     public float initialSpawnDelay = 3f;
 
+    bool isGameFinished = true;
+
     [System.NonSerialized]
     public static GameController Instance;
 
@@ -121,7 +123,6 @@ public class GameController : MonoBehaviour {
     }
 
     public void gameFinished(GameObject winner) {
-
         foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball")) {
             ball.GetComponent<Rigidbody2D>().isKinematic = true;
         }
@@ -144,6 +145,9 @@ public class GameController : MonoBehaviour {
             restart();
             if (ScoreController.Instance.checkWinCondition(player)) {
                 gameFinished(player);
+                isGameFinished = true;
+            } else {
+                isGameFinished = false;
             }
         }
         ScoreController.Instance.highScoreCheck();
@@ -235,6 +239,8 @@ public class GameController : MonoBehaviour {
 
     public void startNewRound() {
         BallController.Instance.moveInRandomDirection();
-        startSpecialSpawning();
+        if (!isGameFinished) {
+            startSpecialSpawning();
+        }
     }
 }
